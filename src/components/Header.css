@@ -1,0 +1,20 @@
+.header {
+  height: 60px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.8);
+}
+
+.logo {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e2c17c;
+  text-decoration: none;
+  padding-left: 30px;
+}
