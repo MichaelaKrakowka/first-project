@@ -6,7 +6,7 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(180deg, #0d0d0d 0%, #2f3b32 50%, #2b1f1a 100%);
+  background-image: url(../public/lesHeader.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

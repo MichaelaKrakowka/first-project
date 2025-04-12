@@ -1,9 +1,7 @@
 import React from "react";
-
 import "./Header.css";
-import { HeaderButtons } from "./HeaderButtons";
 
-export const Header = () => {
+export const Header = ({ onClick }) => {
   return (
     <>
       <header className="header">
@@ -11,7 +9,9 @@ export const Header = () => {
           <a href="/" className="logo">
             Nevěř tichu!
           </a>
-          <HeaderButtons />
+          <button onClick={onClick} className="btn_start">
+            Začít hrát
+          </button>
         </div>
       </header>
     </>
