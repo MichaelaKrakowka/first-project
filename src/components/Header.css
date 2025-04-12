@@ -8,13 +8,20 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: linear-gradient(
+    180deg,
+    #0d0d0d 0%,
+    #2f3b32 50%,
+    #2b1f1a 100%
+  );
 }
 
 .logo {
   font-weight: 700;
+  font-size: 2rem;
   text-transform: uppercase;
   color: #e2c17c;
+  text-shadow: -1px -1px 1px #1b1616, 1px 1px 1px #555;
   text-decoration: none;
   padding-left: 30px;
 }
