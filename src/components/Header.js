@@ -10,7 +10,7 @@ export const Header = ({ onClick }) => {
             Nevěř tichu!
           </a>
           <button onClick={onClick} className="btn_start">
-            Začít hrát
+            Spustit příběh
           </button>
         </div>
       </header>
