@@ -5,7 +5,7 @@ export const MainStory = ({ isCLicked }) => {
   return (
     <section>
       {isCLicked && (
-        <div className="main_story" style={{ padding: "30px" }}>
+        <div className="main_story">
           <p>
             Můj dědeček zemřel náhle. Lékaři to označili za srdeční selhání, ale
             žádná pitva neproběhla. Když jsme ho našli, seděl u stolu ve své
