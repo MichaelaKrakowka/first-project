@@ -9,13 +9,11 @@ export const Header = ({ onClick }) => {
           <a href="/" className="logo">
             Michaela Krakowka
           </a>
-          {/* <button onClick={onClick} className="btn_start">
-            Přihlásit se
-          </button> */}
+          <button onClick={onClick} className="btn_start">
+            Přihlásit se a hrát
+          </button>
         </div>
       </header>
     </>
   );
 };
-
-// pridat dalsi tlacitko s prihlasenim

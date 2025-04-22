@@ -17,10 +17,10 @@
   color: #e2c17c;
   text-shadow: -1px -1px 1px #1b1616, 1px 1px 1px #555;
   text-decoration: none;
-  padding-left: 50px;
+  padding-left: 80px;
 }
 
-/* .btn_start {
+.btn_start {
   font-family: "Cormorant Garamond", serif;
   color: #e2c17c;
   border: 1px solid #e2c17c;
@@ -29,4 +29,4 @@
   padding: 5px 10px;
   margin-right: 50px;
   cursor: pointer;
-} */
+}
