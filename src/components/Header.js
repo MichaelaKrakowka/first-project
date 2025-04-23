@@ -7,10 +7,10 @@ export const Header = ({ onClick }) => {
       <header className="header">
         <div className="header_container container">
           <a href="/" className="logo">
-            Michaela Krakowka
+            NEVĚŘ TICHU!
           </a>
           <button onClick={onClick} className="btn_start">
-            Přihlásit se a hrát
+            Začít hrát
           </button>
         </div>
       </header>
