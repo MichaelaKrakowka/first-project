@@ -34,6 +34,4 @@ export const MainStory = ({ isClicked }) => {
   );
 };
 
-// pridat na konec pribehu dve tlacitka s volbou cesty
 // vymyslet, jakym zpusobem zapisovat objekty a komponenty u voleb
-// pridani obrazku
