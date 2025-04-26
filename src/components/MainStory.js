@@ -21,6 +21,7 @@ export const MainStory = ({ isClicked }) => {
               <b>„Najdi klíč pod hodinami. Nevěř tichu.“</b>
             </p>
           </div>
+
           <p>Nyní se musíš rozhodnout, kterou cestou se vydáš:</p>
 
           <div className="buttons">

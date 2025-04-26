@@ -2,6 +2,12 @@ import React from "react";
 import "./Header.css";
 
 export const Header = ({ onClick }) => {
+  const [isVisible, setIsVisible] = React.useState(true);
+
+  const handleClickButton = (event) => {
+    event.preventDefault();
+    setIsVisible(false);
+  };
   return (
     <>
       <header className="header">
@@ -9,9 +15,16 @@ export const Header = ({ onClick }) => {
           <a href="/" className="logo">
             NEVĚŘ TICHU!
           </a>
-          <button onClick={onClick} className="btn_start">
-            Začít hrát
-          </button>
+          {isVisible && (
+            <button
+              onClick={(event) => {
+                onClick(event);
+                handleClickButton(event);
+              }}
+              className="btn_start">
+              Začít hrát
+            </button>
+          )}
         </div>
       </header>
     </>
