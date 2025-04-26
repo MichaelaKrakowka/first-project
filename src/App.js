@@ -11,7 +11,7 @@ export const App = () => {
   return (
     <div>
       <Header onClick={startStory} />
-      <MainStory isCLicked={isClicked} />
+      <MainStory isClicked={isClicked} />
     </div>
   );
 };
