@@ -2,27 +2,40 @@ export const story = [
   {
     id: "start",
     text: (
-      <div>
+      <>
         <p>
           Můj dědeček zemřel náhle. Lékaři to označili za srdeční selhání, ale
           žádná pitva neproběhla. Když jsme ho našli, seděl u stolu ve své
           pracovně, oči dokořán, ústa otevřená jako by naposledy křičel – ale
           nikdo ho neslyšel. Byl úplně sám. Nebo aspoň tak to tvrdí ostatní.
-          <br />
+        </p>
+        <p>
           Po pohřbu mi přišel balíček. Bez zpáteční adresy. Uvnitř byla jen
           zažloutlá obálka, na ní moje jméno psané jeho písmem. A v ní jen jeden
           řádek:
         </p>
 
-        <p style={{ padding: "15px" }}>
-          <strong>**„Najdi klíč pod hodinami. Nevěř tichu.“**</strong>
+        <p
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            padding: "20px",
+          }}>
+          <strong>„Najdi klíč pod hodinami. Nevěř tichu.“</strong>
         </p>
         <p>
           To bylo všechno. Žádný testament. Žádný formální dopis. Jen tenhle
           podivný vzkaz.
-          <br /> Nyní se musíš rozhodnout, kterou cestou se vydáš:
         </p>
-      </div>
+        <p
+          style={{
+            paddingTop: "50px",
+            display: "flex",
+            justifyContent: "center",
+          }}>
+          Nyní se musíš rozhodnout, kterou cestou se vydáš:
+        </p>
+      </>
     ),
     options: [
       { text: "Vzkaz ignorovat a zahodit ho.", id: "ignoreTheLetter" },
@@ -33,14 +46,15 @@ export const story = [
   {
     id: "ignoreTheLetter",
     text: (
-      <p>
-        Roztrhal jsem dopis a hodil jsem ho do koše.
-        <br />
-        Už se nechci trápit, chci za úmrtím dědečka udělat tlustou čáru a
-        pokračovat ve svém životě. Stačí mi v mysli pár krásných vzpomínek na
-        něj. Otevírám bar plný whiskey a utírám si slzu, která mi stéká po
-        tváři. <br />
-      </p>
+      <>
+        <p>Roztrhal jsem dopis a hodil jsem ho do koše.</p>
+        <p>
+          Už se nechci trápit, chci za úmrtím dědečka udělat tlustou čáru a
+          pokračovat ve svém životě. Stačí mi v mysli pár krásných vzpomínek na
+          něj. Otevírám bar plný whiskey a utírám si slzu, která mi stéká po
+          tváři.
+        </p>
+      </>
     ),
     options: [{ text: "KONEC PŘÍBĚHU", id: "start" }], //vymyslet, jak spustit novou hru
   },
@@ -48,19 +62,19 @@ export const story = [
   {
     id: "findTheKey",
     text: (
-      <p>
-        Rozhodl jsem se jet do jeho starého domu, který už roky chátral. Nikdo
-        tam nevkročil od chvíle, kdy dědečka odvezli. Vzduch uvnitř byl těžký,
-        vstupní hala a schodiště byly zakryté v šeru. Okny zatemněnými těžkými
-        závěsy neprocházelo příliš mnoho světla. Robustní podlahové hodiny z
-        ořechového dřeva stály – ručičky nehybné ve 3:33. Když jsem odsunul
-        jejich těžké tělo od zdi, opravdu tam byl – na zemi ležel malý rezavý
-        klíč, zavěšený na řetízku.
-        <br />
-        Na zadní straně hodin bylo naškrábáno:„Sleduj. Pracovna.“.
-        <br />
-        Mám pocit, že pod škrábanci něco je, ale pořádně na to nevidím.
-      </p>
+      <>
+        <p>
+          Rozhodl jsem se jet do jeho starého domu, který už roky chátral. Nikdo
+          tam nevkročil od chvíle, kdy dědečka odvezli. Vzduch uvnitř byl těžký,
+          vstupní hala a schodiště byly zakryté v šeru. Okny zatemněnými těžkými
+          závěsy neprocházelo příliš mnoho světla. Robustní podlahové hodiny z
+          ořechového dřeva stály – ručičky nehybné ve 3:33. Když jsem odsunul
+          jejich těžké tělo od zdi, opravdu tam byl – na zemi ležel malý rezavý
+          klíč, zavěšený na řetízku.
+        </p>
+        <p>Na zadní straně hodin bylo naškrábáno:„Sleduj. Pracovna.“.</p>
+        <p>Mám pocit, že pod škrábanci něco je, ale pořádně na to nevidím.</p>
+      </>
     ),
     options: [
       { text: "Prozkoumat hodiny", id: "checkTheClock" },
@@ -71,21 +85,23 @@ export const story = [
   {
     id: "checkTheClock",
     text: (
-      <p>
-        Se silným skřípotem závěsy spadly na zem. Svým dopadem na dřevěnou
-        podlahu zvířily hustý oblak prachu, který mi ihned rozdráždil sliznici.
-        Začal jsem nekontrolovaně kašlat. I když slunce rychle zapadá, halu nyní
-        prosvěcovalo denní světlo. Na stěnách vidím nalepenou starodávnou
-        zelenou tapetu s růžovými květinovými vzory. Na zdi, která vede podél
-        schodiště visí obrazy předků. Ve spodním patře se nachází několik
-        masivních zavřených dřevěných dveří. Sice jsem tu již spoustu let nebyl,
-        ale takhle strašidelné si to z dětství nepamatuji. Snad to bude stát za
-        to, pomyslím si, a přiblížím se k hodinám. Shýbám se k dolní části hodin
-        a zkoumám, co před chvíli upoutalo moji pozornost. Otevřenou dlaní
-        přejíždím přes nalepený papírek. Jedná se o výrobní štítek s názvem
-        společnosti „Mundus“.
-        <br /> „Tohle byla ztráta času“ procedím mezi zuby podrážděným tónem.
-      </p>
+      <>
+        <p>
+          Se silným skřípotem závěsy spadly na zem. Svým dopadem na dřevěnou
+          podlahu zvířily hustý oblak prachu, který mi ihned rozdráždil
+          sliznici. Začal jsem nekontrolovaně kašlat. I když slunce rychle
+          zapadá, halu nyní prosvěcovalo denní světlo. Na stěnách vidím
+          nalepenou starodávnou zelenou tapetu s růžovými květinovými vzory. Na
+          zdi, která vede podél schodiště visí obrazy předků. Ve spodním patře
+          se nachází několik masivních zavřených dřevěných dveří. Sice jsem tu
+          již spoustu let nebyl, ale takhle strašidelné si to z dětství
+          nepamatuji. Snad to bude stát za to, pomyslím si, a přiblížím se k
+          hodinám. Shýbám se k dolní části hodin a zkoumám, co před chvíli
+          upoutalo moji pozornost. Otevřenou dlaní přejíždím přes nalepený
+          papírek. Jedná se o výrobní štítek s názvem společnosti „Mundus“.
+        </p>
+        <p>„Tohle byla ztráta času“ procedím mezi zuby podrážděným tónem.</p>
+      </>
     ),
     options: [
       { text: "Pokračovat do dědečkovy pracovny", id: "goToTheOffice" },
@@ -140,21 +156,27 @@ export const story = [
   {
     id: "leaveTheHouse",
     text: (
-      <p>
-        Popadla mě panika. S tímhle nechci mít nic společného. Sahám na kliku a
-        snažím se dveře otevřít – ale jsou zamčené. Zámek ani necvakne. V tu
-        chvíli začnou hodiny odbíjet a z potemnělé chodby se ozvou pomalé, těžké
-        kroky, blížící se za mnou.
-        <br />
-        Rozběhnu se k nejbližšímu oknu, lomcuju jím, ale nejde otevřít. Srdce mi
-        tluče až v krku. <br /> A pak náhlé ..ticho.
-        <br />
-        Kroky zmizely. Zpozorním, uši mám nastražené, dech zadržuju. A pak to
-        ucítím. Studený dech na zátylku. A šepot přímo u ucha: „Svým rozhodnutím
-        jsi změnil kletbu. Nyní ji ponese každý prvorozený.“ Zděšením se snažím
-        křičet, ale i přes snahu ze sebe nevydám ani hlásku. Padám na podlahu,
-        oči dokořán a ústa jako by naposled křičela...
-      </p>
+      <>
+        <p>
+          Popadla mě panika. S tímhle nechci mít nic společného. Sahám na kliku
+          a snažím se dveře otevřít – ale jsou zamčené. Zámek ani necvakne. V tu
+          chvíli začnou hodiny odbíjet a z potemnělé chodby se ozvou pomalé,
+          těžké kroky, blížící se za mnou.
+        </p>
+        <p>
+          Rozběhnu se k nejbližšímu oknu, lomcuju jím, ale nejde otevřít. Srdce
+          mi tluče až v krku.
+        </p>
+        <p>A pak náhlé ..ticho.</p>
+        <p>
+          Kroky zmizely. Zpozorním, uši mám nastražené, dech zadržuju. A pak to
+          ucítím. Studený dech na zátylku. A šepot přímo u ucha: „Svým
+          rozhodnutím jsi změnil kletbu. Nyní ji ponese každý prvorozený.“
+          Zděšením se snažím křičet, ale i přes snahu ze sebe nevydám ani
+          hlásku. Padám na podlahu, oči dokořán a ústa jako by naposled
+          křičela...
+        </p>
+      </>
     ),
     options: [{ text: "KONEC PŘÍBĚHU", id: "start" }],
   },
