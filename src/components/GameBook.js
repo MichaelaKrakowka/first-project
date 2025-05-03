@@ -12,7 +12,7 @@ export const GameBook = () => {
 
   return (
     <>
-      <p className="story_text">{findCurrentPart.text}</p>
+      <section className="story_text">{findCurrentPart.text}</section>
 
       <div className="buttons">
         {findCurrentPart.options.map((option, id) => (
