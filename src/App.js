@@ -1,6 +1,6 @@
 import React from "react";
 import { Header } from "./components/Header";
-import { GameBook } from "./components/StoryData";
+import { GameBook } from "./components/GameBook";
 
 export const App = () => {
   const [isStoryStarted, setIsStoryStarted] = React.useState(false);
