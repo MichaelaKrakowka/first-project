@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "./components/Header";
 import { MainStory } from "./components/MainStory";
-import { StoryGame } from "./components/StoryData";
+import { GameBook } from "./components/StoryData";
 
 export const App = () => {
   const [isStoryStarted, setIsStoryStarted] = React.useState(false);
@@ -13,7 +13,7 @@ export const App = () => {
     <div>
       <Header onClick={startStory} isClicked={isStoryStarted} />
       <MainStory isClicked={isStoryStarted} />
-      {isStoryStarted && <StoryGame />}
+      {isStoryStarted && <GameBook />}
     </div>
   );
 };

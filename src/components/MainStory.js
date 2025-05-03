@@ -18,7 +18,7 @@ export const MainStory = ({ isClicked }) => {
               zažloutlá obálka, na ní moje jméno psané jeho písmem. A v ní…
               jeden řádek:
               <br />
-              <b>„Najdi klíč pod hodinami. Nevěř tichu.“</b>
+              <strong>„Najdi klíč pod hodinami. Nevěř tichu.“</strong>
             </p>
           </div>
 
