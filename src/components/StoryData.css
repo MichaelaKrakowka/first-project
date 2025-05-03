@@ -1,6 +1,6 @@
 /* nastylovat text - transition */
 
-.main_story {
+.story_text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,6 +15,7 @@
 .buttons {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .btn {

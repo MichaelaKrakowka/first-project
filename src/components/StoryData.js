@@ -1,17 +1,27 @@
 import React from "react";
+import "./StoryData.css";
 
 const story = [
   {
     id: "start",
-    text: `Můj dědeček zemřel náhle. Lékaři to označili za srdeční selhání, ale žádná pitva neproběhla. 
-    Když jsme ho našli, seděl u stolu ve své pracovně, oči dokořán, ústa otevřená jako by naposledy křičel –
-     ale nikdo ho neslyšel. Byl úplně sám.
-    Nebo aspoň tak to tvrdí ostatní.
-    Po pohřbu mi přišel balíček. Bez zpáteční adresy.
-    Uvnitř byla jen zažloutlá obálka, na ní moje jméno psané jeho písmem. A v ní jen jeden řádek:
-    **„Najdi klíč pod hodinami. Nevěř tichu.“**
-    To bylo všechno. Žádný testament. Žádný formální dopis. Jen tenhle podivný vzkaz.
-    Nyní se musíš rozhodnout, kterou cestou se vydáš:`,
+    text: (
+      <p>
+        Můj dědeček zemřel náhle. Lékaři to označili za srdeční selhání, ale
+        žádná pitva neproběhla. Když jsme ho našli, seděl u stolu ve své
+        pracovně, oči dokořán, ústa otevřená jako by naposledy křičel – ale
+        nikdo ho neslyšel. Byl úplně sám. Nebo aspoň tak to tvrdí ostatní.{" "}
+        <br />
+        Po pohřbu mi přišel balíček. Bez zpáteční adresy. Uvnitř byla jen
+        zažloutlá obálka, na ní moje jméno psané jeho písmem. A v ní jen jeden
+        řádek:
+        <br />
+        <strong>**„Najdi klíč pod hodinami. Nevěř tichu.“**</strong>
+        To bylo všechno. Žádný testament. Žádný formální dopis. Jen tenhle
+        podivný vzkaz.
+        <br />
+        Nyní se musíš rozhodnout, kterou cestou se vydáš:
+      </p>
+    ),
     options: [
       { text: "Vzkaz ignorovat a zahodit ho.", id: "ignoreTheLetter" },
       { text: "Zajít do domu a najít klíč.", id: "findTheKey" },
@@ -228,22 +238,33 @@ const story = [
     Najednou začnou odbíjet. Každý úder jako by otřásal samotnými zdmi domu.
     Leknu se, zalapám po dechu — otevřu oči dokořán, snažím se zakřičet,
     ale nic... žádný zvuk. Jen...
-    Ticho.
-
-    A já sedím u stolu, ústa otevřená jako bych naposledy křičel, oči dokořán...`,
+    Ticho.`,
+    options: [{ text: "KONEC PŘÍBĚHU", id: "start" }],
   },
 ];
 
 export const GameBook = () => {
   const [currentPart, setCurrentPart] = React.useState("start");
+  const findCurrentPart = story.find((part) => part.id === currentPart); //prochazim kazdou cast (part) objektu a v ni hledam konkretni id (part.id)
+
   const goToNextPart = (id) => {
     setCurrentPart(id);
   };
 
   return (
     <>
-      <p className="story_part">{story.text}</p>
-      <button>{story[currentPart]}</button>
+      <p className="story_text">{findCurrentPart.text}</p>
+
+      <div className="buttons">
+        {findCurrentPart.options.map((option, id) => (
+          <button
+            className="btn"
+            key={id}
+            onClick={() => goToNextPart(option.id)}>
+            {option.text}
+          </button>
+        ))}
+      </div>
     </>
   );
 };
