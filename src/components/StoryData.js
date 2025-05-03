@@ -1,5 +1,8 @@
-const story = {
-  start: {
+import React from "react";
+
+const story = [
+  {
+    id: "start",
     text: `Můj dědeček zemřel náhle. Lékaři to označili za srdeční selhání, ale žádná pitva neproběhla. 
     Když jsme ho našli, seděl u stolu ve své pracovně, oči dokořán, ústa otevřená jako by naposledy křičel –
      ale nikdo ho neslyšel. Byl úplně sám.
@@ -13,7 +16,9 @@ const story = {
       { text: "Zajít do domu a najít klíč.", id: "findTheKey" },
     ],
   },
-  ignoreTheLetter: {
+
+  {
+    id: "ignoreTheLetter",
     text: `Roztrhal jsem dopis a hodil jsem ho do koše.
             Už se nechci trápit, chci za úmrtím dědečka udělat tlustou čáru a pokračovat ve svém životě.
             Stačí mi v mysli pár krásných vzpomínek na něj.
@@ -21,7 +26,8 @@ const story = {
     options: [{ text: "KONEC PŘÍBĚHU", id: "newGame" }], //vymyslet, jak spustit novou hru
   },
 
-  findTheKey: {
+  {
+    id: "findTheKey",
     text: `Rozhodl jsem se jet do jeho starého domu, který už roky chátral.
     Nikdo tam nevkročil od chvíle, kdy dědečka odvezli. Vzduch uvnitř byl těžký,
     vstupní hala a schodiště byly zakryté v šeru.
@@ -35,7 +41,9 @@ const story = {
       { text: "Pokračovat do dědečkovy pracovny", id: "goToTheOffice" },
     ],
   },
-  checkTheClock: {
+
+  {
+    id: "checkTheClock",
     text: `Se silným skřípotem závěsy spadly na zem. 
     Svým dopadem na dřevěnou podlahu zvířily hustý oblak prachu,
      který mi ihned rozdráždil sliznici. Začal jsem nekontrolovaně kašlat. 
@@ -53,7 +61,8 @@ const story = {
     ],
   },
 
-  goToTheOffice: {
+  {
+    id: "goToTheOffice",
     text: `Cestou po schodech sleduji obrazy předků a nemůžu se ubránit pocitu, že mě svými pohledy sledují.
      Ve druhém patře na konci chodby se konečně ocitám v jeho pracovně. 
      Zdá se, že zde bylo vše tak, jak to zanechal. Zápisníky, knihy a staré mapy. 
@@ -69,7 +78,9 @@ const story = {
       { text: "Otevřít dveře", id: "openTheDoor" },
     ],
   },
-  goHome: {
+
+  {
+    id: "goHome",
     text: `Běžím chodbou, jak nejrychleji umím. Když scházím schody dolů, zarazí mě zjištění,
      že hodiny, které jsem odsunul, nyní stojí před vchodovými dveřmi. 
      Jsou otočené zády a slova vyrytá do dřeva se změnila: „Otoč se. Pracovna.“ 
@@ -81,7 +92,9 @@ const story = {
       { text: "Vrátit se zpátky k zamčeným dveřím", id: "openTheDoor" },
     ],
   },
-  openTheDoor: {
+
+  {
+    id: "openTheDoor",
     text: `Ruka se mi třásla, když jsem zasunoval klíč do zámku. 
     Kov zaškrábal, klíč seděl dokonale. Otočil jsem ho – jedno klapnutí, pak druhé. 
     Dveře se po chvíli samy s tichým zaskřípěním pootevřely. Za nimi byla tma. Ne přirozená, ale těžká. Hustá. 
@@ -95,10 +108,16 @@ const story = {
       { text: "Porozhlédnout se po stole", id: "chechTheDesk" },
     ],
   },
-  checkTheRoom: {
+
+  {
+    id: "checkTheRoom",
     text: `Rozhodnu se nejdříve prozkoumat místnost a v rohu najdu další dveře, 
     které zprvu nebyly vidět. Jsou menší než ty, které vedly do této místnosti a 
     vypadají však mnohem starším, až starodávným vzhledem.`,
     options: [{ text: "Porozhlédnout se po stole", id: "checkTheDesk" }],
   },
+];
+
+export const GameBook = () => {
+  const [currentPart, setCurrentPart] = React.useState("start");
 };
