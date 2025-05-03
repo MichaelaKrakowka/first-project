@@ -1,17 +1,19 @@
 import React from "react";
 import { Header } from "./components/Header";
 import { MainStory } from "./components/MainStory";
+import { StoryGame } from "./components/StoryData";
 
 export const App = () => {
-  const [isClicked, setIsClicked] = React.useState(false);
+  const [isStoryStarted, setIsStoryStarted] = React.useState(false);
   const startStory = () => {
-    setIsClicked(true);
+    setIsStoryStarted(true);
   };
 
   return (
     <div>
-      <Header onClick={startStory} />
-      <MainStory isClicked={isClicked} />
+      <Header onClick={startStory} isClicked={isStoryStarted} />
+      <MainStory isClicked={isStoryStarted} />
+      {isStoryStarted && <StoryGame />}
     </div>
   );
 };

@@ -33,5 +33,3 @@ export const MainStory = ({ isClicked }) => {
     </section>
   );
 };
-
-// vymyslet, jakym zpusobem zapisovat objekty a komponenty u voleb
