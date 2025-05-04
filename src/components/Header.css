@@ -27,4 +27,12 @@
   background-color: rgb(12, 19, 15, 0);
   padding: 5px 10px;
   cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.btn_start:hover {
+  transform: scale(1.1);
+}
+.btn_start:active {
+  transform: scale(0.9);
 }

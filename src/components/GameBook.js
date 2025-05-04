@@ -16,7 +16,6 @@ export const GameBook = ({ endStory }) => {
   return (
     <>
       <section className="story_text">{currentPart.text}</section>
-
       <div className="buttons">
         {currentPart.options.map((option, id) => (
           <button
