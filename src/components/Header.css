@@ -27,7 +27,7 @@
   background-color: rgb(12, 19, 15, 0);
   padding: 5px 10px;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: transform 0.2s;
 }
 
 .btn_start:hover {
