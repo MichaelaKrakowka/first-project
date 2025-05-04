@@ -1,5 +1,5 @@
-export const story = [
-  {
+export const story = {
+  start: {
     id: "start",
     text: (
       <>
@@ -43,7 +43,7 @@ export const story = [
     ],
   },
 
-  {
+  ignoreTheLetter: {
     id: "ignoreTheLetter",
     text: (
       <>
@@ -59,7 +59,7 @@ export const story = [
     options: [{ text: "KONEC PŘÍBĚHU", id: "start" }], //vymyslet, jak spustit novou hru
   },
 
-  {
+  findTheKey: {
     id: "findTheKey",
     text: (
       <>
@@ -82,7 +82,7 @@ export const story = [
     ],
   },
 
-  {
+  checkTheClock: {
     id: "checkTheClock",
     text: (
       <>
@@ -108,7 +108,7 @@ export const story = [
     ],
   },
 
-  {
+  goToTheOffice: {
     id: "goToTheOffice",
     text: (
       <p>
@@ -133,7 +133,7 @@ export const story = [
     ],
   },
 
-  {
+  goHome: {
     id: "goHome",
     text: (
       <p>
@@ -153,7 +153,7 @@ export const story = [
     ],
   },
 
-  {
+  leaveTheHouse: {
     id: "leaveTheHouse",
     text: (
       <>
@@ -180,7 +180,7 @@ export const story = [
     options: [{ text: "KONEC PŘÍBĚHU", id: "start" }],
   },
 
-  {
+  openTheDoor: {
     id: "openTheDoor",
     text: (
       <p>
@@ -202,7 +202,7 @@ export const story = [
     ],
   },
 
-  {
+  checkTheRoom: {
     id: "checkTheRoom",
     text: (
       <p>
@@ -213,7 +213,8 @@ export const story = [
     ),
     options: [{ text: "Porozhlédnout se po stole", id: "checkTheDesk" }],
   },
-  {
+
+  checkTheDesk: {
     id: "checkTheDesk",
     text: (
       <p>
@@ -239,7 +240,7 @@ export const story = [
     ],
   },
 
-  {
+  useTheKey: {
     id: "useTheKey",
     text: (
       <p>
@@ -259,7 +260,7 @@ export const story = [
     ],
   },
 
-  {
+  stay: {
     id: "stay",
     text: (
       <p>
@@ -271,7 +272,7 @@ export const story = [
     options: [{ text: "Vstoupit do dveří", id: "goInside" }],
   },
 
-  {
+  goInside: {
     id: "goInside",
     text: (
       <p>
@@ -303,7 +304,7 @@ export const story = [
     ],
   },
 
-  {
+  runAway: {
     id: "runAway",
     text: (
       <p>
@@ -326,7 +327,7 @@ export const story = [
     options: [{ text: "KONEC PŘÍBĚHU", id: "start" }],
   },
 
-  {
+  writeName: {
     id: "writeName",
     text: (
       <p>
@@ -342,4 +343,4 @@ export const story = [
     ),
     options: [{ text: "KONEC PŘÍBĚHU", id: "start" }],
   },
-];
+};

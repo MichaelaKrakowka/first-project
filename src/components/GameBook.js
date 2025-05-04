@@ -4,7 +4,7 @@ import "./GameBook.css";
 
 export const GameBook = () => {
   const [currentPart, setCurrentPart] = React.useState("start");
-  const findCurrentPart = story.find((part) => part.id === currentPart);
+  const findCurrentPart = story[currentPart];
 
   const goToNextPart = (id) => {
     setCurrentPart(id);
