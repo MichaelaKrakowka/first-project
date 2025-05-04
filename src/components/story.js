@@ -56,7 +56,7 @@ export const story = {
         </p>
       </>
     ),
-    options: [{ text: "KONEC PŘÍBĚHU", id: "start" }], //vymyslet, jak spustit novou hru
+    options: [{ text: "KONEC PŘÍBĚHU", id: "konec" }], //vymyslet, jak spustit novou hru
   },
 
   findTheKey: {
@@ -177,7 +177,7 @@ export const story = {
         </p>
       </>
     ),
-    options: [{ text: "KONEC PŘÍBĚHU", id: "start" }],
+    options: [{ text: "KONEC PŘÍBĚHU", id: "konec" }],
   },
 
   openTheDoor: {
@@ -324,7 +324,7 @@ export const story = {
         pak přichází ticho.
       </p>
     ),
-    options: [{ text: "KONEC PŘÍBĚHU", id: "start" }],
+    options: [{ text: "KONEC PŘÍBĚHU", id: "konec" }],
   },
 
   writeName: {
@@ -341,6 +341,6 @@ export const story = {
         snažím se zakřičet, ale nic... žádný zvuk. Jen... Ticho.
       </p>
     ),
-    options: [{ text: "KONEC PŘÍBĚHU", id: "start" }],
+    options: [{ text: "KONEC PŘÍBĚHU", id: "konec" }],
   },
 };

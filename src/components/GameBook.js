@@ -2,20 +2,23 @@ import React from "react";
 import { story } from "./story";
 import "./GameBook.css";
 
-export const GameBook = () => {
-  const [currentPart, setCurrentPart] = React.useState("start");
-  const findCurrentPart = story[currentPart];
+export const GameBook = ({ endStory }) => {
+  const [currentPartId, setCurrentPartId] = React.useState("start");
+  const currentPart = story[currentPartId];
 
   const goToNextPart = (id) => {
-    setCurrentPart(id);
+    if (id === "konec") {
+      endStory();
+    }
+    return setCurrentPartId(id);
   };
 
   return (
     <>
-      <section className="story_text">{findCurrentPart.text}</section>
+      <section className="story_text">{currentPart.text}</section>
 
       <div className="buttons">
-        {findCurrentPart.options.map((option, id) => (
+        {currentPart.options.map((option, id) => (
           <button
             className="btn"
             key={id}
