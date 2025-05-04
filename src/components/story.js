@@ -116,10 +116,10 @@ export const story = [
         mě svými pohledy sledují. Ve druhém patře na konci chodby se konečně
         ocitám v jeho pracovně. Zdá se, že zde bylo vše tak, jak to zanechal.
         Zápisníky, knihy a staré mapy. Co však nejvíce upoutalo mojí pozornost a
-        způsobilo nepříjemnou husí kůži na zátylku, byly podivné náčrty lidských
-        postav bez obličejů. Snažím se zůstat v klidu a nenechat se ovládnout
-        strachem. Pokusím se znovu soustředit. V rohu místnosti jsou dveře,
-        které si jen mlhavě pamatuji z dětství – jsou zamčené. Z kapsy si
+        způsobilo nepříjemnou husí kůži na zátylku, byly podivné náčrty postavy
+        v černé kápi bez obličeje. Snažím se zůstat v klidu a nenechat se
+        ovládnout strachem. Pokusím se znovu soustředit. V rohu místnosti jsou
+        dveře, které si jen mlhavě pamatuji z dětství – jsou zamčené. Z kapsy si
         vytáhnu klíč, který jsem našel pod hodinami.
       </p>
     ),
@@ -170,11 +170,10 @@ export const story = [
         <p>A pak náhlé ..ticho.</p>
         <p>
           Kroky zmizely. Zpozorním, uši mám nastražené, dech zadržuju. A pak to
-          ucítím. Studený dech na zátylku. A šepot přímo u ucha: „Svým
-          rozhodnutím jsi změnil kletbu. Nyní ji ponese každý prvorozený.“
-          Zděšením se snažím křičet, ale i přes snahu ze sebe nevydám ani
-          hlásku. Padám na podlahu, oči dokořán a ústa jako by naposled
-          křičela...
+          ucítím. Studený dech na zátylku. A šepot přímo u ucha: „Měl jsi
+          poslechnout!“ Zděšením se snažím křičet, ale i přes snahu ze sebe
+          nevydám ani hlásku. Padám na podlahu, oči dokořán a ústa jako by
+          naposled křičela...
         </p>
       </>
     ),
@@ -246,12 +245,12 @@ export const story = [
       <p>
         Vložím malý, zrezivělý klíček do zámku dveří – ten samý, který jsem před
         chvílí našel na stole. Kov tiše zaklapne a s lehkým odporem se otočí. V
-        ten moment se z dolního patra ozve zvláštní zvuk. Rytmické klapání. Jako
-        kdyby někdo – nebo něco – pomalu sestupovalo po schodech. Zadržím dech.
-        Ale pak… naprosté ticho. Ne to obyčejné ticho, které zažíváš v prázdném
-        domě. To ticho je husté, těžké. Dusivé. Mám pocit, že se mi hrudník
-        stahuje, jako by se vzduch najednou ztratil. A právě tehdy mi v hlavě
-        vytane ten jediný vzkaz, který všechno začal: „Nevěř tichu.“
+        ten moment se z dolního patra ozve zvláštní zvuk doprovázený pomalými
+        kroky. Jako kdyby někdo – nebo něco – pomalu sestupovalo po schodech.
+        Zadržím dech. Ale pak… naprosté ticho. Ne to obyčejné ticho, které
+        zažíváš v prázdném domě. To ticho je husté, těžké. Dusivé. Mám pocit, že
+        se mi hrudník stahuje, jako by se vzduch najednou ztratil. A právě tehdy
+        mi v hlavě vytane ten jediný vzkaz, který všechno začal: „Nevěř tichu.“
       </p>
     ),
     options: [
@@ -265,7 +264,7 @@ export const story = [
     text: (
       <p>
         Stojím nehybně jako kámen a snažím se téměř nedýchat. Všechny smysly mám
-        nastražené a čekám, co se bude dít. Neděje se nic, tak se rozhodnu
+        nastražené a čekám, co se bude dít. K mému údivu se neděje nic. Rozhodnu
         vstoupit do dveří.
       </p>
     ),
@@ -315,12 +314,13 @@ export const story = [
         Náhlé postrčení mě vyvede z rovnováhy. Padám. Vzduch mi vyráží dech,
         svět se rozmazává. Náraz na studený kámen je krutý a neúprosný. Ležím
         bez hnutí. V puse cítím železitou pachuť krve. Snažím se zaostřit pohled
-        vzhůru, ale obrysy se mi rozplývají. Přesto zahlédnu siluetu postavy,
-        která se ke mně pomalu blíží. Těžce dýchá. Sklání se ke mně, cítím její
-        dech na uchu. A pak šeptá: „Svým rozhodnutím jsi změnil běh kletby. Nyní
-        ji ponese každý prvorozený. Navždy.“ Nedokážu odpovědět. Myšlenky mi
-        bloudí. Vidím tvář svého syna – jasnou, nevinnou, nic netušící. Slzy mi
-        stékají po spáncích. Ne kvůli bolesti. Kvůli němu. A pak přichází ticho.
+        vzhůru, ale obrysy se mi rozplývají. Přesto zahlédnu siluetu postavy v
+        černé kápi, která se ke mně pomalu blíží. Těžce dýchá. Sklání se ke mně,
+        cítím její dech na uchu. A pak šeptá: „Svým rozhodnutím jsi změnil běh
+        kletby. Nyní ji ponese každý prvorozený. Navždy.“ Nedokážu odpovědět.
+        Myšlenky mi bloudí. Vidím tvář svého syna – jasnou, nevinnou, nic
+        netušící. Slzy mi stékají po spáncích. Ne kvůli bolesti. Kvůli němu. A
+        pak přichází ticho.
       </p>
     ),
     options: [{ text: "KONEC PŘÍBĚHU", id: "start" }],
