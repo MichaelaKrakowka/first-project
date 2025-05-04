@@ -7,8 +7,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   height: 100%;
+}
+
+@media (max-width: 700px) {
+  .logo {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .subtitle {
+    text-align: center;
+  }
 }
 
 .logo {
@@ -17,6 +30,17 @@
   color: #e2c17c;
   text-shadow: -1px -1px 1px #1b1616, 1px 1px 1px #555;
   text-decoration: none;
+  transition: 0.2s;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.subtitle {
+  font-family: "Inconsolata", serif;
+  color: #e2c17c;
+  font-size: 2rem;
+  padding-bottom: 30px;
 }
 
 .btn_start {

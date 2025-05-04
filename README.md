@@ -2,12 +2,14 @@ https://nevertichu.com/
 
 napady:
 
-vymyslet, jakym zpusobem zapisovat objekty a komponenty u voleb
+1. pridani zdravi a sily
 
-1. Kliknuti na tlacitko, prepinani 05_day_3_01_exercise_1 bulb video 9:35
+2. pridani prihlaseni pro ulozeni hry pres local storage
 
-2. v textu a na tlacitku pouzit setInterval LifeCycle method - react day 1.2
+3. pozvolne prechody mezi castmi story
 
-3. jakmile kliknu na jednu z moznosti, tak se puvodni text ztrati a pres setInterval se objevi novy dle volby. Mozna vyuzit i pomalejsi zobrazeni? aat to neni takove instatni - hledat v animacich rwd , jak jsme to delali
+4. pridat podkladovou hudbu
 
-4. v pripade vstupu do domu pridat zvuk otevirani dveri plus kroky a az pak se zobrazi text?
+5. podle zbylych procent nastavit podminku, zda postava umre pri setkani s cernou kapi nebo prezije (if 25% nebo mene = umrit atd...)
+
+6. media queries nastavit na mobil
