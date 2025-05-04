@@ -8,10 +8,10 @@ export const Header = ({ onClick, isClicked }) => {
         <a href="/" className="logo">
           NEVĚŘ TICHU!
         </a>
-        <p className="subtitle">
+        {/* <p className="subtitle">
           Každý krok rozhoduje. Udrž si zdraví a co nejvíce síly až do konce
           svého příběhu.
-        </p>
+        </p> */}
         {!isClicked && (
           <button onClick={onClick} className="btn_start">
             Začít hrát
