@@ -126,10 +126,23 @@ export const story = {
     options: [
       {
         //jak nastylovat jen toto konkretni tlacitko?
-        text: "Mám strach, možná by některé věci nemusely být vysvětleny za každou cenu",
+        text: (
+          <p>
+            Mám strach, možná by některé věci
+            <br /> nemusely být vysvětleny za každou cenu
+          </p>
+        ),
         id: "goHome",
       },
-      { text: "Otevřít dveře", id: "openTheDoor" },
+      {
+        text: (
+          <p>
+            Chvíli zvažuji, jestli to chci <br />
+            opravdu vědět, ale pak klíč zasunu do zámku
+          </p>
+        ),
+        id: "openTheDoor",
+      },
     ],
   },
 
@@ -279,7 +292,7 @@ export const story = {
         Rukou tlačím na dřevěné dveře, které se s vrzáním pomalu otevírají.
         Místnost je velmi malá a tmavá. Světlo se do ní dostává pouze z vedlejší
         místnosti. Vedle stěny je křeslo a na něm hnědý kožený deník s iniciály
-        tvého dědečka. Musím se vrátit do místnosti s psacím strojem a lampou,
+        mého dědečka. Musím se vrátit do místnosti s psacím strojem a lampou,
         abych v něm mohl číst. Stránky byly plné poznámek, náčrtů symbolů a
         jmen, které mi nic neříkaly. Spousta stránek bylo prázdných. Jen
         předposlední strana lehce vyčnívala z deníku. Rukopis nebyl podobný
