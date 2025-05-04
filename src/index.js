@@ -13,5 +13,3 @@ root.render(
   </React.StrictMode>
 );
 reportWebVitals();
-
-// napsani readme
