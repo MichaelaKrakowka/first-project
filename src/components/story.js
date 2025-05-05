@@ -6,11 +6,11 @@ export const story = {
         <p>
           Můj dědeček zemřel náhle. Lékaři to označili za srdeční selhání, ale
           žádná pitva neproběhla. Když jsme ho našli, seděl u stolu ve své
-          pracovně, oči dokořán, ústa otevřená jako by naposledy křičel – ale
+          pracovně, oči dokořán, ústa otevřená jakoby naposledy křičel – ale
           nikdo ho neslyšel. Byl úplně sám. Nebo aspoň tak to tvrdí ostatní.
         </p>
         <p>
-          Po pohřbu mi přišel balíček. Bez zpáteční adresy. Uvnitř byla jen
+          Po pohřbu mi přišel balíček bez zpáteční adresy. Uvnitř byla jen
           zažloutlá obálka, na ní moje jméno psané jeho písmem. A v ní jen jeden
           řádek:
         </p>
@@ -68,9 +68,9 @@ export const story = {
           tam nevkročil od chvíle, kdy dědečka odvezli. Vzduch uvnitř byl těžký,
           vstupní hala a schodiště byly zakryté v šeru. Okny zatemněnými těžkými
           závěsy neprocházelo příliš mnoho světla. Robustní podlahové hodiny z
-          ořechového dřeva stály – ručičky nehybné ve 3:33. Když jsem odsunul
-          jejich těžké tělo od zdi, opravdu tam byl – na zemi ležel malý rezavý
-          klíč, zavěšený na řetízku.
+          ořechového dřeva už netikaly, ručičky na ciferníku se zastavily ve
+          3:33. Když jsem odsunul jejich těžké tělo od zdi, opravdu tam byl – na
+          zemi ležel malý rezavý klíč, zavěšený na řetízku.
         </p>
         <p>Na zadní straně hodin bylo naškrábáno:„Sleduj. Pracovna.“.</p>
         <p>Mám pocit, že pod škrábanci něco je, ale pořádně na to nevidím.</p>
@@ -185,7 +185,7 @@ export const story = {
           Kroky zmizely. Zpozorním, uši mám nastražené, dech zadržuju. A pak to
           ucítím. Studený dech na zátylku. A šepot přímo u ucha: „Měl jsi
           poslechnout!“ Zděšením se snažím křičet, ale i přes snahu ze sebe
-          nevydám ani hlásku. Padám na podlahu, oči dokořán a ústa jako by
+          nevydám ani hlásku. Padám na podlahu, oči dokořán a ústa jakoby
           naposled křičela...
         </p>
       </>
