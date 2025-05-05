@@ -288,28 +288,32 @@ export const story = {
   goInside: {
     id: "goInside",
     text: (
-      <p>
-        Rukou tlačím na dřevěné dveře, které se s vrzáním pomalu otevírají.
-        Místnost je velmi malá a tmavá. Světlo se do ní dostává pouze z vedlejší
-        místnosti. Vedle stěny je křeslo a na něm hnědý kožený deník s iniciály
-        mého dědečka. Musím se vrátit do místnosti s psacím strojem a lampou,
-        abych v něm mohl číst. Stránky byly plné poznámek, náčrtů symbolů a
-        jmen, které mi nic neříkaly. Spousta stránek bylo prázdných. Jen
-        předposlední strana lehce vyčnívala z deníku. Rukopis nebyl podobný
-        tomu, jaký používal dědeček. Na stránce bylo napsáno inkoustovým perem:
-        „Každý třetí v linii nese tíhu. Já to byl. Teď ty. Celý náš rod je
-        součástí cyklu a nejde předtím utéct. Obětuj se a napiš zde své jméno,
-        jinak přejde kletba na každého potomka. Nechápu, co to vše má znamenat,
-        ale není tak těžké si spočítat, že zrovna já jsem po dědečkovi třetí v
-        pořadí. Hlavou se mi prohánějí myšlenky - „že by naše rodina byla
-        prokletá a tento dům je s tím vším spojený? Proto mi tady všude nechal
-        dědeček indicie? Ale proč?“ Napadlo mě, že za tím udělám tlustou čáru,
-        odejdu a dům nechám napospas i s jeho prokletím, jenže najednou jsem měl
-        pocit, že nejsem sám. Mé myšlenky přerušil přibližující se klapavý zvuk.
-        Otočil jsem se, ale nic tam nebylo. Když jsem se chtěl otočit zpátky,
-        koutkem oka jsem si všiml, že se na tabuli právě začalo psát další
-        jméno. To moje.
-      </p>
+      <>
+        <p>
+          Rukou tlačím na dřevěné dveře, které se s vrzáním pomalu otevírají.
+          Místnost je velmi malá a tmavá. Světlo se do ní dostává pouze z
+          vedlejší místnosti. Vedle stěny je křeslo a na něm hnědý kožený deník
+          s iniciály mého dědečka. Musím se vrátit do místnosti s psacím strojem
+          a lampou, abych v něm mohl číst. Stránky byly plné poznámek, náčrtů
+          symbolů a jmen, které mi nic neříkaly. Spousta stránek bylo prázdných.
+          Jen předposlední strana lehce vyčnívala z deníku. Rukopis nebyl
+          podobný tomu, jaký používal dědeček. Na stránce bylo napsáno
+          inkoustovým perem: „Každý třetí v linii nese tíhu. Já to byl. Teď ty.
+          Celý náš rod je součástí cyklu a nejde předtím utéct. Obětuj se a
+          napiš zde své jméno, jinak přejde kletba na každého potomka."
+        </p>
+        <p>
+          Nechápu, co to vše má znamenat, ale není tak těžké si spočítat, že
+          zrovna já jsem po dědečkovi třetí v pořadí. Hlavou se mi prohánějí
+          myšlenky - „že by naše rodina byla prokletá a tento dům je s tím vším
+          spojený? Proto mi tady všude nechal dědeček indicie? Ale proč?“
+          Napadlo mě, že za tím udělám tlustou čáru, odejdu a dům nechám
+          napospas i s jeho prokletím, jenže najednou jsem měl pocit, že nejsem
+          sám. Mé myšlenky přerušil přibližující se klapavý zvuk. Otočil jsem
+          se, ale nic tam nebylo. Když jsem se chtěl otočit zpátky, koutkem oka
+          jsem si všiml, že se na tabuli právě začalo psát další jméno. To moje.
+        </p>
+      </>
     ),
     options: [
       { text: "Zpanikařit a utéct oknem", id: "runAway" },
@@ -325,16 +329,16 @@ export const story = {
         ani vteřinu a vyskakuji ven – pod oknem je úzká dřevěná stříška, která
         sotva unese mou váhu. Pomalu se sunu po šindelové střeše směrem k
         okraji, když za sebou zaslechnu rychlý dusot kroků. Nestačím se otočit.
-        Náhlé postrčení mě vyvede z rovnováhy. Padám. Vzduch mi vyráží dech,
-        svět se rozmazává. Náraz na studený kámen je krutý a neúprosný. Ležím
-        bez hnutí. V puse cítím železitou pachuť krve. Snažím se zaostřit pohled
-        vzhůru, ale obrysy se mi rozplývají. Přesto zahlédnu siluetu postavy v
-        černé kápi, která se ke mně pomalu blíží. Těžce dýchá. Sklání se ke mně,
-        cítím její dech na uchu. A pak šeptá: „Svým rozhodnutím jsi změnil běh
-        kletby. Nyní ji ponese každý prvorozený. Navždy.“ Nedokážu odpovědět.
-        Myšlenky mi bloudí. Vidím tvář svého syna – jasnou, nevinnou, nic
-        netušící. Slzy mi stékají po spáncích. Ne kvůli bolesti. Kvůli němu. A
-        pak přichází ticho.
+        Náhlé postrčení mě vyvede z rovnováhy. Pád mi vyráží dech, svět se
+        rozmazává. Náraz na studený kámen je krutý a neúprosný. Ležím bez hnutí.
+        V puse cítím železitou pachuť krve. Snažím se zaostřit pohled vzhůru,
+        ale obrysy se mi rozplývají. Přesto zahlédnu siluetu postavy v černé
+        kápi, která se ke mně pomalu blíží. Těžce dýchá. Sklání se ke mně, cítím
+        její dech na uchu. A pak šeptá: „Svým rozhodnutím jsi změnil běh kletby.
+        Nyní ji ponese každý prvorozený. Navždy.“ Nedokážu odpovědět. Myšlenky
+        mi bloudí. Vidím tvář svého syna – jasnou, nevinnou, nic netušící. Slzy
+        mi stékají po spáncích. Ne kvůli bolesti. Kvůli němu. A pak přichází
+        ticho.
       </p>
     ),
     options: [{ text: "KONEC PŘÍBĚHU", id: "konec" }],
