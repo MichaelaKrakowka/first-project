@@ -14,8 +14,8 @@ export const GameBook = ({ endStory }) => {
   };
 
   return (
-    <>
-      <section className="story_text">{currentPart.text}</section>
+    <div className="story_text">
+      {currentPart.text}
       <div className="buttons">
         {currentPart.options.map((option, id) => (
           <button
@@ -26,6 +26,6 @@ export const GameBook = ({ endStory }) => {
           </button>
         ))}
       </div>
-    </>
+    </div>
   );
 };

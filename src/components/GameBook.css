@@ -1,13 +1,12 @@
-/* nastylovat text - transition */
-
 .story_text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #d1a75c;
-  padding: 0 130px;
+  padding: 0 50px;
   font-size: 2rem;
   font-family: "Inconsolata", serif;
+  flex-grow: 1;
 }
 
 @media (max-width: 768px) {
