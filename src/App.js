@@ -21,7 +21,7 @@ export const App = () => {
   };
 
   const endStory = () => {
-    setIsStoryStarted(false);
+    setCurrentPartId("start");
   };
 
   return (

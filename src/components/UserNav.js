@@ -1,14 +1,11 @@
 import React from "react";
 import "./UserNav.css";
 
-export const UserNav = ({ userName, setCurrentPartId }) => {
-  const restartStory = () => {
-    setCurrentPartId("start");
-  };
+export const UserNav = ({ userName, endStory }) => {
   return (
     <div className="navbar">
       <div className="user_btns">
-        <button onClick={restartStory} className="user_btn">
+        <button onClick={endStory} className="user_btn">
           Restartovat
         </button>
         <button className="user_btn">Uložit</button>

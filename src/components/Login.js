@@ -5,7 +5,6 @@ export const Login = ({ onClick, isClicked, setUserName }) => {
   const [localName, setLocalName] = React.useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault();
     setUserName(localName);
     onClick();
   };

@@ -9,9 +9,8 @@ export const GameBook = ({ endStory }) => {
   const goToNextPart = (id) => {
     if (id === "konec") {
       endStory();
-    } else {
-      setCurrentPartId(id);
     }
+    return setCurrentPartId(id);
   };
 
   return (
