@@ -7,11 +7,11 @@ export const User = () => {
   return (
     <div className="navbar">
       <div className="user_btns">
-        <button className="user_btn">Restart</button>
-        <button className="user_btn">Save</button>
+        <button className="user_btn">Restartovat</button>
+        <button className="user_btn">Uložit</button>
       </div>
       <form className="user_info">
-        <p className="user_name">Napiš jméno:</p>
+        <label className="user_name">Napiš jméno:</label>
         <input
           className="input"
           type="text"
@@ -26,10 +26,15 @@ export const User = () => {
       </form>
       <section className="main_character">
         <p className="health">Zdraví:</p>
-        <p className="inventory">
+        <div className="inventory">
           Inventář:
-          <ul></ul>
-        </p>
+          <ul>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+          </ul>
+        </div>
+        {/* nebo inventar nastavit jako tabulku table? */}
       </section>
     </div>
   );
