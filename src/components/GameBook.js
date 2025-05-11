@@ -2,15 +2,15 @@ import React from "react";
 import { story } from "./story";
 import "./GameBook.css";
 
-export const GameBook = ({ endStory }) => {
-  const [currentPartId, setCurrentPartId] = React.useState("start");
+export const GameBook = ({ endStory, setCurrentPartId, currentPartId }) => {
   const currentPart = story[currentPartId];
 
   const goToNextPart = (id) => {
     if (id === "konec") {
       endStory();
+      return;
     }
-    return setCurrentPartId(id);
+    setCurrentPartId(id);
   };
 
   return (

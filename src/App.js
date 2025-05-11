@@ -15,6 +15,7 @@ export const App = () => {
 
   const [isStoryStarted, setIsStoryStarted] = React.useState(false);
   const [userName, setUserName] = React.useState("");
+  const [currentPartId, setCurrentPartId] = React.useState("start");
 
   const startStory = () => {
     setIsStoryStarted(true);
@@ -40,7 +41,13 @@ export const App = () => {
           />
         )}
         {isStoryStarted && <UserNav userName={userName} endStory={endStory} />}
-        {isStoryStarted && <GameBook endStory={endStory} />}
+        {isStoryStarted && (
+          <GameBook
+            endStory={endStory}
+            currentPartId={currentPartId}
+            setCurrentPartId={setCurrentPartId}
+          />
+        )}
       </div>
     </div>
   );
