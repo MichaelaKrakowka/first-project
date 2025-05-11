@@ -32,6 +32,7 @@ export const User = () => {
             <li>Item</li>
             <li>Item</li>
             <li>Item</li>
+            <li>dalsi item</li>
           </ul>
         </div>
         {/* nebo inventar nastavit jako tabulku table? */}
