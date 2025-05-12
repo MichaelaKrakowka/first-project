@@ -10,15 +10,17 @@ export const UserNav = ({ userName, endStory }) => {
         </button>
         <button className="user_btn">Uložit</button>
       </div>
+
+      <p className="who_play">Hraje:</p>
       <div className="nickname">{userName}</div>
       <section className="main_character">
         <p className="health">Zdraví:</p>
         <div className="inventory">
           Inventář:
           <ul>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
+            <li>Klíč</li>
+            <li>Kámen</li>
+            <li>Baterka</li>
           </ul>
         </div>
         {/* nebo inventar nastavit jako tabulku table? */}

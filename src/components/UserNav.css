@@ -1,4 +1,8 @@
 .nickname {
-  padding: 30px;
+  padding: 0 30px 30px 30px;
   font-size: 2rem;
+}
+
+.who_play {
+  padding: 40px 0 0 30px;
 }

@@ -360,4 +360,21 @@ export const story = {
     ),
     options: [{ text: "KONEC PŘÍBĚHU", id: "konec" }],
   },
+
+  konec: {
+    id: "return",
+    text: (
+      <>
+        <p>Došel jsi na konec příběhu.</p>
+        <p>
+          Chceš si to zkusit znovu pod stejným přihlášením? Klikni na tlačítko
+          restartovat v panelu vlevo.
+        </p>
+        <p>
+          Chceš si to zkusit znovu pod novým přihlášením? Klikni na nadpis Nevěř
+          tichu.
+        </p>
+      </>
+    ),
+  },
 };

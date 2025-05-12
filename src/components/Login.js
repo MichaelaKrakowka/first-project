@@ -13,6 +13,7 @@ export const Login = ({ onClick, isClicked, setUserName }) => {
     <form className="user_info" onSubmit={handleSubmit}>
       <label className="user_name">Napiš jméno:</label>
       <input
+        style={{ fontSize: "1.1rem", fontWeight: "400", paddingLeft: "7px" }}
         className="input"
         type="text"
         value={localName}
