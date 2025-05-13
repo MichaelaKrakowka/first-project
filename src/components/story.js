@@ -365,16 +365,16 @@ export const story = {
     id: "return",
     text: (
       <>
-        <p>Došel jsi na konec příběhu.</p>
         <p>
-          Chceš si to zkusit znovu pod stejným přihlášením? Klikni na tlačítko
-          restartovat v panelu vlevo.
+          Došel jsi až na samotný konec… Ale každý konec je jen začátek nového
+          rozhodnutí.
         </p>
         <p>
-          Chceš si to zkusit znovu pod novým přihlášením? Klikni na nadpis Nevěř
-          tichu.
+          Chceš prožít příběh znovu s vědomím, které už máš? Klikni na
+          Pokračovat.
         </p>
       </>
     ),
+    options: [{ text: "Pokračovat", id: "znova" }],
   },
 };

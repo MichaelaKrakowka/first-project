@@ -6,7 +6,7 @@ export const GameBook = ({ endStory, setCurrentPartId, currentPartId }) => {
   const currentPart = story[currentPartId];
 
   const goToNextPart = (id) => {
-    if (id === "konec") {
+    if (id === "znova") {
       endStory();
       return;
     }
