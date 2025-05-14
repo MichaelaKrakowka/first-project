@@ -372,13 +372,13 @@ export const story = {
         </p>
         <p>
           V hlavě mi stačí pár krásných vzpomínek – jeho hlas, když se smál,
-          ruce ztvrdlé prací a ta jeho vůně... vždycky voněl po doutníku – ne
-          těžce, ale jemně, jako by ten kouř byl součástí jeho osobnosti. Byl to
-          jeho tichý rituál, chvíle klidu uprostřed dne. A právě proto teď sahám
-          do zásuvky po doutníku, který mi kdysi dal. Zapaluji ho pomalu, s
-          úctou, a když první obláček dýmu vystoupá ke stropu, zavírám oči.
-          Vzpomínám na dědečka – ne se smutkem, ale s úsměvem na rtech. Ten
-          doutník je teď most mezi mnou a jím.
+          kůže na rukou ztvrdlá prací a ta jeho vůně... vždycky voněl po
+          doutníku – ne těžce, ale jemně, jako by ten kouř byl součástí jeho
+          osobnosti. Byl to jeho tichý rituál, chvíle klidu uprostřed dne. A
+          právě proto teď sahám do zásuvky po doutníku, který mi kdysi dal.
+          Zapaluji ho pomalu, s úctou, a když první obláček dýmu vystoupá ke
+          stropu, zavírám oči. Vzpomínám na dědečka – ne se smutkem, ale s
+          úsměvem na rtech. Ten doutník je teď most mezi mnou a jím.
         </p>
       </>
     ),
@@ -407,9 +407,8 @@ export const story = {
           chodbami, které znám zpaměti. Najednou stojím před dveřmi do jeho
           pracovny v patře. Ty dveře jsou pootevřené. Vejdu dovnitř a na stole
           leží malý kožený kufřík. Opatrně ho otevřu. Uvnitř jsou zápisníky plné
-          poznámek. Něco mezi deníkem, kódem a výpočtem. Všechno v jeho známém
-          rukopise. Chtěl jsem si je přečíst detailněji a více to pochopit, ale
-          nestihnu to, probouzím se.
+          poznámek. Všechno v jeho známém rukopise. Chtěl jsem si je přečíst
+          detailněji a více to pochopit, ale nestihnu to, probouzím se.
         </p>
       </>
     ),
@@ -431,9 +430,6 @@ export const story = {
         </p>
       </>
     ),
-    options: [
-      { text: "xxx", id: "" },
-      { text: "yyy", id: "" },
-    ],
+    options: [{ text: "Jít do dědečkova domu", id: "followTheDream" }],
   },
 };
