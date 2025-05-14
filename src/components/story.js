@@ -43,22 +43,6 @@ export const story = {
     ],
   },
 
-  ignoreTheLetter: {
-    id: "ignoreTheLetter",
-    text: (
-      <>
-        <p>Roztrhal jsem dopis a hodil jsem ho do koše.</p>
-        <p>
-          Už se nechci trápit, chci za úmrtím dědečka udělat tlustou čáru a
-          pokračovat ve svém životě. Stačí mi v mysli pár krásných vzpomínek na
-          něj. Otevírám bar plný whiskey a utírám si slzu, která mi stéká po
-          tváři.
-        </p>
-      </>
-    ),
-    options: [{ text: "KONEC PŘÍBĚHU", id: "konec" }], //vymyslet, jak spustit novou hru
-  },
-
   findTheKey: {
     id: "findTheKey",
     text: (
@@ -125,7 +109,6 @@ export const story = {
     ),
     options: [
       {
-        //jak nastylovat jen toto konkretni tlacitko?
         text: (
           <p>
             Mám strach, možná by některé věci
@@ -190,7 +173,7 @@ export const story = {
         </p>
       </>
     ),
-    options: [{ text: "KONEC PŘÍBĚHU", id: "konec" }],
+    options: [{ text: "KONEC PŘÍBĚHU", id: "finish" }],
   },
 
   openTheDoor: {
@@ -341,7 +324,7 @@ export const story = {
         ticho.
       </p>
     ),
-    options: [{ text: "KONEC PŘÍBĚHU", id: "konec" }],
+    options: [{ text: "KONEC PŘÍBĚHU", id: "finish" }],
   },
 
   writeName: {
@@ -358,7 +341,7 @@ export const story = {
         snažím se zakřičet, ale nic... žádný zvuk. Jen... Ticho.
       </p>
     ),
-    options: [{ text: "KONEC PŘÍBĚHU", id: "konec" }],
+    options: [{ text: "KONEC PŘÍBĚHU", id: "finish" }],
   },
 
   konec: {
@@ -375,6 +358,82 @@ export const story = {
         </p>
       </>
     ),
-    options: [{ text: "Pokračovat", id: "znova" }],
+    options: [{ text: "Pokračovat", id: "again" }],
+  },
+
+  ignoreTheLetter: {
+    id: "ignoreTheLetter",
+    text: (
+      <>
+        <p>
+          Roztrhal jsem dopis na několik kousků a vhodil do koše. Každý útržek
+          jako by odnášel malý kousek bolesti, která mě tížila. Nezapomenu na
+          něj nikdy, ale nechci, aby mě to dál drželo v minulosti.
+        </p>
+        <p>
+          V hlavě mi stačí pár krásných vzpomínek – jeho hlas, když se smál,
+          ruce ztvrdlé prací a ta jeho vůně... vždycky voněl po doutníku – ne
+          těžce, ale jemně, jako by ten kouř byl součástí jeho osobnosti. Byl to
+          jeho tichý rituál, chvíle klidu uprostřed dne. A právě proto teď sahám
+          do zásuvky po doutníku, který mi kdysi dal. Zapaluji ho pomalu, s
+          úctou, a když první obláček dýmu vystoupá ke stropu, zavírám oči.
+          Vzpomínám na dědečka – ne se smutkem, ale s úsměvem na rtech. Ten
+          doutník je teď most mezi mnou a jím.
+        </p>
+      </>
+    ),
+    options: [
+      { text: "Dát si k doutníku i whiskey", id: "whiskey" },
+      { text: "Zůstat jen u doutníku", id: "cigar" },
+    ],
+  },
+
+  whiskey: {
+    id: "whiskey",
+    text: (
+      <>
+        <p>
+          Sahám do skříňky a vytahuji lahev whiskey – starou, kvalitní,
+          otevřenou jen při výjimečných příležitostech. Nalévám si sklenku a
+          posadím se do křesla. Piju pomalu, jako bych tím chtěl rozpustit i
+          poslední zbytky napětí.
+        </p>
+        <p>
+          Dolévám si třetí a pak i čtvrtou sklenku a vlivem náročného dne a
+          alkoholu mi hlava klesá na opěradlo a víčka těžknou. Usínám.
+        </p>
+        <p>
+          V noci se mi zdá zvláštně živý sen. Jsem v dědečkově domě a procházím
+          chodbami, které znám zpaměti. Najednou stojím před dveřmi do jeho
+          pracovny v patře. Ty dveře jsou pootevřené. Vejdu dovnitř a na stole
+          leží malý kožený kufřík. Opatrně ho otevřu. Uvnitř jsou zápisníky plné
+          poznámek. Něco mezi deníkem, kódem a výpočtem. Všechno v jeho známém
+          rukopise. Chtěl jsem si je přečíst detailněji a více to pochopit, ale
+          nestihnu to, probouzím se.
+        </p>
+      </>
+    ),
+    options: [
+      { text: "Jít do dědečkova domu", id: "listenDream" },
+      { text: "Ignorovat sen", id: "ignoreTheDream" },
+    ],
+  },
+  ignoreTheDream: {
+    id: "ignoreTheDream",
+    text: (
+      <>
+        <p>
+          Sedím na gauči a ještě několik minut jen zírám do stropu. Ten sen byl
+          tak skutečný, jako bych v tom domě opravdu byl. Celý den mi ten obraz
+          leží v hlavě. Kufřík. Pracovna. Poznámky. Snažím se to vytěsnit, ale
+          znovu a znovu mi to před očima naskakuje. K večeru už to nevydržím.
+          Oblékám se, beru klíče a vyrážím. Mířím k dědečkovému domu.
+        </p>
+      </>
+    ),
+    options: [
+      { text: "xxx", id: "" },
+      { text: "yyy", id: "" },
+    ],
   },
 };
