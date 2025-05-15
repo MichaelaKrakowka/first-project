@@ -6,7 +6,7 @@ export const story = {
         <p>
           Můj dědeček zemřel náhle. Lékaři to označili za srdeční selhání, ale
           žádná pitva neproběhla. Když jsme ho našli, seděl u stolu ve své
-          pracovně, oči dokořán, ústa otevřená jakoby naposledy křičel – ale
+          pracovně, oči dokořán, ústa otevřená jako by naposledy křičel, ale
           nikdo ho neslyšel. Byl úplně sám. Nebo aspoň tak to tvrdí ostatní.
         </p>
         <p>
@@ -154,22 +154,19 @@ export const story = {
     text: (
       <>
         <p>
-          Popadla mě panika. S tímhle nechci mít nic společného. Sahám na kliku
-          a snažím se dveře otevřít, ale jsou zamčené. V tu chvíli začnou hodiny
-          odbíjet a z potemnělé chodby se ozvou pomalé, těžké kroky, blížící se
-          ke mě.
-        </p>
-        <p>
-          Rozběhnu se k nejbližšímu oknu, lomcuju s ním, snažím se otočit
-          klikou, ale nejde otevřít. Srdce mi tluče až v krku.
+          Sahám na kliku a snažím se dveře otevřít, ale jsou zamčené. V tu
+          chvíli začnou hodiny odbíjet a z potemnělé chodby se ozvou pomalé,
+          těžké kroky, blížící se ke mě. Rozběhnu se k nejbližšímu oknu, lomcuju
+          s ním, snažím se otočit klikou, ale nejde otevřít. Srdce mi tluče až v
+          krku.
         </p>
         <p>A pak si to uvědomím ...náhlé ticho.</p>
         <p>
           Kroky zmizely. Zpozorním, uši mám nastražené, dech zadržuju. A pak to
           ucítím. Studený dech na zátylku a šepot přímo u ucha: „Měl jsi
-          poslechnout!“ Zděšením se snažím křičet, ale nevydám ze sebe ani
+          poslechnout!“. Zděšením se snažím křičet, ale nevydám ze sebe ani
           hlásku. Všechno kolem mě náhle potemní, světla zhasnou, ale i přesto
-          vidím. Vidím sebe – jak tam stojím, zkamenělý, oči vytřeštěné, ruka
+          vidím. Vidím sebe, jak tam stojím, zkamenělý, oči vytřeštěné, ruka
           stále svírá kliku. Ale já už nejsem vevnitř. Jsem mimo a pozoruji to
           zvenčí. A pak pochopím – to ve mně už nejsem já. Něco mě nahradilo.
           Něco, co čekalo na okamžik slabosti, na to až mi dojdou síly.
@@ -195,8 +192,7 @@ export const story = {
         nímž visela lampa. Když jsem zatáhl za šňůrku, světlo se rozzářilo – a
         odhalilo nástěnku pokrytou fotografiemi, výstřižky z novin, a ručně
         psanými poznámkami. Taky byl vidět psací stroj a černá tabule s
-        křídovými značkami a na ní zakroužkované datumy, jména našich předků a
-        slova jako “opakování” a “linie”.
+        křídovými značkami a slovy, které mi nedávaly smysl.
       </p>
     ),
     options: [
@@ -209,14 +205,14 @@ export const story = {
     id: "checkTheRoom",
     text: (
       <p>
-        Rozhodnu se nejdříve prozkoumat místnost a v rohu najdu další dveře,
-        které zprvu nebyly vidět. Jsou menší než ty, které vedly do této
-        místnosti a vypadají však mnohem starším, až starodávným vzhledem.
+        Rozhodnu se nejdříve prozkoumat místnost a v rohu si všimnu dalších
+        dveří, které zprvu nebyly vidět. Jsou menší než ty, které vedly do této
+        místnosti a vypadají však mnohem starším, až starodávným vzhledem. Jinak
+        mě nic dalšího v místnosti nezaujalo.
       </p>
     ),
-    options: [{ text: "Porozhlédnout se po stole", id: "checkTheDesk" }],
+    options: [{ text: "Porozhlédnout se po stole", id: "checkTheDesk1" }],
   },
-
   checkTheDesk: {
     id: "checkTheDesk",
     text: (
@@ -226,21 +222,49 @@ export const story = {
         sleduje. Skrývá se v tichu. Pokud tohle čteš, víš, že tě pozoruje. Najdi
         můj zápisník..." Inkoust v posledních znacích je roztřesený, jako by byl
         psán ve spěchu… nebo ve strachu. Jakmile dočtu poslední řádek, pocítím
-        náhlé napětí. Oči mi těkají po místnosti. Sleduji každý stín, každý
-        kout. V uších mi buší tlukot srdce. Nikde nikdo. Jen ticho. Třesoucí se
-        rukou vytahuji papír z psacího stroje. Na jeho zadní straně je inkoustem
-        nakreslený zvláštní znak – geometrický, neznámý, znepokojivý. Netuším,
-        co znamená, ale něco na něm mě zneklidňuje až do morku kostí. Všechno ve
-        mně křičí, abych odsud odešel. Pryč z tohoto domu. Pryč od toho všeho.
-        Ale vím, že odpovědi se skrývají v dědečkově deníku. A teď už nemohu
-        couvnout. Zhluboka se nadechnu, snažím se zklidnit. A právě tehdy si
-        všimnu drobnosti: Vedle psacího stroje leží malý klíč.
+        náhlé napětí. V uších cítím tlukot srdce, ale nikde nikoho nevidím.
+        Všechno ve mně křičí, abych odsud odešel. Pryč z tohoto domu. Pryč od
+        toho všeho. Ale vím, že odpovědi se skrývají v dědečkově deníku. A teď
+        už nemohu couvnout. Zhluboka se nadechnu, snažím se zklidnit. A právě
+        tehdy si všimnu drobnosti: Vedle psacího stroje leží malý klíč. Schovám
+        si ho do kapsy, třeba se bude hodit.
       </p>
     ),
-    options: [
-      { text: "Prozkoumat podrobněji místnost", id: "checkTheRoom" },
-      { text: "Použít klíč", id: "useTheKey" },
-    ],
+    options: [{ text: "Prozkoumat podrobněji místnost", id: "checkTheRoom1" }],
+  },
+
+  checkTheRoom1: {
+    id: "checkTheRoom1",
+    text: (
+      <p>
+        Chci se ještě porozhlédnout po místnosti, možná mi něco uniklo. Koutkem
+        oka zavadím o obrys dveří, který jsem si předtím nevšiml. Jsou menší než
+        ty, které vedly do této místnosti a vypadají však mnohem starším, až
+        starodávným vzhledem. Klíč, který jsem našel bude možná pasovat do
+        těchto dveří.
+      </p>
+    ),
+    options: [{ text: "Použít klíč", id: "useTheKey" }],
+  },
+
+  checkTheDesk1: {
+    id: "checkTheDesk1",
+    text: (
+      <p>
+        Uprostřed stolu leží starý psací stroj. V jeho útrobách je zastrčený
+        zažloutlý list papíru. Text na něm je krátký, útržkovitý: „Někdo nás
+        sleduje. Skrývá se v tichu. Pokud tohle čteš, víš, že tě pozoruje. Najdi
+        můj zápisník..." Inkoust v posledních znacích je roztřesený, jako by byl
+        psán ve spěchu… nebo ve strachu. Jakmile dočtu poslední řádek, pocítím
+        náhlé napětí. V uších cítím tlukot srdce, ale nikde nikoho nevidím.
+        Všechno ve mně křičí, abych odsud odešel. Pryč z tohoto domu. Pryč od
+        toho všeho. Ale vím, že odpovědi se skrývají v dědečkově deníku. A teď
+        už nemohu couvnout. Zhluboka se nadechnu, snažím se zklidnit. A právě
+        tehdy si všimnu drobnosti: Vedle psacího stroje leží malý klíč. Určitě
+        bude od těch malých dveří.
+      </p>
+    ),
+    options: [{ text: "Použít klíč", id: "useTheKey" }],
   },
 
   useTheKey: {
@@ -252,9 +276,10 @@ export const story = {
         ten moment se z dolního patra ozve zvláštní zvuk doprovázený pomalými
         kroky. Jako kdyby někdo – nebo něco – pomalu sestupovalo po schodech.
         Zadržím dech. Ale pak… naprosté ticho. Ne to obyčejné ticho, které
-        zažíváš v prázdném domě. To ticho je husté, těžké. Dusivé. Mám pocit, že
+        zažíváš v prázdném domě. To ticho je husté, těžké, dusivé. Mám pocit, že
         se mi hrudník stahuje, jako by se vzduch najednou ztratil. A právě tehdy
-        mi v hlavě vytane ten jediný vzkaz, který všechno začal: „Nevěř tichu.“
+        mi v hlavě vyvstane ten jediný vzkaz, který všechno začal: „Nevěř
+        tichu.“
       </p>
     ),
     options: [
@@ -269,7 +294,7 @@ export const story = {
       <p>
         Stojím nehybně jako kámen a snažím se téměř nedýchat. Všechny smysly mám
         nastražené a čekám, co se bude dít. K mému údivu se neděje nic. Rozhodnu
-        vstoupit do dveří.
+        se vstoupit do dveří.
       </p>
     ),
     options: [{ text: "Vstoupit do dveří", id: "goInside" }],
@@ -281,74 +306,48 @@ export const story = {
       <>
         <p>
           Rukou tlačím na dřevěné dveře, které se s vrzáním pomalu otevírají.
-          Místnost je velmi malá a tmavá. Světlo se do ní dostává pouze z
-          vedlejší místnosti. Vedle stěny je křeslo a na něm hnědý kožený deník
-          s iniciály mého dědečka. Musím se vrátit do místnosti s psacím strojem
-          a lampou, abych v něm mohl číst. Stránky byly plné poznámek, náčrtů
-          symbolů a jmen, které mi nic neříkaly. Spousta stránek bylo prázdných.
-          Jen předposlední strana lehce vyčnívala z deníku. Rukopis nebyl
-          podobný tomu, jaký používal dědeček. Na stránce bylo napsáno
-          inkoustovým perem: „Každý třetí v linii nese tíhu. Já to byl. Teď ty.
-          Celý náš rod je součástí cyklu a nejde předtím utéct. Obětuj se a
-          napiš zde své jméno, jinak přejde kletba na každého potomka."
+          Místnost je holá. Žádný nábytek, žádné okno, jen stůl a na něm nějaký
+          přístroj a vedle něj ležel starý kožený kufřík. Přístroj vypadal jako
+          podivný hybrid mezi starým radiopřijímačem a laboratorním zařízením
+          <br /> z padesátých let. Prohlídl jsem si ho ze všech stran, ale žádný
+          zřetelný nápis, který by napověděl, k čemu vlastně slouží. Možná tlak?
+          Možná záření? Možná čas?
         </p>
         <p>
-          Nechápu, co to vše má znamenat, ale není tak těžké si spočítat, že
-          zrovna já jsem po dědečkovi třetí v pořadí. Hlavou se mi prohánějí
-          myšlenky - „že by naše rodina byla prokletá a tento dům je s tím vším
-          spojený? Proto mi tady všude nechal dědeček indicie? Ale proč?“
-          Napadlo mě, že za tím udělám tlustou čáru, odejdu a dům nechám
-          napospas i s jeho prokletím, jenže najednou jsem měl pocit, že nejsem
-          sám. Mé myšlenky přerušil přibližující se klapavý zvuk. Otočil jsem
-          se, ale nic tam nebylo. Když jsem se chtěl otočit zpátky, koutkem oka
-          jsem si všiml, že se na tabuli právě začalo psát další jméno. To moje.
+          Prsty jsem přejel po studeném kovu, jako bych se chtěl zeptat, co tu
+          vlastně dělá - a v tom <br />v něm něco tiše cvaklo.
         </p>
       </>
     ),
     options: [
-      { text: "Zpanikařit a utéct oknem", id: "runAway" },
-      { text: "Napsat do deníku své jméno a tím se obětovat", id: "writeName" },
+      { text: "Prohlédnout si kufřík", id: "suitcase" },
+      { text: "Prozkoumat, co cvaklo", id: "checkTheMachine" },
     ],
   },
 
-  runAway: {
-    id: "runAway",
+  suitcase: {
+    id: "suitcase",
     text: (
-      <p>
-        Okno se s hlasitým prasknutím dřevěných rámů rozlétlo dokořán. Neváhám
-        ani vteřinu a vyskakuji ven – pod oknem je úzká dřevěná stříška, která
-        sotva unese mou váhu. Pomalu se sunu po šindelové střeše směrem k
-        okraji, když za sebou zaslechnu rychlý dusot kroků. Nestačím se otočit.
-        Náhlé postrčení mě vyvede z rovnováhy. Pád mi vyráží dech, svět se
-        rozmazává. Náraz na studený kámen je krutý a neúprosný. Ležím bez hnutí.
-        V puse cítím železitou pachuť krve. Snažím se zaostřit pohled vzhůru,
-        ale obrysy se mi rozplývají. Přesto zahlédnu siluetu postavy v černé
-        kápi, která se ke mně pomalu blíží. Těžce dýchá. Sklání se ke mně, cítím
-        její dech na uchu. A pak šeptá: „Svým rozhodnutím jsi změnil běh kletby.
-        Nyní ji ponese každý prvorozený. Navždy.“ Nedokážu odpovědět. Myšlenky
-        mi bloudí. Vidím tvář svého syna – jasnou, nevinnou, nic netušící. Slzy
-        mi stékají po spáncích. Ne kvůli bolesti. Kvůli němu. A pak přichází
-        ticho.
-      </p>
+      <>
+        <p>
+          Otevírám kufřík a doufám, že tam dědeček zanechal návod k použití. Po
+          přečtení jeho zápisků zjišťuji, že zkoumal anomálie v tichem
+          naplněných prostorech. Nešlo jen o akustiku, ale o fyzický jev. Podle
+          jeho zápisů existují zvukové prahy, jakési mezery v realitě, které
+          lidské ucho neslyší, ale technologie ano. Nazýval je „zvukové díry“.
+          Jedna poznámka vyčnívala mezi ostatními a znepokojila mě ještě více
+          než samotný dědečkův výzkum.
+        </p>
+        <p>
+          „Nikdy neotvírej úplné ticho – protože tě někdo uslyší. Jestli tohle
+          čteš, něco se pokazilo. Znič přístroj!"
+        </p>
+      </>
     ),
-    options: [{ text: "KONEC PŘÍBĚHU", id: "finish" }],
-  },
-
-  writeName: {
-    id: "writeName",
-    text: (
-      <p>
-        Vzpomenu si na pero s inkoustem, které jsem zahlédl na stole v dědečkově
-        pracovně. Téměř automaticky se rozběhnu zpět. Usedám na jeho místo,
-        otevírám deník na poslední stranu a inkoustovým perem pomalu píšu své
-        jméno. Jakmile dopíšu poslední písmeno, cosi se změní. Hodiny dole v
-        hale se zničehonic dávají do pohybu. Zvednu zápěstí — 3:33. Úplně stejně
-        jako tehdy. Najednou začnou odbíjet. Každý úder jako by otřásal
-        samotnými zdmi domu. Leknu se, zalapám po dechu — otevřu oči dokořán,
-        snažím se zakřičet, ale nic... žádný zvuk. Jen... Ticho.
-      </p>
-    ),
-    options: [{ text: "KONEC PŘÍBĚHU", id: "finish" }],
+    options: [
+      { text: "Zničit přístroj", id: "destroyTheMachine" },
+      { text: "Zapnout přístroj", id: "startTheMachine" },
+    ],
   },
 
   finish: {
