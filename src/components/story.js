@@ -56,12 +56,12 @@ export const story = {
           3:33. Když jsem odsunul jejich těžké tělo od zdi, opravdu tam byl – na
           zemi ležel malý rezavý klíč, zavěšený na řetízku.
         </p>
-        <p>Na zadní straně hodin bylo naškrábáno:„Sleduj. Pracovna.“.</p>
+        <p>Na zadní straně hodin bylo naškrábáno: „Pracovna“.</p>
         <p>Mám pocit, že pod škrábanci něco je, ale pořádně na to nevidím.</p>
       </>
     ),
     options: [
-      { text: "Prozkoumat hodiny", id: "checkTheClock" },
+      { text: "Prozkoumat hodiny", id: "checkTheClock" }, //odečet síly o 25%
       { text: "Pokračovat do dědečkovy pracovny", id: "goToTheOffice" },
     ],
   },
@@ -116,7 +116,7 @@ export const story = {
           </p>
         ),
         id: "goHome",
-      },
+      }, // odečet síly o 25%
       {
         text: (
           <p>
@@ -144,7 +144,7 @@ export const story = {
       </p>
     ),
     options: [
-      { text: "Ignorovat varování a odejít", id: "leaveTheHouse" },
+      { text: "Ignorovat varování a odejít", id: "leaveTheHouse" }, // odečet síly o 25%
       { text: "Vrátit se zpátky k zamčeným dveřím", id: "openTheDoor" },
     ],
   },
@@ -155,21 +155,28 @@ export const story = {
       <>
         <p>
           Popadla mě panika. S tímhle nechci mít nic společného. Sahám na kliku
-          a snažím se dveře otevřít – ale jsou zamčené. Zámek ani necvakne. V tu
-          chvíli začnou hodiny odbíjet a z potemnělé chodby se ozvou pomalé,
-          těžké kroky, blížící se za mnou.
+          a snažím se dveře otevřít, ale jsou zamčené. V tu chvíli začnou hodiny
+          odbíjet a z potemnělé chodby se ozvou pomalé, těžké kroky, blížící se
+          ke mě.
         </p>
         <p>
-          Rozběhnu se k nejbližšímu oknu, lomcuju jím, ale nejde otevřít. Srdce
-          mi tluče až v krku.
+          Rozběhnu se k nejbližšímu oknu, lomcuju s ním, snažím se otočit
+          klikou, ale nejde otevřít. Srdce mi tluče až v krku.
         </p>
-        <p>A pak náhlé ..ticho.</p>
+        <p>A pak si to uvědomím ...náhlé ticho.</p>
         <p>
           Kroky zmizely. Zpozorním, uši mám nastražené, dech zadržuju. A pak to
-          ucítím. Studený dech na zátylku. A šepot přímo u ucha: „Měl jsi
-          poslechnout!“ Zděšením se snažím křičet, ale i přes snahu ze sebe
-          nevydám ani hlásku. Padám na podlahu, oči dokořán a ústa jakoby
-          naposled křičela...
+          ucítím. Studený dech na zátylku a šepot přímo u ucha: „Měl jsi
+          poslechnout!“ Zděšením se snažím křičet, ale nevydám ze sebe ani
+          hlásku. Všechno kolem mě náhle potemní, světla zhasnou, ale i přesto
+          vidím. Vidím sebe – jak tam stojím, zkamenělý, oči vytřeštěné, ruka
+          stále svírá kliku. Ale já už nejsem vevnitř. Jsem mimo a pozoruji to
+          zvenčí. A pak pochopím – to ve mně už nejsem já. Něco mě nahradilo.
+          Něco, co čekalo na okamžik slabosti, na to až mi dojdou síly.
+        </p>
+        <p>
+          Postava v mém těle se pomalu rozhlédne kolem sebe, usměje se, odemkne
+          dveře a vyjde ven.
         </p>
       </>
     ),
@@ -344,8 +351,8 @@ export const story = {
     options: [{ text: "KONEC PŘÍBĚHU", id: "finish" }],
   },
 
-  konec: {
-    id: "return",
+  finish: {
+    id: "finish",
     text: (
       <>
         <p>
