@@ -138,9 +138,9 @@ export const story = {
         dveřmi. Jsou otočené zády a slova vyrytá do dřeva se změnila: „Otoč se.
         Pracovna.“ Nezajímá mě, co se tady stalo, chci prostě tento dům opustit
         jednou pro vždy. Zatlačím do hodin zboku, abych si uvolnil průchod ven.
-        Jakmile jsem nahmatal kliku od dveří, začal mi zvonit telefon. Hlas na
-        druhém konci se mě snaží varovat slovy: „Nesmíš odejít!“, a poté
-        okamžitě zavěsí.
+        Jakmile se mi to povedlo a sevřel jsem kliku od dveří, začal mi zvonit
+        telefon. Hlas na druhém konci se mě snaží varovat slovy: „Nesmíš
+        odejít!“, a poté okamžitě zavěsí.
       </p>
     ),
     options: [
@@ -155,10 +155,9 @@ export const story = {
       <>
         <p>
           Sahám na kliku a snažím se dveře otevřít, ale jsou zamčené. V tu
-          chvíli začnou hodiny odbíjet a z potemnělé chodby se ozvou pomalé,
-          těžké kroky, blížící se ke mě. Rozběhnu se k nejbližšímu oknu, lomcuju
-          s ním, snažím se otočit klikou, ale nejde otevřít. Srdce mi tluče až v
-          krku.
+          chvíli začnou hodiny odbíjet a z chodby se ozvou pomalé, těžké kroky,
+          blížící se ke mě. Rozběhnu se k nejbližšímu oknu, lomcuju s ním,
+          snažím se otočit klikou, ale nejde otevřít. Srdce mi tluče až v krku.
         </p>
         <p>A pak si to uvědomím ...náhlé ticho.</p>
         <p>
@@ -168,11 +167,11 @@ export const story = {
           hlásku. Všechno kolem mě náhle potemní, světla zhasnou, ale i přesto
           vidím. Vidím sebe, jak tam stojím, zkamenělý, oči vytřeštěné, ruka
           stále svírá kliku. Ale já už nejsem vevnitř. Jsem mimo a pozoruji to
-          zvenčí. A pak pochopím – to ve mně už nejsem já. Něco mě nahradilo.
-          Něco, co čekalo na okamžik slabosti, na to až mi dojdou síly.
+          zvenčí. Něco mě nahradilo. Něco, co čekalo na okamžik slabosti, na to
+          až mi dojdou síly.
         </p>
         <p>
-          Postava v mém těle se pomalu rozhlédne kolem sebe, usměje se, odemkne
+          Postava v mém těle se porozhlédne po místnosti, usměje se, otevře
           dveře a vyjde ven.
         </p>
       </>
@@ -331,16 +330,15 @@ export const story = {
       <>
         <p>
           Otevírám kufřík a doufám, že tam dědeček zanechal návod k použití. Po
-          přečtení jeho zápisků zjišťuji, že zkoumal anomálie v tichem
-          naplněných prostorech. Nešlo jen o akustiku, ale o fyzický jev. Podle
-          jeho zápisů existují zvukové prahy, jakési mezery v realitě, které
-          lidské ucho neslyší, ale technologie ano. Nazýval je „zvukové díry“.
-          Jedna poznámka vyčnívala mezi ostatními a znepokojila mě ještě více
-          než samotný dědečkův výzkum.
+          přečtení jeho zápisků zjišťuji, že existují zvukové prahy, jakési
+          mezery v realitě, které lidské ucho neslyší, ale technologie ano.
+          Nazýval je „zvukové díry“. V dalších poznámkách se nejčastěji opakuje
+          věta - vědomí skryté v tichu. Jedna poznámka vyčnívala mezi ostatními
+          a znepokojila mě ještě více než samotný dědečkův výzkum.
         </p>
         <p>
-          „Nikdy neotvírej úplné ticho – protože tě někdo uslyší. Jestli tohle
-          čteš, něco se pokazilo. Znič přístroj!"
+          „Nikdy neotvírej úplné ticho, protože tě někdo uslyší. Jestli tohle
+          čteš, přístroj nezapínej a znič ho!"
         </p>
       </>
     ),
@@ -348,6 +346,83 @@ export const story = {
       { text: "Zničit přístroj", id: "destroyTheMachine" },
       { text: "Zapnout přístroj", id: "startTheMachine" },
     ],
+  },
+
+  checkTheMachine: {
+    id: "checkTheMachine",
+    text: (
+      <>
+        <p>
+          Cvaknutí mě zaujalo a snažil jsem se zjistit, odkud pochází. Opatrně
+          jsem obcházel přístroj ze všech stran, až jsem nechtěně zatáhl za
+          páčku – a přístroj se spustil. Zpočátku se nic nedělo. Vypadalo to, že
+          je rozbitý. Ale po chvíli začal blikat a na displeji se pomalu začala
+          vykreslovat křivka. Zatímco graf nabíral na intenzitě, otevřel jsem
+          kufřík. Hned na první pohled mě zaujala poznámka, která mi rozbušila
+          srdce. Stálo na ní:
+        </p>
+        <p>
+          „Nikdy neotvírej úplné ticho, protože tě někdo uslyší. Jestli tohle
+          čteš, přístroj nezapínej a znič ho!“
+        </p>
+        <p>
+          Graf vykazoval čím dál vyšší hodnoty a zároveň s tím rostla i moje
+          nervozita. Najednou se všechno kolem mě ponořilo do tmy. Když se obraz
+          znovu vyjasnil, uviděl jsem něco nepochopitelného – díval jsem se sám
+          na sebe. Něco mě nahradilo a já jsem zůstal uvězněný v tichu. Postava,
+          která teď obývala mé tělo, se usmála… a vykročila ze dveří.
+        </p>
+      </>
+    ),
+    options: [{ text: "KONEC PŘÍBĚHU", id: "finish" }],
+  },
+
+  destroyTheMachine: {
+    id: "destroyTheMachine",
+    text: (
+      <>
+        <p>
+          Chvíli jsem jen stála přemýšlel nad tím, co jsem se zrovna dozvěděl.
+          Ale nestačilo mi to, potřeboval jsem vědět více. Odnesl jsem kufřík do
+          vedlejší místnosti, kde bylo více světla a snažil jsem se z toho
+          pochopit co nejvíce. Četl jsem vše několikrát a pomalu. A s každým
+          slovem jsem víc chápal, co se tady stalo.
+        </p>
+        <p>
+          Dědeček psal, že přístroj otevírá zvukovou trhlinu – slabé místo v
+          našem světě, skrz které proniká něco, co nemá tvar ani jméno, ale co
+          se dokáže přisát na mysl. Co tě vysaje a nahradí. Prý ji uzavřel, ale
+          stálo ho to život. Pochopil jsem, že když ten přístroj znovu spustím,
+          bude to jako znovu otevřít dveře, které měly zůstat navždy zavřené.
+        </p>
+        <p>
+          Měl jsem chuť to zkusit, jen na chvíli slyšet, co slyšel on. Ale pak
+          jsem si vzpomněl na jeho tělo, na ten výkřik, který se mu zasekl v
+          hrdle a rozhodl se ho poslechnout.
+        </p>
+      </>
+    ),
+    options: [{ text: "Pokračovat", id: "goOn" }],
+  },
+
+  goOn: {
+    id: "goOn",
+    text: (
+      <p>
+        V domě jsem našel staré kladivo a v okamžiku, kdy jsem zvedl ruku,
+        rozhodnut přístroj rozbit, jsem si uvědomil, že vše kolem ztichlo. Cítil
+        jsem, jak se mi pomalu začíná svět kolem zatemňovat a v tom jsem si to
+        uvědomil. Dědeček trhlinu uzavřel, ale něco z ní zůstalo v domě a teď mi
+        chce ukrást to nejcennější, co mám. Mě, moji identitu, mé vědomí.
+        {/* Každý kus kovu, každou
+        součástku, každou lampu. Když jsem skončil, cítil jsem, jak se kolem mě
+        něco zklidnilo. Jako by dům konečně vydechl. Jako by čekal na tenhle
+        okamžik. Dědeček otevřel dveře do něčeho, co neměl. A zavřel je, jak
+        nejlépe dovedl. Já jsem je jen zapečetil. Aby už nikdo další neskončil v
+        tom tichu. */}
+      </p>
+    ),
+    options: [{ text: "KONEC PŘÍBĚHU", id: "finish" }],
   },
 
   finish: {
@@ -379,7 +454,7 @@ export const story = {
         <p>
           V hlavě mi stačí pár krásných vzpomínek – jeho hlas, když se smál,
           kůže na rukou ztvrdlá prací a ta jeho vůně... vždycky voněl po
-          doutníku – ne těžce, ale jemně, jako by ten kouř byl součástí jeho
+          doutníku, ne těžce, ale jemně, jako by ten kouř byl součástí jeho
           osobnosti. Byl to jeho tichý rituál, chvíle klidu uprostřed dne. A
           právě proto teď sahám do zásuvky po doutníku, který mi kdysi dal.
           Zapaluji ho pomalu, s úctou, a když první obláček dýmu vystoupá ke
@@ -430,7 +505,7 @@ export const story = {
         <p>
           Sedím na gauči a ještě několik minut jen zírám do stropu. Ten sen byl
           tak skutečný, jako bych v tom domě opravdu byl. Celý den mi ten obraz
-          leží v hlavě. Kufřík. Pracovna. Poznámky. Snažím se to vytěsnit, ale
+          leží v hlavě. Kufřík, pracovna, poznámky. Snažím se to vytěsnit, ale
           znovu a znovu mi to před očima naskakuje. K večeru už to nevydržím.
           Oblékám se, beru klíče a vyrážím. Mířím k dědečkovému domu.
         </p>
