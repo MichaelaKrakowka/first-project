@@ -28,19 +28,23 @@ export const GameBook = ({
 
   if (currentPartId === "fight") {
     return (
-      <div>
-        <Dice
-          diceRoll={playerFight}
-          setDiceRoll={setPlayerFight}
-          diceClicked={clickedPlayerFight}
-          setDiceClicked={setClickedPlayerFight}
-        />
-        <Dice
-          diceRoll={enemyFight}
-          setDiceRoll={setEnemyFight}
-          diceClicked={clickedEnemyFight}
-          setDiceClicked={setClickedEnemyFight}
-        />
+      <div className="story_text">
+        {currentPart.text}
+        <div className="dices_container">
+          <Dice
+            diceRoll={playerFight}
+            setDiceRoll={setPlayerFight}
+            diceClicked={clickedPlayerFight}
+            setDiceClicked={setClickedPlayerFight}
+          />
+
+          <Dice
+            diceRoll={enemyFight}
+            setDiceRoll={setEnemyFight}
+            diceClicked={clickedEnemyFight}
+            setDiceClicked={setClickedEnemyFight}
+          />
+        </div>
       </div>
     );
   }

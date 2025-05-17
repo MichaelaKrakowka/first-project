@@ -402,11 +402,11 @@ export const story = {
         </p>
       </>
     ),
-    options: [{ text: "Pokračovat", id: "goOn" }],
+    options: [{ text: "Pokračovat", id: "fight" }],
   },
 
-  goOn: {
-    id: "goOn",
+  fight: {
+    id: "fight",
     text: (
       <p>
         V domě jsem našel staré kladivo a v okamžiku, kdy jsem zvedl ruku,
@@ -422,12 +422,7 @@ export const story = {
         tom tichu. */}
       </p>
     ),
-    options: [{ text: "Pokračovat", id: "fight" }],
-  },
-
-  game: {
-    id: "fight",
-    text: <p></p>,
+    options: [{ text: "Pokračovat", id: "finish" }],
   },
 
   finish: {
