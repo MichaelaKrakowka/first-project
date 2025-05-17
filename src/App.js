@@ -17,6 +17,14 @@ export const App = () => {
   const [userName, setUserName] = React.useState("");
   const [currentPartId, setCurrentPartId] = React.useState("start");
 
+  const [diceRoll, setDiceRoll] = React.useState(0);
+  const [diceClicked, setDiceClicked] = React.useState(false);
+
+  const [playerFight, setPlayerFight] = React.useState(0);
+  const [clickedPlayerFight, setClickedPlayerFight] = React.useState(false);
+  const [enemyFight, setEnemyFight] = React.useState(0);
+  const [clickedEnemyFight, setClickedEnemyFight] = React.useState(false);
+
   const startStory = () => {
     setIsStoryStarted(true);
   };
@@ -40,12 +48,33 @@ export const App = () => {
             setUserName={setUserName}
           />
         )}
-        {isStoryStarted && <UserNav userName={userName} endStory={endStory} />}
+        {isStoryStarted && (
+          <UserNav
+            userName={userName}
+            endStory={() => {
+              setDiceClicked(false);
+              setDiceRoll(0);
+              endStory();
+            }}
+            diceRoll={diceRoll}
+            setDiceRoll={setDiceRoll}
+            diceClicked={diceClicked}
+            setDiceClicked={setDiceClicked}
+          />
+        )}
         {isStoryStarted && (
           <GameBook
             endStory={endStory}
             currentPartId={currentPartId}
             setCurrentPartId={setCurrentPartId}
+            playerFight={playerFight}
+            setPlayerFight={setPlayerFight}
+            clickedPlayerFight={clickedPlayerFight}
+            setClickedPlayerFight={setClickedPlayerFight}
+            enemyFight={enemyFight}
+            setEnemyFight={setEnemyFight}
+            clickedEnemyFight={clickedEnemyFight}
+            setClickedEnemyFight={setClickedEnemyFight}
           />
         )}
       </div>

@@ -1,7 +1,15 @@
 import React from "react";
 import "./UserNav.css";
+import { Dice } from "./Dice";
 
-export const UserNav = ({ userName, endStory }) => {
+export const UserNav = ({
+  userName,
+  endStory,
+  diceRoll,
+  setDiceRoll,
+  diceClicked,
+  setDiceClicked,
+}) => {
   return (
     <div className="navbar">
       <div className="user_btns">
@@ -14,16 +22,15 @@ export const UserNav = ({ userName, endStory }) => {
       <p className="who_play">Hraje:</p>
       <div className="nickname">{userName}</div>
       <section className="main_character">
-        <p className="health">Zdraví:</p>
-        <div className="inventory">
-          Inventář:
-          <ul>
-            <li>Klíč</li>
-            <li>Kámen</li>
-            <li>Baterka</li>
-          </ul>
+        <div className="strength">
+          Síla:
+          <Dice
+            diceRoll={diceRoll}
+            setDiceRoll={setDiceRoll}
+            diceClicked={diceClicked}
+            setDiceClicked={setDiceClicked}
+          />
         </div>
-        {/* nebo inventar nastavit jako tabulku table? */}
       </section>
     </div>
   );

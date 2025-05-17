@@ -1,0 +1,13 @@
+.dice {
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  color: black;
+  font-family: "Merriweather";
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dice:hover {
+  transform: scale(1.3);
+}

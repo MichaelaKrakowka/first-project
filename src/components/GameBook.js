@@ -1,8 +1,21 @@
 import React from "react";
 import { story } from "./story";
 import "./GameBook.css";
+import { Dice } from "./Dice";
 
-export const GameBook = ({ endStory, setCurrentPartId, currentPartId }) => {
+export const GameBook = ({
+  endStory,
+  setCurrentPartId,
+  currentPartId,
+  playerFight,
+  setPlayerFight,
+  clickedPlayerFight,
+  setClickedPlayerFight,
+  enemyFight,
+  setEnemyFight,
+  clickedEnemyFight,
+  setClickedEnemyFight,
+}) => {
   const currentPart = story[currentPartId];
 
   const goToNextPart = (id) => {
@@ -12,6 +25,25 @@ export const GameBook = ({ endStory, setCurrentPartId, currentPartId }) => {
     }
     setCurrentPartId(id);
   };
+
+  if (currentPartId === "fight") {
+    return (
+      <div>
+        <Dice
+          diceRoll={playerFight}
+          setDiceRoll={setPlayerFight}
+          diceClicked={clickedPlayerFight}
+          setDiceClicked={setClickedPlayerFight}
+        />
+        <Dice
+          diceRoll={enemyFight}
+          setDiceRoll={setEnemyFight}
+          diceClicked={clickedEnemyFight}
+          setDiceClicked={setClickedEnemyFight}
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="story_text">

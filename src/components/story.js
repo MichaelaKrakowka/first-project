@@ -422,7 +422,12 @@ export const story = {
         tom tichu. */}
       </p>
     ),
-    options: [{ text: "KONEC PŘÍBĚHU", id: "finish" }],
+    options: [{ text: "Pokračovat", id: "fight" }],
+  },
+
+  game: {
+    id: "fight",
+    text: <p></p>,
   },
 
   finish: {

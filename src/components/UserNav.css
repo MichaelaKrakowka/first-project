@@ -1,8 +1,20 @@
+.user_btns {
+  padding-top: 20px;
+  gap: 10px;
+}
+
 .nickname {
   padding: 0 30px 30px 30px;
   font-size: 2rem;
 }
 
 .who_play {
-  padding: 40px 0 0 30px;
+  padding: 50px 0 0 30px;
+}
+
+.strength {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 1.5rem;
 }
