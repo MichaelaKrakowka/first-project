@@ -16,15 +16,19 @@ export const GameBook = ({
   setEnemyFight,
   clickedEnemyFight,
   setClickedEnemyFight,
+  setDiceRoll,
 }) => {
   const currentPart = story[currentPartId];
 
   const goToNextPart = (id) => {
     if (id === "again") {
-      endStory();
-      return;
+      return endStory();
     }
-    setCurrentPartId(id);
+    if (id === "checkTheClock") {
+      setDiceRoll((prev) => Math.max(prev - 1, 0));
+    }
+
+    return setCurrentPartId(id);
   };
 
   if (currentPartId === "fight") {

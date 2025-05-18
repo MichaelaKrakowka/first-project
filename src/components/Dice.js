@@ -26,7 +26,9 @@ export const Dice = ({
         style={{
           backgroundColor: diceClicked ? "#e2c17c" : "rgb(12, 19, 15, 0)",
         }}>
-        <span style={{ fontSize: "1.3rem" }}>{diceRoll || "🎲"}</span>
+        <span style={{ fontSize: "1.3rem" }}>
+          {diceRoll > 0 ? diceRoll : "🎲"}
+        </span>
       </button>
     </div>
   );

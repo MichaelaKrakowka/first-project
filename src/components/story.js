@@ -61,7 +61,7 @@ export const story = {
       </>
     ),
     options: [
-      { text: "Prozkoumat hodiny", id: "checkTheClock" }, //odečet síly o 25%
+      { text: "Prozkoumat hodiny", id: "checkTheClock" },
       { text: "Pokračovat do dědečkovy pracovny", id: "goToTheOffice" },
     ],
   },
@@ -116,7 +116,7 @@ export const story = {
           </p>
         ),
         id: "goHome",
-      }, // odečet síly o 25%
+      },
       {
         text: (
           <p>
