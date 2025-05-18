@@ -36,7 +36,8 @@ export const story = {
             fontStyle: "italic",
           }}>
           Nyní se musíš rozhodnout, kterou cestou se vydáš. Pokud sis ještě
-          nevygeneroval sílu v levém panelu, teď je ta spravná chvíle.
+          nevygeneroval sílu v levém panelu, teď je ta spravná chvíle. Síla ti
+          bude při některých rozhodnutích ubývat, proto jednej s rozvahou.
         </p>
       </>
     ),
@@ -100,14 +101,12 @@ export const story = {
     text: (
       <p>
         Cestou po schodech sleduji obrazy předků a nemůžu se ubránit pocitu, že
-        mě svými pohledy sledují. Ve druhém patře na konci chodby se konečně
-        ocitám v jeho pracovně. Zdá se, že zde bylo vše tak, jak to zanechal.
-        Zápisníky, knihy a staré mapy. Co však nejvíce upoutalo mojí pozornost a
-        způsobilo nepříjemnou husí kůži na zátylku, byly podivné náčrty postavy
-        v černé kápi bez obličeje. Snažím se zůstat v klidu a nenechat se
-        ovládnout strachem. Pokusím se znovu soustředit. V rohu místnosti jsou
-        dveře, které si jen mlhavě pamatuji z dětství – jsou zamčené. Z kapsy si
-        vytáhnu klíč, který jsem našel pod hodinami.
+        mě svými pohledy sledují. Snažím se zůstat v klidu a nenechat se
+        ovládnout strachem. Pokusím se znovu soustředit. Ve druhém patře na
+        konci chodby se konečně ocitám v jeho pracovně. Zdá se, že zde bylo vše
+        tak, jak to zanechal. Zápisníky, knihy a staré mapy. V rohu místnosti
+        jsou dveře, které si jen mlhavě pamatuji z dětství – jsou zamčené. Z
+        kapsy si vytáhnu klíč, který jsem našel pod hodinami.
       </p>
     ),
     options: [
@@ -147,7 +146,7 @@ export const story = {
       </p>
     ),
     options: [
-      { text: "Ignorovat varování a odejít", id: "leaveTheHouse" }, // odečet síly o 25%
+      { text: "Ignorovat varování a odejít", id: "leaveTheHouse" },
       { text: "Vrátit se zpátky k zamčeným dveřím", id: "openTheDoor" },
     ],
   },
@@ -498,19 +497,93 @@ export const story = {
       { text: "Ignorovat sen", id: "ignoreTheDream" },
     ],
   },
+
+  cigar: {
+    id: "cigar",
+    text: (
+      <>
+        Po náročném dni jsem byl tak unavený, že jsem si po doutníku hned šel
+        lehnout. Ve spánku se mi zdál zvláštní, až živý sen. Ocitl jsem se v
+        dědečkově domě a procházel chodbami, které znám nazpaměť. Najednou
+        stojím před dveřmi do jeho pracovny v patře. Jsou pootevřené. Vejdu
+        dovnitř a na stole přede mnou leží malý kožený kufřík. Opatrně ho
+        otevřu, uvnitř jsou zápisníky plné poznámek, psané jeho známým
+        rukopisem. Chci si je přečíst důkladněji a lépe pochopit, co v nich
+        stojí, ale nestihnu to. Probouzím se.
+      </>
+    ),
+    options: [
+      { text: "Jít do dědečkova domu", id: "listenDream" },
+      { text: "Ignorovat sen", id: "ignoreTheDream" },
+    ],
+  },
   ignoreTheDream: {
     id: "ignoreTheDream",
     text: (
       <>
         <p>
-          Sedím na gauči a ještě několik minut jen zírám do stropu. Ten sen byl
-          tak skutečný, jako bych v tom domě opravdu byl. Celý den mi ten obraz
-          leží v hlavě. Kufřík, pracovna, poznámky. Snažím se to vytěsnit, ale
-          znovu a znovu mi to před očima naskakuje. K večeru už to nevydržím.
-          Oblékám se, beru klíče a vyrážím. Mířím k dědečkovému domu.
+          Seděl jsem na gauči a ještě několik minut jen zzíral do stropu. Ten
+          sen byl tak skutečný, jako bych v tom domě opravdu byl. Celý den mi
+          ten obraz ležel v hlavě. Kufřík, pracovna, poznámky. Snažil jsem se to
+          vytěsnit, ale znovu a znovu mi to před očima naskakovalo. K večeru
+          jsem to už nevydržel. Oblékl jsem se, vzal klíče a vyrazil k
+          dědečkovému domu.
         </p>
       </>
     ),
     options: [{ text: "Jít do dědečkova domu", id: "followTheDream" }],
+  },
+
+  followTheDream: {
+    id: "followTheDream",
+    text: (
+      <>
+        <p>
+          Cestou jsem si říkal, jestli jsem přece jen neměl počkat alespoň do
+          rána. Nemusel bych se pak potloukat po starém domě ve tmě. Ale
+          zvědavost zvítězila. Dědeček žil na samotě u lesa. Nikdy mi to
+          nevadilo, nikdy jsem tam necítil nic nepříjemného. Ale dnes, snad
+          právě kvůli tmě, jsem byl neklidný. Chtěl jsem to mít rychle za sebou.
+          Vejít do domu, zjistit, že tam žádný kufřík není, a vrátit se v klidu
+          domů. Vešel jsem. Vzduch byl těžký. Vstupní hala a schodiště byly
+          zahalené tmou a těžké závěsy na oknech ji jen prohlubovaly. Robustní
+          podlahové hodiny z ořechového dřeva už dávno netikaly. Odsunul jsem je
+          trochu od zdi, ale ve tmě jsem nic neviděl. Elektřina v domě už byla
+          vypnutá, ale naštěstí jsem si do batohu přibalil baterku. Když jsem ji
+          rozsvítil, uviděl jsem na zemi malý rezavý klíč zavěšený na řetízku.
+          Na zadní straně hodin bylo naškrábáno: „Pracovna“. Mám pocit, že pod
+          těmi škrábanci je ještě něco dalšího… ale v té tmě to nedokážu pořádně
+          přečíst.
+        </p>
+      </>
+    ),
+    options: [
+      { text: "Prozkoumat hodiny", id: "checkTheClock2" },
+      { text: "Pokračovat do dědečkovy pracovny", id: "goToTheOffice" },
+    ],
+  },
+
+  checkTheClock2: {
+    id: "checkTheClock2",
+    text: (
+      <>
+        <p>
+          Klekám si k hodinám a přitom cítím, jak se mi záda ozývají po celém
+          dni. Snažím se prstem setřít špínu kolem rytiny, ale nápis pod
+          škrábanci odolává. Pevně sevřu baterku mezi zuby, opřu se o bok hodin
+          a zatlačím ještě víc. Dřevo skřípe, klouby mi zapraskají a konečně se
+          těžké tělo hodin pohnulo dál od zdi. S námahou se nakloním a pokusím
+          se očistit prostor za nimi. Dlaně mám od prachu, tričko mi lepí na
+          zádech. Cítím, jak mi bije srdce a dech se zrychluje. Tahle snaha mě
+          stála víc sil, než jsem čekal. Konečně se dostávám k místu, které
+          zaujalo moji pozornost a zjišťuji, že se jedná se výrobní štítek s
+          názvem společnosti „Mundus“.
+        </p>
+        <p>„Tohle byla ztráta času“ procedím mezi zuby podrážděným tónem.</p>
+      </>
+    ),
+    options: [
+      { text: "Pokračovat do dědečkovy pracovny", id: "goToTheOffice" },
+    ],
   },
 };
