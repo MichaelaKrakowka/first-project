@@ -19,7 +19,7 @@ export const story = {
           style={{
             display: "flex",
             justifyContent: "center",
-            padding: "20px",
+            padding: "15px",
           }}>
           <strong>„Najdi klíč pod hodinami. Nevěř tichu.“</strong>
         </p>
@@ -29,11 +29,14 @@ export const story = {
         </p>
         <p
           style={{
-            paddingTop: "50px",
+            paddingTop: "40px",
             display: "flex",
             justifyContent: "center",
+            fontSize: "1.8rem",
+            fontStyle: "italic",
           }}>
-          Nyní se musíš rozhodnout, kterou cestou se vydáš:
+          Nyní se musíš rozhodnout, kterou cestou se vydáš. Pokud sis ještě
+          nevygeneroval sílu v levém panelu, teď je ta spravná chvíle.
         </p>
       </>
     ),
