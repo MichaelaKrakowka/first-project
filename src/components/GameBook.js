@@ -16,7 +16,16 @@ export const GameBook = ({
   setEnemyFight,
   clickedEnemyFight,
   setClickedEnemyFight,
+  diceRoll,
   setDiceRoll,
+  playerFight2,
+  setPlayerFight2,
+  clickedPlayerFight2,
+  setClickedPlayerFight2,
+  enemyFight2,
+  setEnemyFight2,
+  clickedEnemyFight2,
+  setClickedEnemyFight2,
 }) => {
   const currentPart = story[currentPartId];
 
@@ -31,26 +40,40 @@ export const GameBook = ({
   };
 
   if (currentPartId === "fight") {
+    const playerTotal = diceRoll + playerFight + playerFight2;
+    const enemyTotal = enemyFight + enemyFight2;
     return (
       <div className="story_text">
         {currentPart.text}
         <div className="fight_container">
-          <p>
-            Abys přežil, musí být tvá výsledná síla po hodu dvěmi kostkami vyšší
-            než ta nepřítelova. Síla nepřítele je 6.
+          <p
+            style={{
+              fontSize: "1.8rem",
+              fontStyle: "italic",
+              paddingTop: "20px",
+            }}>
+            Abys přežil, musí tvá celková síla po hodu dvěma kostkami překonat
+            sílu nepřítele.
           </p>
           <div className="dices">
-            <div>
+            <div className="fight_dice">
               {userName}:
               <Dice
                 diceRoll={playerFight}
                 setDiceRoll={setPlayerFight}
                 diceClicked={clickedPlayerFight}
                 setDiceClicked={setClickedPlayerFight}
+              />{" "}
+              +{" "}
+              <Dice
+                diceRoll={playerFight2}
+                setDiceRoll={setPlayerFight2}
+                diceClicked={clickedPlayerFight2}
+                setDiceClicked={setClickedPlayerFight2}
               />
+              = {playerTotal}
             </div>
-            <div>
-              {" "}
+            <div className="fight_dice">
               Nepřítel:
               <Dice
                 diceRoll={enemyFight}
@@ -58,7 +81,21 @@ export const GameBook = ({
                 diceClicked={clickedEnemyFight}
                 setDiceClicked={setClickedEnemyFight}
               />
+              +
+              <Dice
+                diceRoll={enemyFight2}
+                setDiceRoll={setEnemyFight2}
+                diceClicked={clickedEnemyFight2}
+                setDiceClicked={setClickedEnemyFight2}
+              />{" "}
+              = {enemyTotal}
             </div>
+          </div>
+          <div>
+            {playerTotal > enemyTotal &&
+              "Sebral jsem poslední zbytky síly a kladivem jsem trefil přímo doprostřed přístroje. Cítil jsem, jakoby se dům nadechl, jakoby čekal na tento okamžik.Dědeček otevřel dveře do něčeho, co neměl. A zavřel je, jak nejlépe dovedl. Já jsem je jen zapečetil. Aby už nikdo další neskončil v  tom tichu."}
+            {playerTotal < enemyTotal && "Prohrál jsi! 💀"}
+            {playerTotal === enemyTotal && "Remíza! 🤝"}
           </div>
         </div>
       </div>

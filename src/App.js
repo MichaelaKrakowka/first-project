@@ -25,6 +25,11 @@ export const App = () => {
   const [enemyFight, setEnemyFight] = React.useState(0);
   const [clickedEnemyFight, setClickedEnemyFight] = React.useState(false);
 
+  const [playerFight2, setPlayerFight2] = React.useState(0);
+  const [clickedPlayerFight2, setClickedPlayerFight2] = React.useState(false);
+  const [enemyFight2, setEnemyFight2] = React.useState(0);
+  const [clickedEnemyFight2, setClickedEnemyFight2] = React.useState(false);
+
   const startStory = () => {
     setIsStoryStarted(true);
   };
@@ -77,6 +82,15 @@ export const App = () => {
             setClickedEnemyFight={setClickedEnemyFight}
             userName={userName}
             setDiceRoll={setDiceRoll}
+            playerFight2={playerFight2}
+            setPlayerFight2={setPlayerFight2}
+            clickedPlayerFight2={clickedPlayerFight2}
+            setClickedPlayerFight2={setClickedPlayerFight2}
+            enemyFight2={enemyFight2}
+            setEnemyFight2={setEnemyFight2}
+            clickedEnemyFight2={clickedEnemyFight2}
+            setClickedEnemyFight2={setClickedEnemyFight2}
+            diceRoll={diceRoll}
           />
         )}
       </div>

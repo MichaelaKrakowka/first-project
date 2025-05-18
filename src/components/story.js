@@ -413,12 +413,6 @@ export const story = {
         jsem, jak se mi pomalu začíná svět kolem zatemňovat a v tom jsem si to
         uvědomil. Dědeček trhlinu uzavřel, ale něco z ní zůstalo v domě a teď mi
         chce ukrást to nejcennější, co mám. Mě, moji identitu, mé vědomí.
-        {/* Každý kus kovu, každou
-        součástku, každou lampu. Když jsem skončil, cítil jsem, jak se kolem mě
-        něco zklidnilo. Jako by dům konečně vydechl. Jako by čekal na tenhle
-        okamžik. Dědeček otevřel dveře do něčeho, co neměl. A zavřel je, jak
-        nejlépe dovedl. Já jsem je jen zapečetil. Aby už nikdo další neskončil v
-        tom tichu. */}
       </p>
     ),
     options: [{ text: "Pokračovat", id: "finish" }],

@@ -72,4 +72,11 @@
 .dices {
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.fight_dice {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
