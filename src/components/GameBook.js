@@ -21,7 +21,7 @@ export const GameBook = ({
   const currentPart = story[currentPartId];
 
   const goToNextPart = (id) => {
-    if (id === "checkTheClock") {
+    if (["checkTheClock", "goHome", "whiskey"].includes(id)) {
       setDiceRoll((prev) => Math.max(prev - 1, 0));
     } else if (id === "again") {
       return endStory();

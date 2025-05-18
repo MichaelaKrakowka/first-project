@@ -12,6 +12,6 @@ napady:
 
 6. pridat Radix
 
-7. pridani zdravi ?
-8. pridani items ?
-9. podle zbylych procent nastavit podminku, zda postava umre nebo prezije ?
+7. pridat dalsi dve kostky a nechat je secist
+
+8. podle zbylych procent nastavit podminku, zda postava umre nebo prezije

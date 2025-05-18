@@ -364,10 +364,7 @@ export const story = {
           kufřík. Hned na první pohled mě zaujala poznámka, která mi rozbušila
           srdce. Stálo na ní:
         </p>
-        <p>
-          „Nikdy neotvírej úplné ticho, protože tě někdo uslyší. Jestli tohle
-          čteš, přístroj nezapínej a znič ho!“
-        </p>
+        <p>„Jestli tohle čteš, přístroj nezapínej a znič ho!“</p>
         <p>
           Graf vykazoval čím dál vyšší hodnoty a zároveň s tím rostla i moje
           nervozita. Najednou se všechno kolem mě ponořilo do tmy. Když se obraz
