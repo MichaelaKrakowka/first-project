@@ -75,6 +75,7 @@ export const App = () => {
             setEnemyFight={setEnemyFight}
             clickedEnemyFight={clickedEnemyFight}
             setClickedEnemyFight={setClickedEnemyFight}
+            userName={userName}
           />
         )}
       </div>

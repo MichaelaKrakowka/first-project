@@ -4,6 +4,7 @@ import "./GameBook.css";
 import { Dice } from "./Dice";
 
 export const GameBook = ({
+  userName,
   endStory,
   setCurrentPartId,
   currentPartId,
@@ -30,20 +31,32 @@ export const GameBook = ({
     return (
       <div className="story_text">
         {currentPart.text}
-        <div className="dices_container">
-          <Dice
-            diceRoll={playerFight}
-            setDiceRoll={setPlayerFight}
-            diceClicked={clickedPlayerFight}
-            setDiceClicked={setClickedPlayerFight}
-          />
-
-          <Dice
-            diceRoll={enemyFight}
-            setDiceRoll={setEnemyFight}
-            diceClicked={clickedEnemyFight}
-            setDiceClicked={setClickedEnemyFight}
-          />
+        <div className="fight_container">
+          <p>
+            Abys přežil, musí být tvá výsledná síla po hodu dvěmi kostkami vyšší
+            než ta nepřítelova. Síla nepřítele je 6.
+          </p>
+          <div className="dices">
+            <div>
+              {userName}:
+              <Dice
+                diceRoll={playerFight}
+                setDiceRoll={setPlayerFight}
+                diceClicked={clickedPlayerFight}
+                setDiceClicked={setClickedPlayerFight}
+              />
+            </div>
+            <div>
+              {" "}
+              Nepřítel:
+              <Dice
+                diceRoll={enemyFight}
+                setDiceRoll={setEnemyFight}
+                diceClicked={clickedEnemyFight}
+                setDiceClicked={setClickedEnemyFight}
+              />
+            </div>
+          </div>
         </div>
       </div>
     );
