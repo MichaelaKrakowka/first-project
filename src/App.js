@@ -34,7 +34,17 @@ export const App = () => {
     setIsStoryStarted(true);
   };
 
-  const endStory = () => {
+  const resetAll = () => {
+    setDiceClicked(false);
+    setDiceRoll(0);
+    setPlayerFight(0);
+    setClickedPlayerFight(false);
+    setEnemyFight(0);
+    setClickedEnemyFight(false);
+    setPlayerFight2(0);
+    setClickedPlayerFight2(false);
+    setEnemyFight2(0);
+    setClickedEnemyFight2(false);
     setCurrentPartId("start");
   };
 
@@ -56,11 +66,7 @@ export const App = () => {
         {isStoryStarted && (
           <UserNav
             userName={userName}
-            endStory={() => {
-              setDiceClicked(false);
-              setDiceRoll(0);
-              endStory();
-            }}
+            endStory={resetAll}
             diceRoll={diceRoll}
             setDiceRoll={setDiceRoll}
             diceClicked={diceClicked}
@@ -69,7 +75,7 @@ export const App = () => {
         )}
         {isStoryStarted && (
           <GameBook
-            endStory={endStory}
+            endStory={resetAll}
             currentPartId={currentPartId}
             setCurrentPartId={setCurrentPartId}
             playerFight={playerFight}

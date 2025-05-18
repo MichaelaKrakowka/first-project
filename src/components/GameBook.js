@@ -27,6 +27,9 @@ export const GameBook = ({
   clickedEnemyFight2,
   setClickedEnemyFight2,
 }) => {
+  const playerTotal = diceRoll + playerFight + playerFight2;
+  const enemyTotal = enemyFight + enemyFight2;
+
   const currentPart = story[currentPartId];
 
   const goToNextPart = (id) => {
@@ -40,8 +43,6 @@ export const GameBook = ({
   };
 
   if (currentPartId === "fight") {
-    const playerTotal = diceRoll + playerFight + playerFight2;
-    const enemyTotal = enemyFight + enemyFight2;
     return (
       <div className="story_text">
         {currentPart.text}
@@ -91,13 +92,20 @@ export const GameBook = ({
               = {enemyTotal}
             </div>
           </div>
-          <div>
-            {playerTotal > enemyTotal &&
-              "Sebral jsem poslední zbytky síly a kladivem jsem trefil přímo doprostřed přístroje. Cítil jsem, jakoby se dům nadechl, jakoby čekal na tento okamžik.Dědeček otevřel dveře do něčeho, co neměl. A zavřel je, jak nejlépe dovedl. Já jsem je jen zapečetil. Aby už nikdo další neskončil v  tom tichu."}
-            {playerTotal < enemyTotal && "Musím ještě doplnit"}
-            {playerTotal === enemyTotal &&
-              "To máš fakt blbé, asi budete bojovat věčně."}
-          </div>
+
+          {clickedPlayerFight &&
+            clickedPlayerFight2 &&
+            clickedEnemyFight &&
+            clickedEnemyFight2 &&
+            diceRoll && (
+              <div>
+                {playerTotal > enemyTotal &&
+                  "Sebral jsem poslední zbytky síly a kladivem jsem trefil přímo doprostřed přístroje. Cítil jsem, jakoby se dům nadechl, jakoby čekal na tento okamžik.Dědeček otevřel dveře do něčeho, co neměl. A zavřel je, jak nejlépe dovedl. Já jsem je jen zapečetil. Aby už nikdo další neskončil v  tom tichu."}
+                {playerTotal < enemyTotal &&
+                  "Všechno se pomalu nořilo do temnoty hlubší než je smrt. Pak jsem najednou stál stranou. Viděl jsem, jak moje tělo klidně odchází z místnosti. Pak se na okamžik otočilo… a usmálo se. V tu chvíli jsem pochopil: já tu zůstal v tom tichu, ve tmě a někdo jiný právě začal žít můj život."}
+                {playerTotal === enemyTotal && "No, to je pech :D "}
+              </div>
+            )}
         </div>
       </div>
     );
