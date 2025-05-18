@@ -76,6 +76,7 @@ export const App = () => {
             clickedEnemyFight={clickedEnemyFight}
             setClickedEnemyFight={setClickedEnemyFight}
             userName={userName}
+            setDiceRoll={setDiceRoll}
           />
         )}
       </div>
