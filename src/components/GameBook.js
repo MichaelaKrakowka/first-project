@@ -94,8 +94,9 @@ export const GameBook = ({
           <div>
             {playerTotal > enemyTotal &&
               "Sebral jsem poslední zbytky síly a kladivem jsem trefil přímo doprostřed přístroje. Cítil jsem, jakoby se dům nadechl, jakoby čekal na tento okamžik.Dědeček otevřel dveře do něčeho, co neměl. A zavřel je, jak nejlépe dovedl. Já jsem je jen zapečetil. Aby už nikdo další neskončil v  tom tichu."}
-            {playerTotal < enemyTotal && "Prohrál jsi! 💀"}
-            {playerTotal === enemyTotal && "Remíza! 🤝"}
+            {playerTotal < enemyTotal && "Musím ještě doplnit"}
+            {playerTotal === enemyTotal &&
+              "To máš fakt blbé, asi budete bojovat věčně."}
           </div>
         </div>
       </div>
