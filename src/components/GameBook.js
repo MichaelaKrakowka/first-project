@@ -53,8 +53,8 @@ export const GameBook = ({
               fontStyle: "italic",
               paddingTop: "20px",
             }}>
-            Abys přežil, musí tvá celková síla po hodu dvěma kostkami překonat
-            sílu nepřítele.
+            Abys přežil, musí tvá celková síla po hodu kostkami být stejná jako
+            soupeřova nebo větší.
           </p>
           <div className="dices">
             <div className="fight_dice">
@@ -103,7 +103,8 @@ export const GameBook = ({
                   "Sebral jsem poslední zbytky síly a kladivem jsem trefil přímo doprostřed přístroje. Cítil jsem, jakoby se dům nadechl, jakoby čekal na tento okamžik.Dědeček otevřel dveře do něčeho, co neměl. A zavřel je, jak nejlépe dovedl. Já jsem je jen zapečetil. Aby už nikdo další neskončil v  tom tichu."}
                 {playerTotal < enemyTotal &&
                   "Všechno se pomalu nořilo do temnoty hlubší než je smrt. Pak jsem najednou stál stranou. Viděl jsem, jak moje tělo klidně odchází z místnosti. Pak se na okamžik otočilo… a usmálo se. V tu chvíli jsem pochopil: já tu zůstal v tom tichu, ve tmě a někdo jiný právě začal žít můj život."}
-                {playerTotal === enemyTotal && "No, to je pech :D "}
+                {playerTotal === enemyTotal &&
+                  "Sebral jsem poslední zbytky síly a kladivem jsem trefil přímo doprostřed přístroje. Cítil jsem, jakoby se dům nadechl, jakoby čekal na tento okamžik.Dědeček otevřel dveře do něčeho, co neměl. A zavřel je, jak nejlépe dovedl. Já jsem je jen zapečetil. Aby už nikdo další neskončil v  tom tichu."}
               </div>
             )}
         </div>
