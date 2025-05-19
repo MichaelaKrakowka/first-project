@@ -51,6 +51,7 @@ export const App = () => {
   return (
     <div className="container">
       <Header />
+
       <div
         style={{
           display: "flex",

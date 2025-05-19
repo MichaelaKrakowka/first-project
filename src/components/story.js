@@ -61,7 +61,10 @@ export const story = {
           zemi ležel malý rezavý klíč, zavěšený na řetízku.
         </p>
         <p>Na zadní straně hodin bylo naškrábáno: „Pracovna“.</p>
-        <p>Mám pocit, že pod škrábanci něco je, ale pořádně na to nevidím.</p>
+        <p>
+          Měl jsem pocit, že pod škrábanci něco je, ale pořádně jsem na to
+          neviděl.
+        </p>
       </>
     ),
     options: [
@@ -78,17 +81,20 @@ export const story = {
           Se silným skřípotem závěsy spadly na zem. Svým dopadem na dřevěnou
           podlahu zvířily hustý oblak prachu, který mi ihned rozdráždil
           sliznici. Začal jsem nekontrolovaně kašlat. I když slunce rychle
-          zapadá, halu nyní prosvěcovalo denní světlo. Na stěnách vidím
+          zapadá, halu nyní prosvěcovalo denní světlo. Na stěnách jsem viděl
           nalepenou starodávnou zelenou tapetu s růžovými květinovými vzory. Na
-          zdi, která vede podél schodiště visí obrazy předků. Ve spodním patře
-          se nachází několik masivních zavřených dřevěných dveří. Sice jsem tu
-          již spoustu let nebyl, ale takhle strašidelné si to z dětství
-          nepamatuji. Snad to bude stát za to, pomyslím si, a přiblížím se k
-          hodinám. Shýbám se k dolní části hodin a zkoumám, co před chvíli
-          upoutalo moji pozornost. Otevřenou dlaní přejíždím přes nalepený
-          papírek. Jedná se o výrobní štítek s názvem společnosti „Mundus“.
+          zdi, která vedla podél schodiště visely obrazy předků. Ve spodním
+          patře se nacházelo několik masivních zavřených dřevěných dveří. Sice
+          jsem tu již spoustu let nebyl, ale takhle strašidelné jsem si to z
+          dětství nepamatoval. Snad to bude stát za to, pomyslel jsem si, a
+          přiblížel jsem se k hodinám. Ohnul jsem se k dolní části hodin a
+          zkoumal, co před chvíli upoutalo moji pozornost. Otevřenou dlaní jsem
+          přejel přes nalepený papírek. Jednalo se o výrobní štítek s názvem
+          společnosti „Mundus“.
         </p>
-        <p>„Tohle byla ztráta času“ procedím mezi zuby podrážděným tónem.</p>
+        <p>
+          „Tohle byla ztráta času“ procedil jsem mezi zuby podrážděným tónem.
+        </p>
       </>
     ),
     options: [
@@ -100,13 +106,14 @@ export const story = {
     id: "goToTheOffice",
     text: (
       <p>
-        Cestou po schodech sleduji obrazy předků a nemůžu se ubránit pocitu, že
-        mě svými pohledy sledují. Snažím se zůstat v klidu a nenechat se
-        ovládnout strachem. Pokusím se znovu soustředit. Ve druhém patře na
-        konci chodby se konečně ocitám v jeho pracovně. Zdá se, že zde bylo vše
-        tak, jak to zanechal. Zápisníky, knihy a staré mapy. V rohu místnosti
-        jsou dveře, které si jen mlhavě pamatuji z dětství – jsou zamčené. Z
-        kapsy si vytáhnu klíč, který jsem našel pod hodinami.
+        Cestou po schodech jsem sledoval obrazy předků a nemohl se ubránit
+        pocitu, že mě svými pohledy sledují. Snažil jsem se zůstat v klidu a
+        nenechat se ovládnout strachem. Pokusil jsem se znovu soustředit. Ve
+        druhém patře na konci chodby jsem se konečně ocitl v jeho pracovně.
+        Zdálo se, že zde bylo vše tak, jak to zanechal. Zápisníky, knihy a staré
+        mapy. V rohu místnosti byly dveře, které jsem si jen mlhavě pamatoval z
+        dětství – byly zamčené. Z kapsy jsem si vytáhl klíč, který jsem našel
+        pod hodinami.
       </p>
     ),
     options: [
@@ -135,14 +142,14 @@ export const story = {
     id: "goHome",
     text: (
       <p>
-        Běžím chodbou, jak nejrychleji umím. Když scházím schody dolů, zarazí mě
-        zjištění, že hodiny, které jsem odsunul, nyní stojí před vchodovými
-        dveřmi. Jsou otočené zády a slova vyrytá do dřeva se změnila: „Otoč se.
-        Pracovna.“ Nezajímá mě, co se tady stalo, chci prostě tento dům opustit
-        jednou pro vždy. Zatlačím do hodin zboku, abych si uvolnil průchod ven.
-        Jakmile se mi to povedlo a sevřel jsem kliku od dveří, začal mi zvonit
-        telefon. Hlas na druhém konci se mě snaží varovat slovy: „Nesmíš
-        odejít!“, a poté okamžitě zavěsí.
+        Běžel jsem chodbou, jak nejrychleji umím. Když jsem scházel schody dolů,
+        zarazilo mě zjištění, že hodiny, které jsem odsunul, nyní stojí před
+        vchodovými dveřmi. Byly otočené zády a slova vyrytá do dřeva se změnila:
+        „Otoč se. Pracovna.“ Nezajímalo mě, co se tady stalo, chtěl jsem prostě
+        tento dům opustit jednou pro vždy. Zatlačil jsem do hodin zboku, abych
+        si uvolnil průchod ven. Jakmile se mi to povedlo a sevřel jsem kliku od
+        dveří, začal mi zvonit telefon. Hlas na druhém konci se mě snažil
+        varovat slovy: „Nesmíš odejít!“, a poté okamžitě zavěsil.
       </p>
     ),
     options: [
@@ -156,25 +163,27 @@ export const story = {
     text: (
       <>
         <p>
-          Sahám na kliku a snažím se dveře otevřít, ale jsou zamčené. V tu
-          chvíli začnou hodiny odbíjet a z chodby se ozvou pomalé, těžké kroky,
-          blížící se ke mě. Rozběhnu se k nejbližšímu oknu, lomcuju s ním,
-          snažím se otočit klikou, ale nejde otevřít. Srdce mi tluče až v krku.
-        </p>
-        <p>A pak si to uvědomím ...náhlé ticho.</p>
-        <p>
-          Kroky zmizely. Zpozorním, uši mám nastražené, dech zadržuju. A pak to
-          ucítím. Studený dech na zátylku a šepot přímo u ucha: „Měl jsi
-          poslechnout!“. Zděšením se snažím křičet, ale nevydám ze sebe ani
-          hlásku. Všechno kolem mě náhle potemní, světla zhasnou, ale i přesto
-          vidím. Vidím sebe, jak tam stojím, zkamenělý, oči vytřeštěné, ruka
-          stále svírá kliku. Ale já už nejsem vevnitř. Jsem mimo a pozoruji to
-          zvenčí. Něco mě nahradilo. Něco, co čekalo na okamžik slabosti, na to
-          až mi dojdou síly.
+          Sahl jsem na kliku a snažil se dveře otevřít, ale byly zamčené. V tu
+          chvíli začaly odbíjet hodiny, které už netikaly. Rozběhl jsem se k
+          nejbližšímu oknu, lomcoval s ním, snažil jsem se otočit klikou, ale
+          nešla otevřít. Srdce mi tluklo až v krku.
         </p>
         <p>
-          Postava v mém těle se porozhlédne po místnosti, usměje se, otevře
-          dveře a vyjde ven.
+          A pak mi to došlo... náhlé ticho. Nebylo slyšet ani štěbetání ptáků,
+          které mě v domě dosud provázelo, a hodiny přestaly odbíjet.
+        </p>
+        <p>
+          Zpozorněl jsem, nastražil uši a zadržel dech. A pak jsem ucítil, jak
+          opouštím své tělo. Zděšený jsem se snažil zakřičet, ale nevydal jsem
+          ani hlásku. Všechno kolem mě náhle potemnělo, světla zhasla, a přesto
+          jsem viděl. Viděl jsem sám sebe, jak tam stojím zkamenělý, s očima
+          vytřeštěnýma, ruka stále svírala kliku. Ale já už nebyl uvnitř. Byl
+          jsem mimo a pozoroval to zvenčí. Něco mě nahradilo. Něco, co čekalo,
+          až vejdu do domu, aby se mohlo zmocnit mého těla.
+        </p>
+        <p>
+          Postava v mém těle se porozhlédla po místnosti, usmála se, otevřela
+          dveře a vyšla ven.
         </p>
       </>
     ),
@@ -185,15 +194,14 @@ export const story = {
     id: "openTheDoor",
     text: (
       <p>
-        Ruka se mi třásla, když jsem zasunoval klíč do zámku. Kov zaškrábal,
-        klíč seděl dokonale. Otočil jsem ho – jedno klapnutí, pak druhé. Dveře
-        se po chvíli samy s tichým zaskřípěním pootevřely. Za nimi byla tma. Ne
-        přirozená, ale těžká. Hustá. Jako by pohlcovala světlo. Přesto jsem
-        vstoupil dovnitř. Místnost nebyla velká. V jejím středu stál stůl, nad
-        nímž visela lampa. Když jsem zatáhl za šňůrku, světlo se rozzářilo – a
-        odhalilo nástěnku pokrytou fotografiemi, výstřižky z novin, a ručně
-        psanými poznámkami. Taky byl vidět psací stroj a černá tabule s
-        křídovými značkami a slovy, které mi nedávaly smysl.
+        Ruka se mi třásla, když jsem zasouval klíč do zámku. Kov zaškrábal, klíč
+        zapadl dokonale. Otočil jsem jím – jedno klapnutí, pak druhé. Dveře se
+        po chvíli samy, s tichým zaskřípěním, pootevřely. Za nimi byla tma a ve
+        vzduchu byl cítit petrolej. Vstoupil jsem dovnitř a všiml si petrolejové
+        lampy na stole. Z kapsy jsem vytáhl zapalovač a zapálil knot. Světlo se
+        rozzářilo a odhalilo nástěnku pokrytou fotografiemi, novinovými
+        výstřižky a ručně psanými poznámkami. Byl tam i psací stroj a černá
+        tabule s křídovými značkami a slovy, která mi nedávala smysl.
       </p>
     ),
     options: [
@@ -206,10 +214,10 @@ export const story = {
     id: "checkTheRoom",
     text: (
       <p>
-        Rozhodnu se nejdříve prozkoumat místnost a v rohu si všimnu dalších
-        dveří, které zprvu nebyly vidět. Jsou menší než ty, které vedly do této
-        místnosti a vypadají však mnohem starším, až starodávným vzhledem. Jinak
-        mě nic dalšího v místnosti nezaujalo.
+        Rozhodl jsem se nejdříve prozkoumat místnost a v rohu jsem si všiml
+        dalších dveří, které zprvu nebyly vidět. Byly menší než ty, které vedly
+        do této místnosti, a působily mnohem starším, až starodávným dojmem.
+        Jinak mě v místnosti nic dalšího nezaujalo.
       </p>
     ),
     options: [{ text: "Porozhlédnout se po stole", id: "checkTheDesk1" }],
@@ -218,17 +226,18 @@ export const story = {
     id: "checkTheDesk",
     text: (
       <p>
-        Uprostřed stolu leží starý psací stroj. V jeho útrobách je zastrčený
-        zažloutlý list papíru. Text na něm je krátký, útržkovitý: „Někdo nás
+        Uprostřed stolu ležel starý psací stroj. V jeho útrobách byl zastrčený
+        zažloutlý list papíru. Text na něm byl krátký, útržkovitý: „Někdo nás
         sleduje. Skrývá se v tichu. Pokud tohle čteš, víš, že tě pozoruje. Najdi
-        můj zápisník..." Inkoust v posledních znacích je roztřesený, jako by byl
-        psán ve spěchu… nebo ve strachu. Jakmile dočtu poslední řádek, pocítím
-        náhlé napětí. V uších cítím tlukot srdce, ale nikde nikoho nevidím.
-        Všechno ve mně křičí, abych odsud odešel. Pryč z tohoto domu. Pryč od
-        toho všeho. Ale vím, že odpovědi se skrývají v dědečkově deníku. A teď
-        už nemohu couvnout. Zhluboka se nadechnu, snažím se zklidnit. A právě
-        tehdy si všimnu drobnosti: Vedle psacího stroje leží malý klíč. Schovám
-        si ho do kapsy, třeba se bude hodit.
+        můj zápisník..." Inkoust v posledních znacích byl roztřesený, jako by
+        byl psán ve spěchu… nebo ve strachu. Jakmile jsem dočetl poslední řádek,
+        pocítil jsem náhlé napětí. V uších jsem cítil tlukot srdce, ale nikoho
+        jsem neviděl. Všechno ve mně křičelo, abych odsud odešel. Pryč z tohoto
+        domu. Pryč od toho všeho. Ale věděl jsem, že odpovědi se skrývají v
+        dědečkově zápisníku. Teď už jsem nemohl couvnout. Zhluboka jsem se
+        nadechl a snažil se zklidnit. A právě tehdy jsem si všiml drobnosti:
+        vedle psacího stroje ležel malý klíč. Schoval jsem si ho do kapsy, třeba
+        se bude hodit.
       </p>
     ),
     options: [{ text: "Prozkoumat podrobněji místnost", id: "checkTheRoom1" }],
@@ -238,11 +247,11 @@ export const story = {
     id: "checkTheRoom1",
     text: (
       <p>
-        Chci se ještě porozhlédnout po místnosti, možná mi něco uniklo. Koutkem
-        oka zavadím o obrys dveří, který jsem si předtím nevšiml. Jsou menší než
-        ty, které vedly do této místnosti a vypadají však mnohem starším, až
-        starodávným vzhledem. Klíč, který jsem našel bude možná pasovat do
-        těchto dveří.
+        Chtěl jsem se ještě porozhlédnout po místnosti, možná mi něco uniklo.
+        Koutkem oka jsem zavadil o obrys dveří, kterých jsem si předtím nevšiml.
+        Byly menší než ty, které vedly do této místnosti, a působily mnohem
+        starším, až starodávným dojmem. Klíč, který jsem našel, možná pasuje
+        právě do těchto dveří.
       </p>
     ),
     options: [{ text: "Použít klíč", id: "useTheKey" }],
@@ -252,17 +261,17 @@ export const story = {
     id: "checkTheDesk1",
     text: (
       <p>
-        Uprostřed stolu leží starý psací stroj. V jeho útrobách je zastrčený
-        zažloutlý list papíru. Text na něm je krátký, útržkovitý: „Někdo nás
+        Uprostřed stolu ležel starý psací stroj. V jeho útrobách byl zastrčený
+        zažloutlý list papíru. Text na něm byl krátký, útržkovitý: „Někdo nás
         sleduje. Skrývá se v tichu. Pokud tohle čteš, víš, že tě pozoruje. Najdi
-        můj zápisník..." Inkoust v posledních znacích je roztřesený, jako by byl
-        psán ve spěchu… nebo ve strachu. Jakmile dočtu poslední řádek, pocítím
-        náhlé napětí. V uších cítím tlukot srdce, ale nikde nikoho nevidím.
-        Všechno ve mně křičí, abych odsud odešel. Pryč z tohoto domu. Pryč od
-        toho všeho. Ale vím, že odpovědi se skrývají v dědečkově deníku. A teď
-        už nemohu couvnout. Zhluboka se nadechnu, snažím se zklidnit. A právě
-        tehdy si všimnu drobnosti: Vedle psacího stroje leží malý klíč. Určitě
-        bude od těch malých dveří.
+        můj zápisník…“ Inkoust v posledních znacích byl roztřesený, jako by byl
+        psán ve spěchu… nebo ve strachu. Jakmile jsem dočetl poslední řádek,
+        pocítil jsem náhlé napětí. V uších jsem cítil tlukot srdce, ale nikde
+        jsem nikoho neviděl. Všechno ve mně křičelo, abych odsud odešel. Pryč z
+        tohoto domu. Pryč od toho všeho. Ale věděl jsem, že odpovědi se skrývají
+        v dědečkově zápisníku. Teď už jsem nemohl couvnout. Zhluboka jsem se
+        nadechl a snažil se zklidnit. A právě tehdy jsem si všiml drobnosti:
+        vedle psacího stroje ležel malý klíč. Určitě bude od těch malých dveří.
       </p>
     ),
     options: [{ text: "Použít klíč", id: "useTheKey" }],
@@ -272,15 +281,11 @@ export const story = {
     id: "useTheKey",
     text: (
       <p>
-        Vložím malý, zrezivělý klíček do zámku dveří – ten samý, který jsem před
-        chvílí našel na stole. Kov tiše zaklapne a s lehkým odporem se otočí. V
-        ten moment se z dolního patra ozve zvláštní zvuk doprovázený pomalými
-        kroky. Jako kdyby někdo – nebo něco – pomalu sestupovalo po schodech.
-        Zadržím dech. Ale pak… naprosté ticho. Ne to obyčejné ticho, které
-        zažíváš v prázdném domě. To ticho je husté, těžké, dusivé. Mám pocit, že
-        se mi hrudník stahuje, jako by se vzduch najednou ztratil. A právě tehdy
-        mi v hlavě vyvstane ten jediný vzkaz, který všechno začal: „Nevěř
-        tichu.“
+        Vložil jsem malý, zrezivělý klíček do zámku dveří, který jsem před
+        chvílí našel na stole. Kov tiše zaklapl a s lehkým odporem se otočil. V
+        ten moment jsem uslyšel, jak se v dolním patře začaly odbíjet hodiny,
+        které předtím nefungovaly. Zadržel jsem dech – a právě tehdy mi v hlavě
+        vyvstal ten jediný vzkaz, který všechno začal: „Nevěř tichu.“
       </p>
     ),
     options: [
@@ -293,9 +298,9 @@ export const story = {
     id: "stay",
     text: (
       <p>
-        Stojím nehybně jako kámen a snažím se téměř nedýchat. Všechny smysly mám
-        nastražené a čekám, co se bude dít. K mému údivu se neděje nic. Rozhodnu
-        se vstoupit do dveří.
+        Stál jsem nehybně jako kámen a snažil se téměř nedýchat. Všechny smysly
+        jsem měl nastražené a čekal jsem, co se bude dít. K mému údivu se nedělo
+        nic. Rozhodl se vstoupit do dveří.
       </p>
     ),
     options: [{ text: "Vstoupit do dveří", id: "goInside" }],
@@ -306,17 +311,19 @@ export const story = {
     text: (
       <>
         <p>
-          Rukou tlačím na dřevěné dveře, které se s vrzáním pomalu otevírají.
-          Místnost je holá. Žádný nábytek, žádné okno, jen stůl a na něm nějaký
-          přístroj a vedle něj ležel starý kožený kufřík. Přístroj vypadal jako
-          podivný hybrid mezi starým radiopřijímačem a laboratorním zařízením
-          <br /> z padesátých let. Prohlídl jsem si ho ze všech stran, ale žádný
-          zřetelný nápis, který by napověděl, k čemu vlastně slouží. Možná tlak?
-          Možná záření? Možná čas?
-        </p>
+          {" "}
+          Rukou jsem tlačil na dřevěné dveře, které se s vrzáním pomalu
+          otevřely. Místnost byla holá. Žádný nábytek, žádné okno, jen stůl, na
+          něm nějaký přístroj a vedle něj starý kožený kufřík. Přístroj vypadal
+          jako podivný hybrid mezi starým radiopřijímačem a laboratorním
+          zařízením z padesátých let. Prohlédl jsem si ho ze všech stran, ale
+          žádný zřetelný nápis, který by napověděl, k čemu vlastně slouží. Možná
+          tlak? Možná záření? Možná čas?{" "}
+        </p>{" "}
         <p>
+          {" "}
           Prsty jsem přejel po studeném kovu, jako bych se chtěl zeptat, co tu
-          vlastně dělá - a v tom <br />v něm něco tiše cvaklo.
+          vlastně dělá – a v tom v něm něco tiše cvaklo.{" "}
         </p>
       </>
     ),
@@ -365,11 +372,13 @@ export const story = {
         </p>
         <p>„Jestli tohle čteš, přístroj nezapínej a znič ho!“</p>
         <p>
-          Graf vykazoval čím dál vyšší hodnoty a zároveň s tím rostla i moje
-          nervozita. Najednou se všechno kolem mě ponořilo do tmy. Když se obraz
-          znovu vyjasnil, uviděl jsem něco nepochopitelného – díval jsem se sám
-          na sebe. Něco mě nahradilo a já jsem zůstal uvězněný v tichu. Postava,
-          která teď obývala mé tělo, se usmála… a vykročila ze dveří.
+          Graf ukazoval čím dál vyšší hodnoty a spolu s tím rostla i moje
+          nervozita. Najednou se kolem mě všechno ponořilo do husté tmy a
+          naprostého ticha. Hodiny, které dříve odbíjely, najednou ztichly. Když
+          se mi obraz pomalu vyjasnil, spatřil jsem něco naprosto
+          nepochopitelného — díval jsem se sám na sebe. Něco mě nahradilo a já
+          jsem zůstal uvězněný v tom bezedném tichu. Postava, která teď obývala
+          mé tělo, se pomalu porozhlédla po místnosti… a pak vykročila ze dveří.
         </p>
       </>
     ),
@@ -381,23 +390,23 @@ export const story = {
     text: (
       <>
         <p>
-          Chvíli jsem jen stála přemýšlel nad tím, co jsem se zrovna dozvěděl.
-          Ale nestačilo mi to, potřeboval jsem vědět více. Odnesl jsem kufřík do
-          vedlejší místnosti, kde bylo více světla a snažil jsem se z toho
-          pochopit co nejvíce. Četl jsem vše několikrát a pomalu. A s každým
-          slovem jsem víc chápal, co se tady stalo.
+          Chvíli jsem jen stál a přemýšlel nad tím, co jsem se právě dozvěděl.
+          Ale nestačilo mi to, potřeboval jsem vědět víc. Odnesl jsem kufřík do
+          vedlejší místnosti, kde stála petrolejová lampa, a snažil jsem se z
+          toho pochopit co nejvíc. Četl jsem všechno několikrát a pomalu. A s
+          každým slovem jsem lépe chápal, co se tady stalo.
         </p>
         <p>
           Dědeček psal, že přístroj otevírá zvukovou trhlinu – slabé místo v
-          našem světě, skrz které proniká něco, co nemá tvar ani jméno, ale co
-          se dokáže přisát na mysl. Co tě vysaje a nahradí. Prý ji uzavřel, ale
+          našem světě, skrz které proniká něco, co nemá tvar ani jméno, ale
+          dokáže se přisát na mysl. Co tě vysaje a nahradí. Prý ji uzavřel, ale
           stálo ho to život. Pochopil jsem, že když ten přístroj znovu spustím,
           bude to jako znovu otevřít dveře, které měly zůstat navždy zavřené.
         </p>
         <p>
           Měl jsem chuť to zkusit, jen na chvíli slyšet, co slyšel on. Ale pak
           jsem si vzpomněl na jeho tělo, na ten výkřik, který se mu zasekl v
-          hrdle a rozhodl se ho poslechnout.
+          hrdle, a rozhodl se ho poslechnout.
         </p>
       </>
     ),
@@ -409,10 +418,11 @@ export const story = {
     text: (
       <p>
         V domě jsem našel staré kladivo a v okamžiku, kdy jsem zvedl ruku,
-        rozhodnut přístroj rozbit, jsem si uvědomil, že vše kolem ztichlo. Cítil
-        jsem, jak se mi pomalu začíná svět kolem zatemňovat a v tom jsem si to
-        uvědomil. Dědeček trhlinu uzavřel, ale něco z ní zůstalo v domě a teď mi
-        chce ukrást to nejcennější, co mám. Mě, moji identitu, mé vědomí.
+        rozhodnutý přístroj rozbít, jsem si uvědomil, že vše kolem ztichlo.
+        Cítil jsem, jak se mi pomalu začíná svět kolem zatemňovat, a právě v ten
+        moment mi došlo, že dědeček trhlinu sice uzavřel, ale něco z ní v domě
+        zůstalo – a teď mi chce ukrást to nejcennější, co mám: mě samotného, mou
+        identitu, mé vědomí.
       </p>
     ),
     options: [{ text: "Pokračovat", id: "finish" }],
@@ -440,19 +450,20 @@ export const story = {
     text: (
       <>
         <p>
-          Roztrhal jsem dopis na několik kousků a vhodil do koše. Každý útržek
-          jako by odnášel malý kousek bolesti, která mě tížila. Nezapomenu na
-          něj nikdy, ale nechci, aby mě to dál drželo v minulosti.
+          Roztrhal jsem dopis na několik kousků a vhodil je do koše. Každý
+          útržek jako by odnášel malý kousek bolesti, která mě tížila.
+          Nezapomenu na něj nikdy, ale nechtěl jsem, aby mě to dál drželo v
+          minulosti.
         </p>
         <p>
-          V hlavě mi stačí pár krásných vzpomínek – jeho hlas, když se smál,
+          V hlavě mi stačilo pár krásných vzpomínek – jeho hlas, když se smál,
           kůže na rukou ztvrdlá prací a ta jeho vůně... vždycky voněl po
           doutníku, ne těžce, ale jemně, jako by ten kouř byl součástí jeho
           osobnosti. Byl to jeho tichý rituál, chvíle klidu uprostřed dne. A
-          právě proto teď sahám do zásuvky po doutníku, který mi kdysi dal.
-          Zapaluji ho pomalu, s úctou, a když první obláček dýmu vystoupá ke
-          stropu, zavírám oči. Vzpomínám na dědečka – ne se smutkem, ale s
-          úsměvem na rtech. Ten doutník je teď most mezi mnou a jím.
+          právě proto jsem teď sáhl do zásuvky po doutníku, který mi kdysi dal.
+          Zapálil jsem ho pomalu, s úctou, a když první obláček dýmu vystoupal
+          ke stropu, zavřel jsem oči. Vzpomínal jsem na dědečka, ne se smutkem,
+          ale s úsměvem na rtech. Ten doutník byl mostem mezi mnou a jím.
         </p>
       </>
     ),
@@ -467,22 +478,23 @@ export const story = {
     text: (
       <>
         <p>
-          Sahám do skříňky a vytahuji lahev whiskey – starou, kvalitní,
-          otevřenou jen při výjimečných příležitostech. Nalévám si sklenku a
-          posadím se do křesla. Piju pomalu, jako bych tím chtěl rozpustit i
+          Sáhl jsem do skříňky a vytáhl lahev whiskey – starou, kvalitní,
+          otevřenou jen při výjimečných příležitostech. Nalil jsem si sklenku a
+          posadil se do křesla. Pil jsem pomalu, jako bych tím chtěl rozpustit i
           poslední zbytky napětí.
         </p>
         <p>
-          Dolévám si třetí a pak i čtvrtou sklenku a vlivem náročného dne a
-          alkoholu mi hlava klesá na opěradlo a víčka těžknou. Usínám.
+          Dolil jsem si třetí a pak i čtvrtou sklenku a vlivem náročného dne a
+          alkoholu mi hlava klesla na opěradlo a víčka ztěžkla. Usnul jsem.
         </p>
         <p>
-          V noci se mi zdá zvláštně živý sen. Jsem v dědečkově domě a procházím
-          chodbami, které znám zpaměti. Najednou stojím před dveřmi do jeho
-          pracovny v patře. Ty dveře jsou pootevřené. Vejdu dovnitř a na stole
-          leží malý kožený kufřík. Opatrně ho otevřu. Uvnitř jsou zápisníky plné
-          poznámek. Všechno v jeho známém rukopise. Chtěl jsem si je přečíst
-          detailněji a více to pochopit, ale nestihnu to, probouzím se.
+          V noci se mi zdál zvláštně živý sen. Byl jsem v dědečkově domě a
+          procházel chodbami, které znám zpaměti. Najednou jsem stál před dveřmi
+          do jeho pracovny v patře. Ty dveře byly pootevřené. Vešel jsem dovnitř
+          a na stole ležel malý kožený kufřík. Opatrně jsem ho otevřel. Uvnitř
+          byly zápisníky plné poznámek, všechno v jeho známém rukopise. Chtěl
+          jsem si je přečíst detailněji a více to pochopit, ale nestihl jsem to
+          a probudil jsem se.
         </p>
       </>
     ),
@@ -503,7 +515,7 @@ export const story = {
         dovnitř a na stole přede mnou leží malý kožený kufřík. Opatrně ho
         otevřu, uvnitř jsou zápisníky plné poznámek, psané jeho známým
         rukopisem. Chci si je přečíst důkladněji a lépe pochopit, co v nich
-        stojí, ale nestihnu to. Probouzím se.
+        stojí, ale nestihnu to a probouzím se.
       </>
     ),
     options: [
@@ -516,9 +528,9 @@ export const story = {
     text: (
       <>
         <p>
-          Seděl jsem na gauči a ještě několik minut jen zzíral do stropu. Ten
-          sen byl tak skutečný, jako bych v tom domě opravdu byl. Celý den mi
-          ten obraz ležel v hlavě. Kufřík, pracovna, poznámky. Snažil jsem se to
+          Seděl jsem na gauči a ještě několik minut jen zíral do stropu. Ten sen
+          byl tak skutečný, jako bych v tom domě opravdu byl. Celý den mi ten
+          obraz ležel v hlavě. Kufřík, pracovna, poznámky. Snažil jsem se to
           vytěsnit, ale znovu a znovu mi to před očima naskakovalo. K večeru
           jsem to už nevydržel. Oblékl jsem se, vzal klíče a vyrazil k
           dědečkovému domu.
@@ -535,19 +547,16 @@ export const story = {
         <p>
           Cestou jsem si říkal, jestli jsem přece jen neměl počkat alespoň do
           rána. Nemusel bych se pak potloukat po starém domě ve tmě. Ale
-          zvědavost zvítězila. Dědeček žil na samotě u lesa. Nikdy mi to
-          nevadilo, nikdy jsem tam necítil nic nepříjemného. Ale dnes, snad
-          právě kvůli tmě, jsem byl neklidný. Chtěl jsem to mít rychle za sebou.
-          Vejít do domu, zjistit, že tam žádný kufřík není, a vrátit se v klidu
-          domů. Vešel jsem. Vzduch byl těžký. Vstupní hala a schodiště byly
-          zahalené tmou a těžké závěsy na oknech ji jen prohlubovaly. Robustní
-          podlahové hodiny z ořechového dřeva už dávno netikaly. Odsunul jsem je
-          trochu od zdi, ale ve tmě jsem nic neviděl. Elektřina v domě už byla
-          vypnutá, ale naštěstí jsem si do batohu přibalil baterku. Když jsem ji
-          rozsvítil, uviděl jsem na zemi malý rezavý klíč zavěšený na řetízku.
-          Na zadní straně hodin bylo naškrábáno: „Pracovna“. Mám pocit, že pod
-          těmi škrábanci je ještě něco dalšího… ale v té tmě to nedokážu pořádně
-          přečíst.
+          zvědavost zvítězila. Chtěl jsem to mít rychle za sebou. Vejít do domu,
+          zjistit, že tam žádný kufřík není, a vrátit se v klidu domů.Když jsem
+          vešel dovnitř, vzduch byl těžký. Vstupní hala a schodiště nešly přes
+          tmu vůbec vidět. Elektřina v domě už byla vypnutá, ale naštěstí jsem
+          si do batohu přibalil baterku. Když jsem ji rozsvítil, uviděl jsem
+          robustní podlahové hodiny z ořechového dřeva, které už netikaly.
+          Odsunul jsem je trochu od zdi a uviděl jsem na zemi malý rezavý klíč
+          zavěšený na řetízku. Na zadní straně hodin bylo naškrábáno:
+          „Pracovna“. Měl jsem pocit, že pod těmi škrábanci je ještě něco
+          dalšího… ale v té tmě jsem to nedokázal pořádně přečíst.
         </p>
       </>
     ),
@@ -562,18 +571,21 @@ export const story = {
     text: (
       <>
         <p>
-          Klekám si k hodinám a přitom cítím, jak se mi záda ozývají po celém
-          dni. Snažím se prstem setřít špínu kolem rytiny, ale nápis pod
-          škrábanci odolává. Pevně sevřu baterku mezi zuby, opřu se o bok hodin
-          a zatlačím ještě víc. Dřevo skřípe, klouby mi zapraskají a konečně se
-          těžké tělo hodin pohnulo dál od zdi. S námahou se nakloním a pokusím
-          se očistit prostor za nimi. Dlaně mám od prachu, tričko mi lepí na
-          zádech. Cítím, jak mi bije srdce a dech se zrychluje. Tahle snaha mě
-          stála víc sil, než jsem čekal. Konečně se dostávám k místu, které
-          zaujalo moji pozornost a zjišťuji, že se jedná se výrobní štítek s
-          názvem společnosti „Mundus“.
+          Klekl jsem si k hodinám a přitom jsem cítil, jak se mi záda ozývají po
+          celém dni. Snažil jsem se prstem setřít špínu kolem rytiny, ale nápis
+          pod škrábanci odolával. Pevně jsem sevřel baterku mezi zuby, opřel
+          jsem se o bok hodin a zatlačilještě víc. Dřevo skřípalo, klouby mi
+          zapraskali a konečně se těžké tělo hodin pohnulo dál od zdi. S námahou
+          jsem se naklonil a pokusil se očistit prostor za nimi. Dlaně jsem měl
+          od prachu, tričko se mi lepilo na zádech. Cítil jsem, jak mi bilo
+          srdce a dech se zrychloval. Tahle snaha mě stála víc sil, než jsem
+          čekal. Konečně jsem se dostal k místu, které zaujalo moji pozornost a
+          zjistil jsem, že se jedná se výrobní štítek s názvem společnosti
+          „Mundus“.
         </p>
-        <p>„Tohle byla ztráta času“ procedím mezi zuby podrážděným tónem.</p>
+        <p>
+          „Tohle byla ztráta času“ procedil jsem mezi zuby podrážděným tónem.
+        </p>
       </>
     ),
     options: [
