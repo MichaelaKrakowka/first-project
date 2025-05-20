@@ -1,4 +1,5 @@
 import React from "react";
+import { BgMusic } from "./BgMusic"; //nove
 
 import "./UserNav.css";
 import { Dice } from "./Dice";
@@ -19,6 +20,7 @@ export const UserNav = ({
         </button>
         <button className="user_btn">Uložit</button>
       </div>
+      <BgMusic />
 
       <p className="who_play">Hraje:</p>
       <div className="nickname">{userName}</div>

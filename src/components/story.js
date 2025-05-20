@@ -35,8 +35,7 @@ export const story = {
             fontSize: "1.8rem",
             fontStyle: "italic",
           }}>
-          Nyní se musíš rozhodnout, kterou cestou se vydáš. Pokud sis ještě
-          nevygeneroval sílu v levém panelu, teď je ta spravná chvíle. Síla ti
+          Než se vydáš na svou cestu, vygeneruj si sílu v levém panelu. Síla ti
           bude při některých rozhodnutích ubývat, proto jednej s rozvahou.
         </p>
       </>
@@ -382,6 +381,12 @@ export const story = {
     options: [{ text: "KONEC PŘÍBĚHU", id: "finish" }],
   },
 
+  startTheMachine: {
+    id: "startTheMachine",
+    text: <p>Jeste musim vymyslet...</p>,
+    options: [{ text: "KONEC PŘÍBĚHU", id: "finish" }],
+  },
+
   destroyTheMachine: {
     id: "destroyTheMachine",
     text: (
@@ -520,6 +525,16 @@ export const story = {
       { text: "Ignorovat sen", id: "ignoreTheDream" },
     ],
   },
+
+  listenDream: {
+    id: "listenDream",
+    text: <p>Musim vymyslet</p>,
+    options: [
+      { text: "Prozkoumat hodiny", id: "checkTheClock" },
+      { text: "Pokračovat do dědečkovy pracovny", id: "goToTheOffice" },
+    ],
+  },
+
   ignoreTheDream: {
     id: "ignoreTheDream",
     text: (

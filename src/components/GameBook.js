@@ -19,7 +19,6 @@ export const GameBook = ({
   setClickedEnemyFight,
   diceRoll,
   setDiceRoll,
-  diceClicked,
   playerFight2,
   setPlayerFight2,
   clickedPlayerFight2,
@@ -39,13 +38,11 @@ export const GameBook = ({
       setShowMinusStrength(true);
       setDiceRoll((prev) => Math.max(prev - 1, 0));
       setTimeout(() => setShowMinusStrength(false), 3000);
-    }
-
-    if (id === "again") {
+    } else if (id === "again") {
       return endStory();
     }
 
-    setCurrentPartId(id);
+    return setCurrentPartId(id);
   };
 
   if (currentPartId === "fight") {

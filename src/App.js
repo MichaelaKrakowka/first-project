@@ -64,6 +64,7 @@ export const App = () => {
             setUserName={setUserName}
           />
         )}
+
         {isStoryStarted && (
           <UserNav
             userName={userName}
@@ -72,6 +73,7 @@ export const App = () => {
             setDiceRoll={setDiceRoll}
             diceClicked={diceClicked}
             setDiceClicked={setDiceClicked}
+            isStoryStarted={isStoryStarted} //nove
           />
         )}
         {isStoryStarted && (
