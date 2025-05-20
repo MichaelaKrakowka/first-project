@@ -98,6 +98,7 @@ export const App = () => {
             clickedEnemyFight2={clickedEnemyFight2}
             setClickedEnemyFight2={setClickedEnemyFight2}
             diceRoll={diceRoll}
+            diceClicked={diceClicked}
           />
         )}
       </div>

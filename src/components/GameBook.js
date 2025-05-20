@@ -1,4 +1,5 @@
 import React from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { story } from "./story";
 import "./GameBook.css";
 import { Dice } from "./Dice";
@@ -18,6 +19,7 @@ export const GameBook = ({
   setClickedEnemyFight,
   diceRoll,
   setDiceRoll,
+  diceClicked,
   playerFight2,
   setPlayerFight2,
   clickedPlayerFight2,
@@ -27,19 +29,23 @@ export const GameBook = ({
   clickedEnemyFight2,
   setClickedEnemyFight2,
 }) => {
+  const [showMinusStrength, setShowMinusStrength] = React.useState(false);
   const playerTotal = diceRoll + playerFight + playerFight2;
   const enemyTotal = enemyFight + enemyFight2;
-
   const currentPart = story[currentPartId];
 
   const goToNextPart = (id) => {
     if (["checkTheClock", "goHome", "whiskey", "checkTheClock2"].includes(id)) {
+      setShowMinusStrength(true);
       setDiceRoll((prev) => Math.max(prev - 1, 0));
-    } else if (id === "again") {
+      setTimeout(() => setShowMinusStrength(false), 3000);
+    }
+
+    if (id === "again") {
       return endStory();
     }
 
-    return setCurrentPartId(id);
+    setCurrentPartId(id);
   };
 
   if (currentPartId === "fight") {
@@ -115,6 +121,24 @@ export const GameBook = ({
 
   return (
     <div className="story_text">
+      <AnimatePresence>
+        {showMinusStrength && (
+          <motion.div
+            initial={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 0, y: -10 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 2 }}
+            style={{
+              position: "absolute",
+              bottom: "60px",
+              left: "50%",
+              transform: "translateX(-50%)",
+              zIndex: 1,
+            }}>
+            –1 síla
+          </motion.div>
+        )}
+      </AnimatePresence>
       {currentPart.text}
       <div className="buttons">
         {currentPart.options.map((option, id) => (
