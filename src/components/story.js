@@ -264,14 +264,12 @@ export const story = {
         Uprostřed stolu ležel starý psací stroj. V jeho útrobách byl zastrčený
         zažloutlý list papíru. Text na něm byl krátký, útržkovitý: „Někdo nás
         sleduje. Skrývá se v tichu. Pokud tohle čteš, víš, že tě pozoruje. Najdi
-        můj zápisník…“ Inkoust v posledních znacích byl roztřesený, jako by byl
-        psán ve spěchu… nebo ve strachu. Jakmile jsem dočetl poslední řádek,
-        pocítil jsem náhlé napětí. V uších jsem cítil tlukot srdce, ale nikde
-        jsem nikoho neviděl. Všechno ve mně křičelo, abych odsud odešel. Pryč z
-        tohoto domu. Pryč od toho všeho. Ale věděl jsem, že odpovědi se skrývají
-        v dědečkově zápisníku. Teď už jsem nemohl couvnout. Zhluboka jsem se
-        nadechl a snažil se zklidnit. A právě tehdy jsem si všiml drobnosti:
-        vedle psacího stroje ležel malý klíč. Určitě bude od těch malých dveří.
+        můj zápisník…“ Jakmile jsem dočetl poslední řádek, pocítil jsem náhlé
+        napětí. Všechno ve mně křičelo, abych odsud odešel. Pryč z tohoto domu.
+        Pryč od toho všeho. Ale věděl jsem, že odpovědi se skrývají v dědečkově
+        zápisníku. Teď už jsem nemohl couvnout. Zhluboka jsem se nadechl a
+        snažil se zklidnit. A právě tehdy jsem si všiml drobnosti: vedle psacího
+        stroje ležel malý klíč. Určitě bude od těch malých dveří.
       </p>
     ),
     options: [{ text: "Použít klíč", id: "useTheKey" }],
@@ -283,9 +281,10 @@ export const story = {
       <p>
         Vložil jsem malý, zrezivělý klíček do zámku dveří, který jsem před
         chvílí našel na stole. Kov tiše zaklapl a s lehkým odporem se otočil. V
-        ten moment jsem uslyšel, jak se v dolním patře začaly odbíjet hodiny,
-        které předtím nefungovaly. Zadržel jsem dech – a právě tehdy mi v hlavě
-        vyvstal ten jediný vzkaz, který všechno začal: „Nevěř tichu.“
+        ten moment jsem uslyšel, jak v dolním patře začaly odbíjet hodiny,
+        přitom když jsem do domu vstoupil, nefungovaly. Zadržel jsem dech a
+        právě tehdy mi v hlavě vyvstal ten jediný vzkaz, který všechno začal:
+        „Nevěř tichu.“
       </p>
     ),
     options: [
@@ -311,19 +310,17 @@ export const story = {
     text: (
       <>
         <p>
-          {" "}
           Rukou jsem tlačil na dřevěné dveře, které se s vrzáním pomalu
           otevřely. Místnost byla holá. Žádný nábytek, žádné okno, jen stůl, na
           něm nějaký přístroj a vedle něj starý kožený kufřík. Přístroj vypadal
           jako podivný hybrid mezi starým radiopřijímačem a laboratorním
           zařízením z padesátých let. Prohlédl jsem si ho ze všech stran, ale
           žádný zřetelný nápis, který by napověděl, k čemu vlastně slouží. Možná
-          tlak? Možná záření? Možná čas?{" "}
-        </p>{" "}
+          měří tlak, záření nebo čas?
+        </p>
         <p>
-          {" "}
           Prsty jsem přejel po studeném kovu, jako bych se chtěl zeptat, co tu
-          vlastně dělá – a v tom v něm něco tiše cvaklo.{" "}
+          vlastně dělá – a v tom v něm něco tiše cvaklo.
         </p>
       </>
     ),
@@ -367,8 +364,8 @@ export const story = {
           páčku – a přístroj se spustil. Zpočátku se nic nedělo. Vypadalo to, že
           je rozbitý. Ale po chvíli začal blikat a na displeji se pomalu začala
           vykreslovat křivka. Zatímco graf nabíral na intenzitě, otevřel jsem
-          kufřík. Hned na první pohled mě zaujala poznámka, která mi rozbušila
-          srdce. Stálo na ní:
+          kufřík. Hned na první pohled mě zaujala poznámka, která mě
+          znepokojila. Stálo na ní:
         </p>
         <p>„Jestli tohle čteš, přístroj nezapínej a znič ho!“</p>
         <p>

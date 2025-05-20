@@ -53,8 +53,9 @@ export const GameBook = ({
               fontStyle: "italic",
               paddingTop: "20px",
             }}>
-            Abys přežil, musí tvá celková síla po hodu kostkami být stejná jako
-            soupeřova nebo větší.
+            Chceš zvednout kladivo, zničit přístroj a tím porazit nepřítele?
+            Součet hodu dvěma kostkami a tvé síly musí být alespoň tak vysoký
+            jako soupeřův.
           </p>
           <div className="dices">
             <div className="fight_dice">
