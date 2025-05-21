@@ -8,11 +8,6 @@ import { GameBook } from "./components/GameBook";
 const TRACKING_ID = "G-S4F2CQVK9Z";
 
 export const App = () => {
-  React.useEffect(() => {
-    ReactGA.initialize(TRACKING_ID);
-    ReactGA.send("pageview");
-  }, []);
-
   const [isStoryStarted, setIsStoryStarted] = React.useState(false);
   const [userName, setUserName] = React.useState("");
   const [currentPartId, setCurrentPartId] = React.useState("start");
@@ -30,7 +25,32 @@ export const App = () => {
   const [enemyFight2, setEnemyFight2] = React.useState(0);
   const [clickedEnemyFight2, setClickedEnemyFight2] = React.useState(false);
 
+  React.useEffect(() => {
+    ReactGA.initialize(TRACKING_ID);
+    ReactGA.send("pageview");
+
+    const savedName = localStorage.getItem("userName");
+    const savedPartId = localStorage.getItem("currentPartId");
+
+    if (savedName) {
+      setUserName(savedName);
+      setIsStoryStarted(true);
+    }
+
+    if (savedPartId) {
+      setCurrentPartId(savedPartId);
+    }
+  }, []);
+
+  React.useEffect(() => {
+    if (isStoryStarted) {
+      localStorage.setItem("currentPartId", currentPartId);
+    }
+  }, [currentPartId, isStoryStarted]);
+
   const startStory = () => {
+    localStorage.setItem("userName", userName);
+    localStorage.setItem("currentPartId", currentPartId);
     setIsStoryStarted(true);
   };
 
@@ -46,6 +66,15 @@ export const App = () => {
     setEnemyFight2(0);
     setClickedEnemyFight2(false);
     setCurrentPartId("start");
+  };
+
+  const resetAllAndLogout = () => {
+    localStorage.removeItem("userName");
+    localStorage.removeItem("currentPartId");
+    resetAll();
+
+    setUserName(""); //odhlasi a preskoci zpet na login
+    setIsStoryStarted(false); //to stejne, odhlasi nadobro
   };
 
   return (
@@ -73,7 +102,9 @@ export const App = () => {
             setDiceRoll={setDiceRoll}
             diceClicked={diceClicked}
             setDiceClicked={setDiceClicked}
-            isStoryStarted={isStoryStarted} //nove
+            isStoryStarted={isStoryStarted}
+            currentPartId={currentPartId}
+            resetAllAndLogout={resetAllAndLogout}
           />
         )}
         {isStoryStarted && (
