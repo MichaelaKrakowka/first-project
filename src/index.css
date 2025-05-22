@@ -16,10 +16,3 @@ body {
   font-family: "Merriweather", serif;
   line-height: 1.6;
 }
-
-@media (max-width: 768px) {
-  .body {
-    background-size: contain;
-    background-position: center;
-  }
-}

@@ -1,5 +1,5 @@
 import React from "react";
-import { BgMusic } from "./BgMusic"; //nove
+import { BgMusic } from "./BgMusic";
 
 import "./UserNav.css";
 import { Dice } from "./Dice";
