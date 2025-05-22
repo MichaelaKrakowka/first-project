@@ -3,7 +3,9 @@ import ReactGA from "react-ga4";
 import { Header } from "./components/Header";
 import { Login } from "./components/Login";
 import { UserNav } from "./components/UserNav";
+import { MobileUserNav } from "./components/MobileUserNav";
 import { GameBook } from "./components/GameBook";
+import { useMediaQuery } from "react-responsive";
 
 const TRACKING_ID = "G-S4F2CQVK9Z";
 
@@ -24,6 +26,8 @@ export const App = () => {
   const [clickedPlayerFight2, setClickedPlayerFight2] = React.useState(false);
   const [enemyFight2, setEnemyFight2] = React.useState(0);
   const [clickedEnemyFight2, setClickedEnemyFight2] = React.useState(false);
+
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   React.useEffect(() => {
     ReactGA.initialize(TRACKING_ID);
@@ -82,19 +86,15 @@ export const App = () => {
     localStorage.removeItem("currentPartId");
     resetAll();
 
-    setUserName(""); //odhlasi a preskoci zpet na login
-    setIsStoryStarted(false); //to stejne, odhlasi nadobro
+    setUserName("");
+    setIsStoryStarted(false);
   };
 
   return (
     <div className="container">
       <Header />
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}>
+      <div style={{ display: "flex", justifyContent: "center" }}>
         {!isStoryStarted && (
           <Login
             onClick={startStory}
@@ -103,19 +103,31 @@ export const App = () => {
           />
         )}
 
-        {isStoryStarted && (
-          <UserNav
-            userName={userName}
-            endStory={resetAll}
-            diceRoll={diceRoll}
-            setDiceRoll={setDiceRoll}
-            diceClicked={diceClicked}
-            setDiceClicked={setDiceClicked}
-            isStoryStarted={isStoryStarted}
-            currentPartId={currentPartId}
-            resetAllAndLogout={resetAllAndLogout}
-          />
-        )}
+        {isStoryStarted &&
+          (isMobile ? (
+            <MobileUserNav
+              userName={userName}
+              endStory={resetAll}
+              diceRoll={diceRoll}
+              setDiceRoll={setDiceRoll}
+              diceClicked={diceClicked}
+              setDiceClicked={setDiceClicked}
+              currentPartId={currentPartId}
+              resetAllAndLogout={resetAllAndLogout}
+            />
+          ) : (
+            <UserNav
+              userName={userName}
+              endStory={resetAll}
+              diceRoll={diceRoll}
+              setDiceRoll={setDiceRoll}
+              diceClicked={diceClicked}
+              setDiceClicked={setDiceClicked}
+              currentPartId={currentPartId}
+              resetAllAndLogout={resetAllAndLogout}
+            />
+          ))}
+
         {isStoryStarted && (
           <GameBook
             endStory={resetAll}

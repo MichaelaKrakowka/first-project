@@ -1,0 +1,69 @@
+.mobile_menu_btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: none;
+  border: none;
+  z-index: 100;
+  color: #d1a75c;
+  font-size: 24px;
+}
+
+.DialogOverlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  inset: 0;
+  animation: fadeIn 300ms ease-out;
+}
+
+.DialogContent {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  max-width: 300px;
+  background: #1b1b1b;
+  padding: 30px 15px;
+  animation: slideIn 300ms ease-out;
+}
+
+.close_btn {
+  background: none;
+  border: none;
+  color: #d1a75c;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.start_paragraph {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-style: italic;
+}
+@media (max-width: 768px) {
+  .start_paragraph {
+    font-size: 1.2rem;
+  }
+}

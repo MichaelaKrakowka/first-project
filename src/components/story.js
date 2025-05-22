@@ -27,14 +27,7 @@ export const story = {
           To bylo všechno. Žádný testament. Žádný formální dopis. Jen tenhle
           podivný vzkaz.
         </p>
-        <p
-          style={{
-            paddingTop: "40px",
-            display: "flex",
-            justifyContent: "center",
-            fontSize: "1.8rem",
-            fontStyle: "italic",
-          }}>
+        <p className="start_paragraph">
           Než se vydáš na svou cestu, vygeneruj si sílu v levém panelu. Síla ti
           bude při některých rozhodnutích ubývat, proto jednej s rozvahou.
         </p>
