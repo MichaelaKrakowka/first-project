@@ -31,22 +31,31 @@ export const App = () => {
 
     const savedName = localStorage.getItem("userName");
     const savedPartId = localStorage.getItem("currentPartId");
+    const savedDiceRoll = localStorage.getItem("diceRoll");
+    const savedDiceClicked = localStorage.getItem("diceClicked");
 
     if (savedName) {
       setUserName(savedName);
       setIsStoryStarted(true);
     }
-
     if (savedPartId) {
       setCurrentPartId(savedPartId);
+    }
+    if (savedDiceRoll !== null) {
+      setDiceRoll(Number(savedDiceRoll));
+    }
+    if (savedDiceClicked !== null) {
+      setDiceClicked(JSON.parse(savedDiceClicked));
     }
   }, []);
 
   React.useEffect(() => {
     if (isStoryStarted) {
       localStorage.setItem("currentPartId", currentPartId);
+      localStorage.setItem("diceRoll", diceRoll);
+      localStorage.setItem("diceClicked", JSON.stringify(diceClicked));
     }
-  }, [currentPartId, isStoryStarted]);
+  }, [currentPartId, isStoryStarted, diceRoll, diceClicked]);
 
   const startStory = () => {
     localStorage.setItem("userName", userName);

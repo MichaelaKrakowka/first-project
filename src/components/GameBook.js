@@ -38,7 +38,8 @@ export const GameBook = ({
       setShowMinusStrength(true);
       setDiceRoll((prev) => Math.max(prev - 1, 0));
       setTimeout(() => setShowMinusStrength(false), 3000);
-    } else if (id === "again") {
+    }
+    if (id === "again") {
       return endStory();
     }
 

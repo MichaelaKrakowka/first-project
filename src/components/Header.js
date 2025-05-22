@@ -5,9 +5,7 @@ export const Header = () => {
   return (
     <header className="header">
       <div className="header_container container">
-        <a href="/" className="logo">
-          NEVĚŘ TICHU!
-        </a>
+        <h1 className="logo">NEVĚŘ TICHU!</h1>
       </div>
     </header>
   );
