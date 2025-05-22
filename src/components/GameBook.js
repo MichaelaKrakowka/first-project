@@ -125,11 +125,11 @@ export const GameBook = ({
             initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 0, y: -10 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
             style={{
               position: "absolute",
-              bottom: "60px",
-              left: "50%",
+              bottom: "40px",
+              left: "45%",
               transform: "translateX(-50%)",
               zIndex: 1,
             }}>

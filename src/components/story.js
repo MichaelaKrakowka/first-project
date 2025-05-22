@@ -383,7 +383,27 @@ export const story = {
 
   startTheMachine: {
     id: "startTheMachine",
-    text: <p>Jeste musim vymyslet...</p>,
+    text: (
+      <>
+        <p>
+          Ačkoliv jsem se snažil přesvědčit sám sebe, abych ten přístroj
+          nezapínal, abych ho okamžitě zničil, zvědavost byla silnější než
+          strach. Chtěl jsem jen na chvíli slyšet to, co slyšel dědeček.
+        </p>
+        <p>
+          Zapnul jsem přístroj a napjatý jsem sledoval, co se stane. V místnosti
+          zavládlo ticho, přerušované jen slabým pípáním a monotónním pohybem
+          ručičky grafu, která se začala prudce vychylovat. Po chvíli jsem
+          pocítil, jak mě opouští síla. Všechno kolem se začalo rozplývat do tmy
+          a do naprostého ticha. Ticha, které mě doslova pohltilo. Když se mi
+          obraz zase začal vracet, bylo něco špatně. Uviděl jsem sám sebe.
+          Vnímal jsem vlastní postavu, jak stojí naproti mně, živá, dýchající,
+          ale nebyl jsem to já. Něco jiného mě nahradilo. Já zůstal uvězněný v
+          tom nicotném tichu, a ta postava – ten druhý já – se beze slova
+          rozhlédl po místnosti, pomalu se otočil a vykročil směrem ke dveřím.
+        </p>
+      </>
+    ),
     options: [{ text: "KONEC PŘÍBĚHU", id: "finish" }],
   },
 
@@ -490,13 +510,13 @@ export const story = {
           alkoholu mi hlava klesla na opěradlo a víčka ztěžkla. Usnul jsem.
         </p>
         <p>
-          V noci se mi zdál zvláštně živý sen. Byl jsem v dědečkově domě a
-          procházel chodbami, které znám zpaměti. Najednou jsem stál před dveřmi
-          do jeho pracovny v patře. Ty dveře byly pootevřené. Vešel jsem dovnitř
-          a na stole ležel malý kožený kufřík. Opatrně jsem ho otevřel. Uvnitř
-          byly zápisníky plné poznámek, všechno v jeho známém rukopise. Chtěl
-          jsem si je přečíst detailněji a více to pochopit, ale nestihl jsem to
-          a probudil jsem se.
+          Zdál se mi zvláštně živý sen. Byl jsem v dědečkově domě a procházel
+          chodbami, které znám zpaměti. Najednou jsem stál před dveřmi do jeho
+          pracovny v patře. Ty dveře byly pootevřené. Vešel jsem dovnitř a na
+          stole ležel malý kožený kufřík. Opatrně jsem ho otevřel. Uvnitř byly
+          zápisníky plné poznámek, všechno v jeho známém rukopise. Chtěl jsem si
+          je přečíst detailněji a více to pochopit, ale nestihl jsem to a
+          probudil jsem se.
         </p>
       </>
     ),
@@ -528,7 +548,30 @@ export const story = {
 
   listenDream: {
     id: "listenDream",
-    text: <p>Musim vymyslet</p>,
+    text: (
+      <>
+        <p>
+          Probudil jsem se celý rozlámaný z gauče, na kterém jsem večer usnul s
+          hlavou plnou myšlenek. Jen co jsem se trochu protáhl, vybavil se mi
+          sen, který se mi zdál. Byl až nepříjemně živý, jako bych v tom domě
+          skutečně byl. Bylo mi hned jasné, že se tam musím vydat a zjistit,
+          jestli tam ten kufřík opravdu je.
+        </p>
+        <p>
+          Za chvíli jsem už přijížděl k domu mého dědečka. Vstupní hala se
+          schodištěm byla ponořená do šera, tlumeného závěsy na oknech, které
+          nepropouštěly téměř žádné světlo. Robustní hodiny z ořechového dřeva u
+          schodiště už netikaly. Ručičky na ciferníku stály, přesně na 3:33.
+          Když jsem jejich masivní tělo odsunul od zdi, opravdu tam byl. Na
+          podlaze ležel malý rezavý klíč, zavěšený na starém řetízku. Na zadní
+          straně hodin bylo vyryté slovo: „Pracovna“.
+        </p>
+        <p>
+          Pod rýhami se zdálo být ještě něco dalšího, ale v přítmí jsem to
+          nedokázal rozpoznat.
+        </p>
+      </>
+    ),
     options: [
       { text: "Prozkoumat hodiny", id: "checkTheClock" },
       { text: "Pokračovat do dědečkovy pracovny", id: "goToTheOffice" },
