@@ -16,16 +16,17 @@ export const AvoidCheating = ({
       {!diceClicked ? (
         isMobile ? (
           <div>
-            <h2
+            <p
               style={{
                 marginBottom: "20px",
-                fontWeight: "inherit",
                 fontSize: "1.2rem",
                 fontStyle: "italic",
               }}>
-              Teď je čas hodit si kostkou a určit svou sílu. Kostku najdeš v
-              levém menu spolu s výsledkem hodu, nebo můžeš použít kostku níže.
-            </h2>
+              Teď je čas hodit si kostkou a určit svou sílu.Síla ti bude při
+              některých rozhodnutích ubývat, proto jednej s rozvahou. Kostku
+              najdeš v levém menu spolu s výsledkem hodu, nebo můžeš použít
+              kostku níže.
+            </p>
             <Dice
               diceClicked={diceClicked}
               setDiceClicked={setDiceClicked}

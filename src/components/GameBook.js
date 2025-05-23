@@ -28,6 +28,7 @@ export const GameBook = ({
   clickedEnemyFight2,
   setClickedEnemyFight2,
 }) => {
+  const storyTopRef = React.useRef(null);
   const [showMinusStrength, setShowMinusStrength] = React.useState(false);
   const playerTotal = diceRoll + playerFight + playerFight2;
   const enemyTotal = enemyFight + enemyFight2;
@@ -43,12 +44,16 @@ export const GameBook = ({
       return endStory();
     }
 
-    return setCurrentPartId(id);
+    setCurrentPartId(id);
+
+    setTimeout(() => {
+      storyTopRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
   };
 
   if (currentPartId === "fight") {
     return (
-      <div className="story_text">
+      <div className="story_text" ref={storyTopRef}>
         {currentPart.text}
         <div className="fight_container">
           <p
@@ -93,7 +98,7 @@ export const GameBook = ({
                 setDiceRoll={setEnemyFight2}
                 diceClicked={clickedEnemyFight2}
                 setDiceClicked={setClickedEnemyFight2}
-              />{" "}
+              />
               = {enemyTotal}
             </div>
           </div>
@@ -105,11 +110,11 @@ export const GameBook = ({
             typeof diceRoll === "number" && (
               <div>
                 {playerTotal > enemyTotal &&
-                  "Sebral jsem poslední zbytky síly a kladivem jsem trefil přímo doprostřed přístroje. Cítil jsem, jakoby se dům nadechl, jakoby čekal na tento okamžik.Dědeček otevřel dveře do něčeho, co neměl. A zavřel je, jak nejlépe dovedl. Já jsem je jen zapečetil. Aby už nikdo další neskončil v  tom tichu."}
+                  "Sebral jsem poslední zbytky síly a kladivem jsem trefil přímo doprostřed přístroje. Cítil jsem, jakoby se dům nadechl, jakoby čekal na tento okamžik. Dědeček otevřel dveře do něčeho, co neměl. A zavřel je, jak nejlépe dovedl. Já jsem je jen zapečetil. Aby už nikdo další neskončil v tom tichu."}
                 {playerTotal < enemyTotal &&
                   "Všechno se pomalu nořilo do temnoty hlubší než je smrt. Pak jsem najednou stál stranou. Viděl jsem, jak moje tělo klidně odchází z místnosti. Pak se na okamžik otočilo… a usmálo se. V tu chvíli jsem pochopil: já tu zůstal v tom tichu, ve tmě a někdo jiný právě začal žít můj život."}
                 {playerTotal === enemyTotal &&
-                  "Sebral jsem poslední zbytky síly a kladivem jsem trefil přímo doprostřed přístroje. Cítil jsem, jakoby se dům nadechl, jakoby čekal na tento okamžik.Dědeček otevřel dveře do něčeho, co neměl. A zavřel je, jak nejlépe dovedl. Já jsem je jen zapečetil. Aby už nikdo další neskončil v  tom tichu."}
+                  "Sebral jsem poslední zbytky síly a kladivem jsem trefil přímo doprostřed přístroje. Cítil jsem, jakoby se dům nadechl, jakoby čekal na tento okamžik. Dědeček otevřel dveře do něčeho, co neměl. A zavřel je, jak nejlépe dovedl. Já jsem je jen zapečetil. Aby už nikdo další neskončil v tom tichu."}
               </div>
             )}
         </div>
@@ -118,7 +123,7 @@ export const GameBook = ({
   }
 
   return (
-    <div className="story_text">
+    <div className="story_text" ref={storyTopRef}>
       {currentPart.text}
 
       <div className="buttons">
@@ -134,6 +139,7 @@ export const GameBook = ({
             </motion.div>
           )}
         </AnimatePresence>
+
         {currentPart.options.map((option, id) => (
           <button
             className="btn"

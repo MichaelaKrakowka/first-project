@@ -28,8 +28,7 @@ export const story = {
           podivný vzkaz.
         </p>
         <p className="start_paragraph">
-          Síla ti bude při některých rozhodnutích ubývat, proto jednej s
-          rozvahou.
+          Teď jsi na řadě ty, dopiš další řádek.
         </p>
       </>
     ),
