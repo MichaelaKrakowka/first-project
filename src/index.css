@@ -5,15 +5,20 @@
 }
 
 body {
-  min-height: 100vh;
-  min-width: 100vw;
+  color: #d1a75c;
+  font-family: "Merriweather", serif;
+  line-height: 1.6;
+}
+body::before {
+  content: "";
   background-image: url(../public/lesHeader.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: scroll;
-
-  color: #d1a75c;
-  font-family: "Merriweather", serif;
-  line-height: 1.6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
 }
