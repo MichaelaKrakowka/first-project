@@ -120,6 +120,7 @@ export const GameBook = ({
   return (
     <div className="story_text">
       {currentPart.text}
+
       <div className="buttons">
         <AnimatePresence>
           {showMinusStrength && (
