@@ -9,8 +9,9 @@ body {
   min-width: 100vw;
   background-image: url(../public/lesHeader.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
 
   color: #d1a75c;
   font-family: "Merriweather", serif;
