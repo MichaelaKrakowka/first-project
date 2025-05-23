@@ -3,3 +3,9 @@
   height: 34px;
   margin-top: 10px;
 }
+
+@media (max-width: 979px) {
+  .play_btn {
+    padding-bottom: 10px;
+  }
+}

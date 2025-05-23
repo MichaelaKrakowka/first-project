@@ -102,7 +102,7 @@ export const GameBook = ({
             clickedPlayerFight2 &&
             clickedEnemyFight &&
             clickedEnemyFight2 &&
-            diceRoll && (
+            typeof diceRoll === "number" && (
               <div>
                 {playerTotal > enemyTotal &&
                   "Sebral jsem poslední zbytky síly a kladivem jsem trefil přímo doprostřed přístroje. Cítil jsem, jakoby se dům nadechl, jakoby čekal na tento okamžik.Dědeček otevřel dveře do něčeho, co neměl. A zavřel je, jak nejlépe dovedl. Já jsem je jen zapečetil. Aby už nikdo další neskončil v  tom tichu."}

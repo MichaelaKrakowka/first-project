@@ -25,7 +25,7 @@
   transition: 0.2s;
   padding-left: 180px;
 }
-@media (max-width: 768px) {
+@media (max-width: 979px) {
   .logo {
     font-size: 3rem;
     text-align: center;
