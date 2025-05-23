@@ -6,6 +6,7 @@ import { UserNav } from "./components/UserNav";
 import { MobileUserNav } from "./components/MobileUserNav";
 import { GameBook } from "./components/GameBook";
 import { useMediaQuery } from "react-responsive";
+import { AvoidCheating } from "./components/AvoidCheating";
 
 const TRACKING_ID = "G-S4F2CQVK9Z";
 
@@ -129,31 +130,37 @@ export const App = () => {
           ))}
 
         {isStoryStarted && (
-          <GameBook
-            endStory={resetAll}
-            currentPartId={currentPartId}
-            setCurrentPartId={setCurrentPartId}
-            playerFight={playerFight}
-            setPlayerFight={setPlayerFight}
-            clickedPlayerFight={clickedPlayerFight}
-            setClickedPlayerFight={setClickedPlayerFight}
-            enemyFight={enemyFight}
-            setEnemyFight={setEnemyFight}
-            clickedEnemyFight={clickedEnemyFight}
-            setClickedEnemyFight={setClickedEnemyFight}
-            userName={userName}
-            setDiceRoll={setDiceRoll}
-            playerFight2={playerFight2}
-            setPlayerFight2={setPlayerFight2}
-            clickedPlayerFight2={clickedPlayerFight2}
-            setClickedPlayerFight2={setClickedPlayerFight2}
-            enemyFight2={enemyFight2}
-            setEnemyFight2={setEnemyFight2}
-            clickedEnemyFight2={clickedEnemyFight2}
-            setClickedEnemyFight2={setClickedEnemyFight2}
+          <AvoidCheating
             diceRoll={diceRoll}
+            setDiceRoll={setDiceRoll}
             diceClicked={diceClicked}
-          />
+            setDiceClicked={setDiceClicked}>
+            <GameBook
+              endStory={resetAll}
+              currentPartId={currentPartId}
+              setCurrentPartId={setCurrentPartId}
+              playerFight={playerFight}
+              setPlayerFight={setPlayerFight}
+              clickedPlayerFight={clickedPlayerFight}
+              setClickedPlayerFight={setClickedPlayerFight}
+              enemyFight={enemyFight}
+              setEnemyFight={setEnemyFight}
+              clickedEnemyFight={clickedEnemyFight}
+              setClickedEnemyFight={setClickedEnemyFight}
+              userName={userName}
+              setDiceRoll={setDiceRoll}
+              playerFight2={playerFight2}
+              setPlayerFight2={setPlayerFight2}
+              clickedPlayerFight2={clickedPlayerFight2}
+              setClickedPlayerFight2={setClickedPlayerFight2}
+              enemyFight2={enemyFight2}
+              setEnemyFight2={setEnemyFight2}
+              clickedEnemyFight2={clickedEnemyFight2}
+              setClickedEnemyFight2={setClickedEnemyFight2}
+              diceRoll={diceRoll}
+              diceClicked={diceClicked}
+            />
+          </AvoidCheating>
         )}
       </div>
     </div>

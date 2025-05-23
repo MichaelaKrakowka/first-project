@@ -87,6 +87,11 @@
   flex-direction: row;
   gap: 10px;
 }
+@media (max-width: 797px) {
+  .fight_dice {
+    font-size: 1.3rem;
+  }
+}
 
 .minus_strenght {
   position: absolute;

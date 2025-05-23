@@ -28,8 +28,8 @@ export const story = {
           podivný vzkaz.
         </p>
         <p className="start_paragraph">
-          Než se vydáš na svou cestu, vygeneruj si sílu v levém panelu. Síla ti
-          bude při některých rozhodnutích ubývat, proto jednej s rozvahou.
+          Síla ti bude při některých rozhodnutích ubývat, proto jednej s
+          rozvahou.
         </p>
       </>
     ),
