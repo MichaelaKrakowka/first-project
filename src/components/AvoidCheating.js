@@ -22,7 +22,7 @@ export const AvoidCheating = ({
                 fontSize: "1.2rem",
                 fontStyle: "italic",
               }}>
-              Teď je čas hodit si kostkou a určit svou sílu.Síla ti bude při
+              Teď je čas hodit si kostkou a určit svou sílu. Síla ti bude při
               některých rozhodnutích ubývat, proto jednej s rozvahou. Kostku
               najdeš v levém menu spolu s výsledkem hodu, nebo můžeš použít
               kostku níže.
@@ -35,9 +35,15 @@ export const AvoidCheating = ({
             />
           </div>
         ) : (
-          <h2 style={{ marginBottom: "20px" }}>
-            Nejdříve si hoď kostkou v levém panelu pro určení své síly
-          </h2>
+          <p
+            style={{
+              marginBottom: "20px",
+              fontSize: "1.8rem",
+              fontStyle: "italic",
+            }}>
+            Teď je čas hodit si kostkou a určit svou sílu. Síla ti bude při
+            některých rozhodnutích ubývat, proto jednej s rozvahou.
+          </p>
         )
       ) : (
         children
