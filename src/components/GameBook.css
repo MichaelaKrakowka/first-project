@@ -13,7 +13,7 @@
   .story_text {
     /* font-size: 1.3rem; */
     text-align: left;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-size: 1.3rem;
   }
 }
@@ -81,6 +81,17 @@
   }
 }
 
+.fight_note {
+  font-size: 1.8rem;
+  font-style: italic;
+  padding-top: 20px;
+}
+@media (max-width: 979px) {
+  .fight_note {
+    font-size: 1.2rem;
+  }
+}
+
 .fight_dice {
   display: flex;
   flex-direction: row;
@@ -100,9 +111,9 @@
   z-index: 1;
 }
 
-@media (max-width: 979px) {
-  .minus_strength {
-    bottom: 40px;
-    left: 50%;
-  }
-}
+/* @media (max-width: 979px) {
+  .minus_strenght {
+   
+    
+  }    jeste dodelat
+} */

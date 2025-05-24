@@ -56,12 +56,7 @@ export const GameBook = ({
       <div className="story_text" ref={storyTopRef}>
         {currentPart.text}
         <div className="fight_container">
-          <p
-            style={{
-              fontSize: "1.8rem",
-              fontStyle: "italic",
-              paddingTop: "20px",
-            }}>
+          <p className="fight_note">
             Chceš zvednout kladivo, zničit přístroj a tím porazit nepřítele?
             Součet hodu dvěma kostkami a tvé síly musí být alespoň tak vysoký
             jako soupeřův.
