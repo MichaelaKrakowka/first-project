@@ -28,7 +28,6 @@
 
 @media (max-width: 979px) {
   .buttons {
-    display: flex;
     flex-direction: column;
     padding: 15px;
     text-align: center;

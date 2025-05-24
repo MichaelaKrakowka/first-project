@@ -47,6 +47,12 @@
   cursor: pointer;
   transition: transform 0.2s;
 }
+@media (max-width: 979px) {
+  .btn_start {
+    transition: none;
+    cursor: none;
+  }
+}
 
 .btn_start:hover {
   transform: scale(1.1);
