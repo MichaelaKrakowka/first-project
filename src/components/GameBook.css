@@ -13,7 +13,7 @@
   .story_text {
     /* font-size: 1.3rem; */
     text-align: left;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-size: 1.3rem;
   }
 }
@@ -116,7 +116,7 @@
 }
 
 .minus_strength {
-  position: absolute;
+  /* position: absolute; */
   bottom: 110px;
   left: 300px;
   color: red;
@@ -124,8 +124,8 @@
 
 @media (max-width: 979px) {
   .minus_strength {
-    top: -1100px;
-    left: 180px;
+    top: -50px;
+    left: 250px;
     transform: none;
   }
 }

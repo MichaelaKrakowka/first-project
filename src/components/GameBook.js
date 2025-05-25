@@ -27,6 +27,8 @@ export const GameBook = ({
       setShowMinusStrength(true);
       setDiceRoll((prev) => Math.max(prev - 1, 0));
       setTimeout(() => setShowMinusStrength(false), 3000);
+      const audio = new Audio("/sounds/minus-strenght.mp3");
+      audio.play();
     }
     if (id === "again") {
       return endStory();
@@ -128,9 +130,9 @@ export const GameBook = ({
             <motion.div
               className="minus_strength"
               initial={{ opacity: 1, y: 0 }}
-              // animate={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 0, y: -30 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 4 }}>
+              transition={{ duration: 7 }}>
               –1 síla
             </motion.div>
           )}

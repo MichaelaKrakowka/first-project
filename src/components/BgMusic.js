@@ -25,7 +25,7 @@ export const BgMusic = () => {
   return (
     <div>
       <audio ref={audioRef} loop>
-        <source src="/bg-music.mp3" type="audio/mpeg" />
+        <source src="/sounds/bg-music.mp3" type="audio/mpeg" />
         Váš prohlížeč nepodporuje přehrávání audia.
       </audio>
       <button className="play_btn" onClick={toggleMusic}>
