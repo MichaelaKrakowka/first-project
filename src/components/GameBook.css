@@ -4,7 +4,7 @@
   justify-content: center;
   color: #d1a75c;
   padding: 0 50px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Inconsolata", serif;
   flex-grow: 1;
 }
@@ -39,7 +39,7 @@
 .btn {
   position: relative;
   font-family: "Inconsolata", serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #e2c17c;
   border-radius: 10px;
   background-color: rgb(12, 19, 15, 0);
@@ -117,7 +117,7 @@
 
 .minus_strength {
   position: absolute;
-  bottom: 10px;
+  bottom: 110px;
   left: 300px;
   color: red;
 }

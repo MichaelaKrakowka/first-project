@@ -1,5 +1,4 @@
 import React from "react";
-import { BgMusic } from "./BgMusic";
 
 import "./UserNav.css";
 import { Dice } from "./Dice";
@@ -36,7 +35,6 @@ export const UserNav = ({
           Uložit
         </button>
       </div>
-      <BgMusic />
       <section className="main_character">
         <div className="strength">
           Síla:

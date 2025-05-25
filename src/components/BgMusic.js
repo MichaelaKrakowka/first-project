@@ -28,7 +28,7 @@ export const BgMusic = () => {
         <source src="/bg-music.mp3" type="audio/mpeg" />
         Váš prohlížeč nepodporuje přehrávání audia.
       </audio>
-      <button className="play_btn user_btn" onClick={toggleMusic}>
+      <button className="play_btn" onClick={toggleMusic}>
         {isPlaying ? "🔇" : "🔊"}
       </button>
     </div>
