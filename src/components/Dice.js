@@ -24,9 +24,9 @@ export const Dice = ({
         onClick={handleRoll}
         disabled={diceClicked}
         style={{
-          backgroundColor: diceClicked ? "#e2c17c" : "rgb(12, 19, 15, 0)",
+          backgroundColor: diceClicked ? "#e2c17c" : "rgb(12, 19, 15, 0);",
         }}>
-        <span style={{ fontSize: "1.3rem" }}>
+        <span style={{ fontSize: "1.4rem" }}>
           {diceClicked ? diceRoll : "🎲"}
         </span>
       </button>
