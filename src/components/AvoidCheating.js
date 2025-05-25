@@ -10,10 +10,15 @@ export const AvoidCheating = ({ diceRoll, setDiceRoll, children }) => {
     <div style={{ textAlign: "center" }}>
       {!diceClicked ? (
         isMobile ? (
-          <div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}>
             <p
               style={{
-                marginBottom: "20px",
+                margin: "17px",
                 fontSize: "1.2rem",
                 fontStyle: "italic",
               }}>
