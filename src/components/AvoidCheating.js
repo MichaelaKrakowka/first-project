@@ -2,14 +2,9 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Dice } from "./Dice";
 
-export const AvoidCheating = ({
-  diceClicked,
-  setDiceClicked,
-  diceRoll,
-  setDiceRoll,
-  children,
-}) => {
+export const AvoidCheating = ({ diceRoll, setDiceRoll, children }) => {
   const isMobile = useMediaQuery({ query: "(max-width: 797px)" });
+  const diceClicked = diceRoll !== null;
 
   return (
     <div style={{ textAlign: "center" }}>
@@ -27,12 +22,7 @@ export const AvoidCheating = ({
               najdeš v levém menu spolu s výsledkem hodu, nebo můžeš použít
               kostku níže.
             </p>
-            <Dice
-              diceClicked={diceClicked}
-              setDiceClicked={setDiceClicked}
-              diceRoll={diceRoll}
-              setDiceRoll={setDiceRoll}
-            />
+            <Dice diceRoll={diceRoll} setDiceRoll={setDiceRoll} />
           </div>
         ) : (
           <p

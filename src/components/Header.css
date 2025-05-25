@@ -24,6 +24,9 @@
   transition: 0.2s;
   padding-left: 180px;
 }
+.logo:hover {
+  transform: scale(1.1);
+}
 @media (max-width: 979px) {
   .logo {
     font-size: 2.4rem;
@@ -31,32 +34,4 @@
     padding: 0;
     text-align: center;
   }
-}
-
-.logo:hover {
-  transform: scale(1.1);
-}
-
-.btn_start {
-  font-family: "Inconsolata", serif;
-  font-size: 2rem;
-  color: #e2c17c;
-  border-radius: 10px;
-  background-color: rgb(12, 19, 15, 0);
-  padding: 5px 10px;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-@media (max-width: 979px) {
-  .btn_start {
-    transition: none;
-    cursor: none;
-  }
-}
-
-.btn_start:hover {
-  transform: scale(1.1);
-}
-.btn_start:active {
-  transform: scale(0.9);
 }

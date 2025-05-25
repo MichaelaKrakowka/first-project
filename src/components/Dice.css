@@ -1,6 +1,9 @@
 .dice {
   width: 35px;
   height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 8px;
   color: black;
   font-family: "Merriweather";

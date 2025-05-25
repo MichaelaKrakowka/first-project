@@ -15,18 +15,9 @@ export const App = () => {
   const [userName, setUserName] = React.useState("");
   const [currentPartId, setCurrentPartId] = React.useState("start");
 
-  const [diceRoll, setDiceRoll] = React.useState(0);
-  const [diceClicked, setDiceClicked] = React.useState(false);
+  const [diceRoll, setDiceRoll] = React.useState(null);
 
-  const [playerFight, setPlayerFight] = React.useState(0);
-  const [clickedPlayerFight, setClickedPlayerFight] = React.useState(false);
-  const [enemyFight, setEnemyFight] = React.useState(0);
-  const [clickedEnemyFight, setClickedEnemyFight] = React.useState(false);
-
-  const [playerFight2, setPlayerFight2] = React.useState(0);
-  const [clickedPlayerFight2, setClickedPlayerFight2] = React.useState(false);
-  const [enemyFight2, setEnemyFight2] = React.useState(0);
-  const [clickedEnemyFight2, setClickedEnemyFight2] = React.useState(false);
+  const diceClicked = diceRoll !== null;
 
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
@@ -37,7 +28,6 @@ export const App = () => {
     const savedName = localStorage.getItem("userName");
     const savedPartId = localStorage.getItem("currentPartId");
     const savedDiceRoll = localStorage.getItem("diceRoll");
-    const savedDiceClicked = localStorage.getItem("diceClicked");
 
     if (savedName) {
       setUserName(savedName);
@@ -48,9 +38,6 @@ export const App = () => {
     }
     if (savedDiceRoll !== null) {
       setDiceRoll(Number(savedDiceRoll));
-    }
-    if (savedDiceClicked !== null) {
-      setDiceClicked(JSON.parse(savedDiceClicked));
     }
   }, []);
 
@@ -69,16 +56,7 @@ export const App = () => {
   };
 
   const resetAll = () => {
-    setDiceClicked(false);
-    setDiceRoll(0);
-    setPlayerFight(0);
-    setClickedPlayerFight(false);
-    setEnemyFight(0);
-    setClickedEnemyFight(false);
-    setPlayerFight2(0);
-    setClickedPlayerFight2(false);
-    setEnemyFight2(0);
-    setClickedEnemyFight2(false);
+    setDiceRoll(null);
     setCurrentPartId("start");
   };
 
@@ -112,7 +90,6 @@ export const App = () => {
               diceRoll={diceRoll}
               setDiceRoll={setDiceRoll}
               diceClicked={diceClicked}
-              setDiceClicked={setDiceClicked}
               currentPartId={currentPartId}
               resetAllAndLogout={resetAllAndLogout}
             />
@@ -123,40 +100,20 @@ export const App = () => {
               diceRoll={diceRoll}
               setDiceRoll={setDiceRoll}
               diceClicked={diceClicked}
-              setDiceClicked={setDiceClicked}
               currentPartId={currentPartId}
               resetAllAndLogout={resetAllAndLogout}
             />
           ))}
 
         {isStoryStarted && (
-          <AvoidCheating
-            diceRoll={diceRoll}
-            setDiceRoll={setDiceRoll}
-            diceClicked={diceClicked}
-            setDiceClicked={setDiceClicked}>
+          <AvoidCheating diceRoll={diceRoll} setDiceRoll={setDiceRoll}>
             <GameBook
+              key={diceClicked}
               endStory={resetAll}
               currentPartId={currentPartId}
               setCurrentPartId={setCurrentPartId}
-              playerFight={playerFight}
-              setPlayerFight={setPlayerFight}
-              clickedPlayerFight={clickedPlayerFight}
-              setClickedPlayerFight={setClickedPlayerFight}
-              enemyFight={enemyFight}
-              setEnemyFight={setEnemyFight}
-              clickedEnemyFight={clickedEnemyFight}
-              setClickedEnemyFight={setClickedEnemyFight}
               userName={userName}
               setDiceRoll={setDiceRoll}
-              playerFight2={playerFight2}
-              setPlayerFight2={setPlayerFight2}
-              clickedPlayerFight2={clickedPlayerFight2}
-              setClickedPlayerFight2={setClickedPlayerFight2}
-              enemyFight2={enemyFight2}
-              setEnemyFight2={setEnemyFight2}
-              clickedEnemyFight2={clickedEnemyFight2}
-              setClickedEnemyFight2={setClickedEnemyFight2}
               diceRoll={diceRoll}
               diceClicked={diceClicked}
             />

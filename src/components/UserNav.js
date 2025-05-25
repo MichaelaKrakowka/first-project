@@ -31,7 +31,7 @@ export const UserNav = ({
           onClick={() => {
             localStorage.setItem("userName", userName);
             localStorage.setItem("currentPartId", currentPartId);
-            alert("Uloženo!");
+            alert("Hra uložena!");
           }}>
           Uložit
         </button>

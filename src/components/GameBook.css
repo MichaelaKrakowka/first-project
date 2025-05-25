@@ -37,6 +37,7 @@
 }
 
 .btn {
+  position: relative;
   font-family: "Inconsolata", serif;
   font-size: 2rem;
   color: #e2c17c;
@@ -58,8 +59,18 @@
 .btn:hover {
   transform: scale(1.1);
 }
+@media (max-width: 979px) {
+  .btn:hover {
+    transform: none;
+  }
+}
 .btn:active {
   transform: scale(0.9);
+}
+@media (max-width: 979px) {
+  .btn:active {
+    transform: none;
+  }
 }
 
 .fight_container {
@@ -95,6 +106,7 @@
 .fight_dice {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 10px;
 }
 @media (max-width: 797px) {
@@ -103,17 +115,17 @@
   }
 }
 
-.minus_strenght {
+.minus_strength {
   position: absolute;
-  bottom: -20px;
-  left: 45px;
-  transform: translateX(-50%);
-  z-index: 1;
+  bottom: 10px;
+  left: 300px;
+  color: red;
 }
 
-/* @media (max-width: 979px) {
-  .minus_strenght {
-   
-    
-  }    jeste dodelat
-} */
+@media (max-width: 979px) {
+  .minus_strength {
+    top: -1100px;
+    left: 180px;
+    transform: none;
+  }
+}

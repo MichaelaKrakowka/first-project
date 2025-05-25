@@ -1,7 +1,7 @@
 .play_btn {
   width: 188px;
   height: 34px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 @media (max-width: 979px) {

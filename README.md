@@ -2,10 +2,7 @@ https://nevertichu.com/
 
 1.  zmenit ukazatel odecitani sily nahoru
 2.  pridat clear na timeout
-3.      setTimeout(() => {
+3.          setTimeout(() => {
 
     storyTopRef.current?.scrollIntoView({ behavior: "smooth" });
     }, 100);
-
-4.  storyTopRef ?
-5.  ruzne velikosti font size u tlacitek na mobilu??
