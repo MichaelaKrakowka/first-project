@@ -27,7 +27,7 @@ export const AvoidCheating = ({ diceRoll, setDiceRoll, children }) => {
         ) : (
           <p
             style={{
-              marginBottom: "20px",
+              margin: "20px",
               fontSize: "1.8rem",
               fontStyle: "italic",
             }}>
