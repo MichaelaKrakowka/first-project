@@ -38,18 +38,25 @@
   border-radius: 10px;
   transition: 0.2s;
   padding: 5px 10px;
-  outline: none;
 }
 
 @media (max-width: 979px) {
   .submit_btn {
     padding: 0 5px;
+  }
+  .submit:focus {
     outline: none;
+    box-shadow: none;
   }
 }
 .submit_btn:hover {
-  outline: none;
   box-shadow: 0 0 5px #e2c17c;
   background-color: rgba(226, 193, 124, 0.05);
   transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+@media (max-width: 979px) {
+  .submit_btn:hover {
+    outline: none;
+  }
 }
