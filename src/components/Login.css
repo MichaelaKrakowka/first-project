@@ -43,8 +43,6 @@
 @media (max-width: 979px) {
   .submit_btn {
     padding: 0 5px;
-    outline: none;
-    box-shadow: none;
     border: none;
   }
 }
