@@ -52,10 +52,3 @@
   background-color: rgba(226, 193, 124, 0.05);
   transition: box-shadow 0.3s, background-color 0.3s;
 }
-
-@media (max-width: 979px) {
-  .submit_btn:hover {
-    outline: none;
-    border: none;
-  }
-}
