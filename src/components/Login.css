@@ -43,13 +43,12 @@
 @media (max-width: 979px) {
   .submit_btn {
     padding: 0 5px;
-  }
-  .submit:focus {
     outline: none;
     box-shadow: none;
     border: none;
   }
 }
+
 .submit_btn:hover {
   box-shadow: 0 0 5px #e2c17c;
   background-color: rgba(226, 193, 124, 0.05);
