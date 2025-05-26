@@ -73,7 +73,12 @@ export const App = () => {
     <div className="container">
       <Header />
 
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          paddingLeft: "60px",
+        }}>
         {!isStoryStarted && (
           <Login
             onClick={startStory}

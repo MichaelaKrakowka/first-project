@@ -38,6 +38,14 @@
   border-radius: 10px;
   transition: 0.2s;
   padding: 5px 10px;
+  outline: none;
+}
+
+@media (max-width: 979px) {
+  .submit_btn {
+    padding: 0 5px;
+    outline: none;
+  }
 }
 .submit_btn:hover {
   outline: none;
