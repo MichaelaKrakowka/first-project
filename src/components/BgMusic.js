@@ -29,7 +29,7 @@ export const BgMusic = () => {
         Váš prohlížeč nepodporuje přehrávání audia.
       </audio>
       <button className="play_btn" onClick={toggleMusic}>
-        {isPlaying ? "🔇" : "🔊"}
+        {isPlaying ? "🔊" : "🔇"}
       </button>
     </div>
   );
