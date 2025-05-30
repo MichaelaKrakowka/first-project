@@ -5,13 +5,15 @@
   background: none;
   border: none;
   z-index: 100;
-  color: #d1a75c;
+  /* color: #d1a75c; */
   font-size: 25px;
+  cursor: pointer;
 }
 
 svg {
-  width: 23px;
-  height: 23px;
+  width: 25px;
+  height: 25px;
+  color: #d1a75c;
 }
 
 .DialogOverlay {
@@ -36,10 +38,11 @@ svg {
 .close_btn {
   background: none;
   border: none;
-  color: #d1a75c;
+  /* color: #d1a75c; */
   position: absolute;
   top: 15px;
   right: 15px;
+  cursor: pointer;
 }
 
 @keyframes slideIn {

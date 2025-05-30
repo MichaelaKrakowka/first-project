@@ -7,7 +7,7 @@ export const Header = () => {
     <header className="header">
       <div className="header_container container">
         <div className="header_content">
-          <h1 className="logo">NEVĚŘ TICHU!</h1>
+          <h1 className="logo">Nevěř tichu!</h1>
           <BgMusic />
         </div>
       </div>

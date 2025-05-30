@@ -1,9 +1,26 @@
-.play_btn {
+.music-toggle {
   background-color: transparent;
-  border-radius: 10px;
-  transition: 0.2s;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.play_btn:hover {
-  transform: scale(1.3);
+.music-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon_svg {
+  width: 24px;
+  height: 24px;
+  fill: #d1a75c; /* Nebo jakákoli barva, která ladí s pozadím */
+  transition: transform 0.2s ease;
+}
+
+.music-toggle:hover .icon {
+  transform: scale(1.1);
 }

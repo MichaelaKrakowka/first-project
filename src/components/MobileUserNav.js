@@ -13,7 +13,7 @@ export const MobileUserNav = (props) => {
         <button
           className="mobile_menu_btn"
           aria-label={open ? "Zavřít menu" : "Otevřít menu"}>
-          {open ? " " : <HamburgerMenuIcon />}
+          {open ? " " : <HamburgerMenuIcon className="menu_icon" />}
         </button>
       </Dialog.Trigger>
 

@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #d1a75c;
+  color: #8f6316;
   padding: 0 50px;
   font-size: 1.8rem;
-  font-family: "Inconsolata", serif;
+  font-family: "Montserrat", serif;
   flex-grow: 1;
 }
 
@@ -38,7 +38,7 @@
 
 .btn {
   position: relative;
-  font-family: "Inconsolata", serif;
+  font-family: "Montserrat", serif;
   font-size: 1.8rem;
   color: #e2c17c;
   border-radius: 10px;
@@ -46,7 +46,7 @@
   padding: 5px 10px;
   margin-right: 50px;
   cursor: pointer;
-  transition: 0.2s;
+  /* transition: 0.2s; */
 }
 
 @media (max-width: 979px) {
@@ -57,20 +57,8 @@
   }
 }
 .btn:hover {
-  transform: scale(1.1);
-}
-@media (max-width: 979px) {
-  .btn:hover {
-    transform: none;
-  }
-}
-.btn:active {
-  transform: scale(0.9);
-}
-@media (max-width: 979px) {
-  .btn:active {
-    transform: none;
-  }
+  box-shadow: 0 0 5px #e2c17c;
+  background-color: rgba(43, 43, 42, 0.735);
 }
 
 .fight_container {

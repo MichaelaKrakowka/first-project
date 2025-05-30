@@ -2,10 +2,10 @@ import React from "react";
 import ReactGA from "react-ga4";
 import { Header } from "./components/Header";
 import { Login } from "./components/Login";
-import { UserNav } from "./components/UserNav";
+
 import { MobileUserNav } from "./components/MobileUserNav";
 import { GameBook } from "./components/GameBook";
-import { useMediaQuery } from "react-responsive";
+
 import { AvoidCheating } from "./components/AvoidCheating";
 
 const TRACKING_ID = "G-S4F2CQVK9Z";
@@ -18,8 +18,6 @@ export const App = () => {
   const [diceRoll, setDiceRoll] = React.useState(null);
 
   const diceClicked = diceRoll !== null;
-
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   React.useEffect(() => {
     ReactGA.initialize(TRACKING_ID);
@@ -87,28 +85,17 @@ export const App = () => {
           />
         )}
 
-        {isStoryStarted &&
-          (isMobile ? (
-            <MobileUserNav
-              userName={userName}
-              endStory={resetAll}
-              diceRoll={diceRoll}
-              setDiceRoll={setDiceRoll}
-              diceClicked={diceClicked}
-              currentPartId={currentPartId}
-              resetAllAndLogout={resetAllAndLogout}
-            />
-          ) : (
-            <UserNav
-              userName={userName}
-              endStory={resetAll}
-              diceRoll={diceRoll}
-              setDiceRoll={setDiceRoll}
-              diceClicked={diceClicked}
-              currentPartId={currentPartId}
-              resetAllAndLogout={resetAllAndLogout}
-            />
-          ))}
+        {isStoryStarted && (
+          <MobileUserNav
+            userName={userName}
+            endStory={resetAll}
+            diceRoll={diceRoll}
+            setDiceRoll={setDiceRoll}
+            diceClicked={diceClicked}
+            currentPartId={currentPartId}
+            resetAllAndLogout={resetAllAndLogout}
+          />
+        )}
 
         {isStoryStarted && (
           <AvoidCheating diceRoll={diceRoll} setDiceRoll={setDiceRoll}>
