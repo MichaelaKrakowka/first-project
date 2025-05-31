@@ -17,7 +17,7 @@
 .icon_svg {
   width: 24px;
   height: 24px;
-  fill: #d1a75c; /* Nebo jakákoli barva, která ladí s pozadím */
+  fill: var(--primary-color);
   transition: transform 0.2s ease;
 }
 

@@ -2,18 +2,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #8f6316;
-  padding: 0 50px;
+  padding: 20px 50px;
   font-size: 1.8rem;
-  font-family: "Montserrat", serif;
   flex-grow: 1;
 }
 
 @media (max-width: 979px) {
   .story_text {
-    /* font-size: 1.3rem; */
     text-align: left;
-    /* margin-left: 20px; */
     font-size: 1.3rem;
   }
 }
@@ -22,8 +18,8 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-top: 30px;
+  justify-content: space-around;
+  margin-top: 50px;
 }
 
 @media (max-width: 979px) {
@@ -38,13 +34,12 @@
 
 .btn {
   position: relative;
-  font-family: "Montserrat", serif;
+  font-family: "Inter";
   font-size: 1.8rem;
   color: #e2c17c;
   border-radius: 10px;
   background-color: rgb(12, 19, 15, 0);
   padding: 5px 10px;
-  margin-right: 50px;
   cursor: pointer;
   /* transition: 0.2s; */
 }

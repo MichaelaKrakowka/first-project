@@ -4,31 +4,31 @@
   margin: 20px;
   padding: 20px 30px;
   border-radius: 16px;
-  border: 1px solid #e2c17c;
+  border: 1px solid var(--border-color);
   box-shadow: 0 0 10px rgba(226, 193, 124, 0.2);
   backdrop-filter: hue-rotate(45deg);
 }
 
 .navbar:hover {
   outline: none;
-  box-shadow: 0 0 5px #e2c17c;
+  box-shadow: var(--box-shadow);
   background-color: rgba(226, 193, 124, 0.05);
   transition: box-shadow 0.3s, background-color 0.3s;
 }
 
 .user_btn {
   width: 188px;
-  font-family: "Inconsolata", serif;
+  font-family: var(--button-font);
   font-size: 1.2rem;
-  color: #e2c17c;
-  border-radius: 10px;
+  color: var(--border-color);
+  border-radius: var(--border-radius);
   background-color: rgb(12, 19, 15, 0);
   cursor: pointer;
   transition: 0.2s;
 }
 
 .user_btn:hover {
-  transform: scale(1.1);
+  box-shadow: var(--box-shadow);
 }
 .user_btn:active {
   transform: scale(0.9);
@@ -45,16 +45,14 @@
 
 .user_btns {
   display: flex;
-  justify-content: left;
   flex-direction: column;
   padding-top: 20px;
-  gap: 5px;
+  gap: 7px;
 }
 
 .main_character {
   padding-top: 20px;
   font-size: 1.2rem;
-  font-family: "Inconsolata", serif;
 }
 .strength {
   display: flex;

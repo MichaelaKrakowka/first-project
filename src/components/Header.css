@@ -1,6 +1,5 @@
 .header {
   height: 175px;
-  /* background-color: #1b1b1b82; */
 }
 
 .container {
@@ -17,16 +16,10 @@
 }
 
 .logo {
-  font-family: "Montserrat";
   font-size: 3.5rem;
-  color: #d1a75c;
-  text-shadow: -1px -1px 1px #1b1616, 1px 1px 1px #555;
-  text-decoration: none;
-  transition: 0.2s;
+  color: var(--primary-color);
+  letter-spacing: 4px;
   font-weight: 400;
-}
-.logo:hover {
-  transform: scale(1.1);
 }
 @media (max-width: 979px) {
   .logo {

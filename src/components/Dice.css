@@ -1,12 +1,12 @@
 .dice {
-  width: 35px;
-  height: 35px;
+  width: 38px;
+  height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
   color: black;
-  font-family: "Merriweather";
+  font-family: "Montserrat";
   cursor: pointer;
   transition: 0.3s;
 }

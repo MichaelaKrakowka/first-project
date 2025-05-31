@@ -8,26 +8,23 @@
 }
 
 .user_name {
-  font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
-  color: #d1a75c;
-  /* display: flex;
-  align-items: center; */
+  color: var(--primary-color);
 }
 
 .input {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #d1a75c;
-  font-family: "Montserrat";
+  border-bottom: 1px solid var(--primary-color);
   font-size: 1.4rem;
-  color: #d1a75c;
+  margin-left: 13px;
+  color: var(--primary-color);
   width: 100%;
-  max-width: 250px;
+  max-width: 225px;
 }
 .input:focus {
   outline: none;
-  border-bottom: 2px solid #e2c17c; /* např. zvýraznění při aktivaci */
+  border-bottom: 2px solid var(--border-color);
 }
 
 .submit {
@@ -37,19 +34,19 @@
 
 .submit_btn {
   background: rgba(148, 92, 8, 0.487);
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   border: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-  padding: 6px 12px;
+  padding: 5px 12px;
   color: white;
   cursor: pointer;
-  transition: box-shadow 0.3s, background-color 0.3s;
+  transition: 0.3s;
 }
 
 .submit_btn:hover {
-  box-shadow: 0 0 5px #e2c17c;
+  box-shadow: var(--box-shadow);
   background-color: rgba(226, 193, 124, 0.05);
 }
 

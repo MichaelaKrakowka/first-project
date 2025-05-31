@@ -19,12 +19,11 @@ export const GameBook = ({
   const [enemy, setEnemy] = React.useState({ dice1: null, dice2: null });
 
   const playerTotal =
-    (!isNaN(diceRoll) ? diceRoll : 0) +
-    (!isNaN(player.dice1) ? player.dice1 : 0) +
-    (!isNaN(player.dice2) ? player.dice2 : 0);
+    (diceRoll ? diceRoll : 0) +
+    (player.dice1 ? player.dice1 : 0) +
+    (player.dice2 ? player.dice2 : 0);
   const enemyTotal =
-    (!isNaN(enemy.dice1) ? enemy.dice1 : 0) +
-    (!isNaN(enemy.dice2) ? enemy.dice2 : 0);
+    (enemy.dice1 ? enemy.dice1 : 0) + (enemy.dice2 ? enemy.dice2 : 0);
   const currentPart = story[currentPartId];
 
   const goToNextPart = (id) => {

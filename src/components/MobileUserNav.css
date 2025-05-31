@@ -5,15 +5,20 @@
   background: none;
   border: none;
   z-index: 100;
-  /* color: #d1a75c; */
   font-size: 25px;
   cursor: pointer;
+  padding: 5px 7px;
+}
+
+.mobile_menu_btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
 }
 
 svg {
   width: 25px;
   height: 25px;
-  color: #d1a75c;
+  color: var(--primary-color);
 }
 
 .DialogOverlay {
@@ -38,7 +43,6 @@ svg {
 .close_btn {
   background: none;
   border: none;
-  /* color: #d1a75c; */
   position: absolute;
   top: 15px;
   right: 15px;

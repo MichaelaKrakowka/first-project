@@ -75,7 +75,6 @@ export const App = () => {
         style={{
           display: "flex",
           justifyContent: "center",
-          paddingLeft: "60px",
         }}>
         {!isStoryStarted && (
           <Login

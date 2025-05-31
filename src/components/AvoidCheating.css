@@ -1,0 +1,11 @@
+.cheating_paragraph {
+  padding: 20px;
+  margin: 17px;
+  font-size: 1.8rem;
+  font-style: italic;
+}
+@media (max-width: 979px) {
+  .cheating_paragraph {
+    font-size: 1.3rem;
+  }
+}

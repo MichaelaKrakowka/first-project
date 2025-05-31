@@ -1,5 +1,6 @@
 import React from "react";
 import { Dice } from "./Dice";
+import "./AvoidCheating.css";
 
 export const AvoidCheating = ({ diceRoll, setDiceRoll, children }) => {
   const diceClicked = diceRoll !== null;
@@ -13,12 +14,7 @@ export const AvoidCheating = ({ diceRoll, setDiceRoll, children }) => {
             flexDirection: "column",
             alignItems: "center",
           }}>
-          <p
-            style={{
-              margin: "17px",
-              fontSize: "1.2rem",
-              fontStyle: "italic",
-            }}>
+          <p className="cheating_paragraph">
             Teď je čas hodit si kostkou a určit svou sílu. Síla ti bude při
             některých rozhodnutích ubývat, proto jednej s rozvahou. Kostku
             najdeš v levém menu spolu s výsledkem hodu, nebo můžeš použít kostku
