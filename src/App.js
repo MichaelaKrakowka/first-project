@@ -3,7 +3,7 @@ import ReactGA from "react-ga4";
 import { Header } from "./components/Header";
 import { Login } from "./components/Login";
 
-import { MobileUserNav } from "./components/MobileUserNav";
+import { DialogUserNav } from "./components/DialogUserNav";
 import { GameBook } from "./components/GameBook";
 
 import { AvoidCheating } from "./components/AvoidCheating";
@@ -85,7 +85,7 @@ export const App = () => {
         )}
 
         {isStoryStarted && (
-          <MobileUserNav
+          <DialogUserNav
             userName={userName}
             endStory={resetAll}
             diceRoll={diceRoll}

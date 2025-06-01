@@ -19,7 +19,7 @@
 .user_btn {
   width: 188px;
   font-family: var(--button-font);
-  font-size: 1.2rem;
+  font-size: var(--fontSize2);
   color: var(--border-color);
   border-radius: var(--border-radius);
   background-color: rgb(12, 19, 15, 0);
@@ -40,7 +40,7 @@
 
 .nickname {
   padding: 0 30px 30px 30px;
-  font-size: 2rem;
+  font-size: var(--fontSize2);
 }
 
 .user_btns {
@@ -52,11 +52,11 @@
 
 .main_character {
   padding-top: 20px;
-  font-size: 1.2rem;
+  font-size: var(--fontSize2);
 }
 .strength {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  font-size: 1.3rem;
+  font-size: var(--fontSize3);
 }

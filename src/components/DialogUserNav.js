@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { UserNav } from "./UserNav";
 import { HamburgerMenuIcon, Cross2Icon } from "@radix-ui/react-icons";
-import "./MobileUserNav.css";
+import "./DialogUserNav.css";
 
-export const MobileUserNav = (props) => {
+export const DialogUserNav = (props) => {
   const [open, setOpen] = useState(false);
 
   return (

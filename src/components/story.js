@@ -28,7 +28,7 @@ export const story = {
           podivný vzkaz.
         </p>
         <p className="start_paragraph">
-          Teď jsi na řadě ty, dopiš další řádek.
+          Teď jsi na řadě ty, dopiš další řádek:
         </p>
       </>
     ),
@@ -450,10 +450,7 @@ export const story = {
           Došel jsi až na samotný konec… Ale každý konec je jen začátek nového
           rozhodnutí.
         </p>
-        <p>
-          Chceš prožít příběh znovu s vědomím, které už máš? Klikni na
-          Pokračovat.
-        </p>
+        <p>Chceš si to zkusit zahrát ještě jednou? Klikni na Pokračovat.</p>
       </>
     ),
     options: [{ text: "Pokračovat", id: "again" }],

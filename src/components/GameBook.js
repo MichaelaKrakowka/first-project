@@ -53,11 +53,15 @@ export const GameBook = ({
       <div className="story_text" ref={storyTopRef}>
         {currentPart.text}
         <div className="fight_container">
-          <p className="fight_note">
-            Chceš zvednout kladivo, zničit přístroj a tím porazit nepřítele?
-            Součet hodu dvěma kostkami a tvé síly musí být alespoň tak vysoký
-            jako soupeřův.
-          </p>
+          <div className="fight_note">
+            <p>
+              Chceš zvednout kladivo, zničit přístroj a tím porazit nepřítele?
+            </p>
+            <p>
+              Součet hodu dvěma kostkami a tvé zbývající síly musí být alespoň
+              tak vysoký jako soupeřův.
+            </p>
+          </div>
           <div className="dices">
             <div className="fight_dice">
               {userName}:
@@ -110,13 +114,18 @@ export const GameBook = ({
           </div>
 
           {playerFought && enemyFought && diceRoll !== null && (
-            <div>
+            <div className="finish_fight">
               {playerTotal > enemyTotal &&
                 "Sebral jsem poslední zbytky síly a kladivem jsem trefil přímo doprostřed přístroje. Cítil jsem, jakoby se dům nadechl, jakoby čekal na tento okamžik. Dědeček otevřel dveře do něčeho, co neměl. A zavřel je, jak nejlépe dovedl. Já jsem je jen zapečetil. Aby už nikdo další neskončil v tom tichu."}
               {playerTotal < enemyTotal &&
                 "Všechno se pomalu nořilo do temnoty hlubší než je smrt. Pak jsem najednou stál stranou. Viděl jsem, jak moje tělo klidně odchází z místnosti. Pak se na okamžik otočilo… a usmálo se. V tu chvíli jsem pochopil: já tu zůstal v tom tichu, ve tmě a někdo jiný právě začal žít můj život."}
               {playerTotal === enemyTotal &&
                 "Sebral jsem poslední zbytky síly a kladivem jsem trefil přímo doprostřed přístroje. Cítil jsem, jakoby se dům nadechl, jakoby čekal na tento okamžik. Dědeček otevřel dveře do něčeho, co neměl. A zavřel je, jak nejlépe dovedl. Já jsem je jen zapečetil. Aby už nikdo další neskončil v tom tichu."}
+              <button
+                className="btn finish_btn"
+                onClick={() => goToNextPart("finish")}>
+                KONEC
+              </button>
             </div>
           )}
         </div>
