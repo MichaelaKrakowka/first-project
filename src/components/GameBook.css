@@ -100,9 +100,10 @@
 }
 
 .minus_strength {
-  /* position: absolute; */
+  position: absolute;
   bottom: 110px;
   left: 300px;
+  pointer-events: none;
   color: red;
 }
 

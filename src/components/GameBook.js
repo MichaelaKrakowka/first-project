@@ -59,7 +59,7 @@ export const GameBook = ({
               initial={{ opacity: 1, y: 0 }}
               animate={{ opacity: 0, y: -30 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 7 }}>
+              transition={{ duration: 4 }}>
               –1 síla
             </motion.div>
           )}
