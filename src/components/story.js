@@ -78,7 +78,7 @@ export const story = {
           patře se nacházelo několik masivních zavřených dřevěných dveří. Sice
           jsem tu již spoustu let nebyl, ale takhle strašidelné jsem si to z
           dětství nepamatoval. Snad to bude stát za to, pomyslel jsem si, a
-          přiblížel jsem se k hodinám. Ohnul jsem se k dolní části hodin a
+          přiblížil jsem se k hodinám. Ohnul jsem se k dolní části hodin a
           zkoumal, co před chvíli upoutalo moji pozornost. Otevřenou dlaní jsem
           přejel přes nalepený papírek. Jednalo se o výrobní štítek s názvem
           společnosti „Mundus“.
@@ -155,13 +155,13 @@ export const story = {
       <>
         <p>
           Sahl jsem na kliku a snažil se dveře otevřít, ale byly zamčené. V tu
-          chvíli začaly odbíjet hodiny, které už netikaly. Rozběhl jsem se k
-          nejbližšímu oknu, lomcoval s ním, snažil jsem se otočit klikou, ale
-          nešla otevřít. Srdce mi tluklo až v krku.
+          chvíli začaly znovu odbíjet hodiny. Rozběhl jsem se k nejbližšímu
+          oknu, lomcoval s ním, snažil jsem se otočit klikou, ale nešla otevřít.
+          Srdce mi tluklo až v krku.
         </p>
         <p>
           A pak mi to došlo... náhlé ticho. Nebylo slyšet ani štěbetání ptáků,
-          které mě v domě dosud provázelo, a hodiny přestaly odbíjet.
+          které mě v domě dosud provázelo, a hodiny byly opět potichu.
         </p>
         <p>
           Zpozorněl jsem, nastražil uši a zadržel dech. A pak jsem ucítil, jak
@@ -178,7 +178,13 @@ export const story = {
         </p>
       </>
     ),
-    options: [{ text: "KONEC PŘÍBĚHU", id: "finish" }],
+    options: [{ text: "KONEC PŘÍBĚHU", id: "finishLost" }],
+  },
+
+  finishLost: {
+    id: "finishLost",
+    text: <p>Tak tohle nevyšlo, chceš to zkusit znovu?</p>,
+    options: [{ text: "Pokračovat", id: "again" }],
   },
 
   openTheDoor: {
@@ -220,15 +226,14 @@ export const story = {
         Uprostřed stolu ležel starý psací stroj. V jeho útrobách byl zastrčený
         zažloutlý list papíru. Text na něm byl krátký, útržkovitý: „Někdo nás
         sleduje. Skrývá se v tichu. Pokud tohle čteš, víš, že tě pozoruje. Najdi
-        můj zápisník..." Inkoust v posledních znacích byl roztřesený, jako by
-        byl psán ve spěchu… nebo ve strachu. Jakmile jsem dočetl poslední řádek,
-        pocítil jsem náhlé napětí. V uších jsem cítil tlukot srdce, ale nikoho
-        jsem neviděl. Všechno ve mně křičelo, abych odsud odešel. Pryč z tohoto
-        domu. Pryč od toho všeho. Ale věděl jsem, že odpovědi se skrývají v
-        dědečkově zápisníku. Teď už jsem nemohl couvnout. Zhluboka jsem se
-        nadechl a snažil se zklidnit. A právě tehdy jsem si všiml drobnosti:
-        vedle psacího stroje ležel malý klíč. Schoval jsem si ho do kapsy, třeba
-        se bude hodit.
+        můj zápisník..." Jakmile jsem dočetl poslední řádek, pocítil jsem náhlé
+        napětí. V uších jsem cítil tlukot srdce, ale nikoho jsem neviděl.
+        Všechno ve mně křičelo, abych odsud odešel. Pryč z tohoto domu. Pryč od
+        toho všeho. Ale věděl jsem, že odpovědi se skrývají v dědečkově
+        zápisníku. Teď už jsem nemohl couvnout. Zhluboka jsem se nadechl a
+        snažil se zklidnit. A právě tehdy jsem si všiml drobnosti: vedle psacího
+        stroje ležel malý klíč. Schoval jsem si ho do kapsy, třeba se bude
+        hodit.
       </p>
     ),
     options: [{ text: "Prozkoumat podrobněji místnost", id: "checkTheRoom1" }],
@@ -270,12 +275,11 @@ export const story = {
     id: "useTheKey",
     text: (
       <p>
-        Vložil jsem malý, zrezivělý klíček do zámku dveří, který jsem před
-        chvílí našel na stole. Kov tiše zaklapl a s lehkým odporem se otočil. V
-        ten moment jsem uslyšel, jak v dolním patře začaly odbíjet hodiny,
-        přitom když jsem do domu vstoupil, nefungovaly. Zadržel jsem dech a
-        právě tehdy mi v hlavě vyvstal ten jediný vzkaz, který všechno začal:
-        „Nevěř tichu.“
+        Vložil jsem malý klíček do zámku dveří, který jsem před chvílí našel na
+        stole. Kov tiše zaklapl a s lehkým odporem se otočil. V ten moment jsem
+        uslyšel, jak v dolním patře začaly odbíjet hodiny, přitom když jsem do
+        domu vstoupil, nefungovaly. Zadržel jsem dech a právě tehdy mi v hlavě
+        vyvstal ten jediný vzkaz, který všechno začal: „Nevěř tichu.“
       </p>
     ),
     options: [
@@ -365,12 +369,12 @@ export const story = {
           naprostého ticha. Hodiny, které dříve odbíjely, najednou ztichly. Když
           se mi obraz pomalu vyjasnil, spatřil jsem něco naprosto
           nepochopitelného — díval jsem se sám na sebe. Něco mě nahradilo a já
-          jsem zůstal uvězněný v tom bezedném tichu. Postava, která teď obývala
+          jsem zůstal uvězněný v tom naprostém tichu. Postava, která teď obývala
           mé tělo, se pomalu porozhlédla po místnosti… a pak vykročila ze dveří.
         </p>
       </>
     ),
-    options: [{ text: "KONEC PŘÍBĚHU", id: "finish" }],
+    options: [{ text: "KONEC PŘÍBĚHU", id: "finishLost" }],
   },
 
   startTheMachine: {
@@ -396,7 +400,7 @@ export const story = {
         </p>
       </>
     ),
-    options: [{ text: "KONEC PŘÍBĚHU", id: "finish" }],
+    options: [{ text: "KONEC PŘÍBĚHU", id: "finishLost" }],
   },
 
   destroyTheMachine: {
@@ -446,11 +450,12 @@ export const story = {
     id: "finish",
     text: (
       <>
+        <p>Paráda, gratuluji! :) </p>
         <p>
-          Došel jsi až na samotný konec… Ale každý konec je jen začátek nového
-          rozhodnutí.
+          Došel jsi až na samotný konec. Dům je zbaven všeho zlého a ty se můžeš
+          v klidu vrátit domů. Nebo si to chceš projet ještě jednou?{" "}
         </p>
-        <p>Chceš si to zkusit zahrát ještě jednou? Klikni na Pokračovat.</p>
+        <p>Pokud ano, klikni na Pokračovat</p>
       </>
     ),
     options: [{ text: "Pokračovat", id: "again" }],
@@ -461,7 +466,7 @@ export const story = {
     text: (
       <>
         <p>
-          Roztrhal jsem dopis na několik kousků a vhodil je do koše. Každý
+          Roztrhal jsem dopis na několik kousků a vhodil ho do koše. Každý
           útržek jako by odnášel malý kousek bolesti, která mě tížila.
           Nezapomenu na něj nikdy, ale nechtěl jsem, aby mě to dál drželo v
           minulosti.
@@ -548,7 +553,7 @@ export const story = {
         </p>
         <p>
           Za chvíli jsem už přijížděl k domu mého dědečka. Vstupní hala se
-          schodištěm byla ponořená do šera, tlumeného závěsy na oknech, které
+          schodištěm byla ponořená do šera a tlumené závěsy na oknech
           nepropouštěly téměř žádné světlo. Robustní hodiny z ořechového dřeva u
           schodiště už netikaly. Ručičky na ciferníku stály, přesně na 3:33.
           Když jsem jejich masivní tělo odsunul od zdi, opravdu tam byl. Na
@@ -592,7 +597,7 @@ export const story = {
           Cestou jsem si říkal, jestli jsem přece jen neměl počkat alespoň do
           rána. Nemusel bych se pak potloukat po starém domě ve tmě. Ale
           zvědavost zvítězila. Chtěl jsem to mít rychle za sebou. Vejít do domu,
-          zjistit, že tam žádný kufřík není, a vrátit se v klidu domů.Když jsem
+          zjistit, že tam žádný kufřík není, a vrátit se v klidu domů. Když jsem
           vešel dovnitř, vzduch byl těžký. Vstupní hala a schodiště nešly přes
           tmu vůbec vidět. Elektřina v domě už byla vypnutá, ale naštěstí jsem
           si do batohu přibalil baterku. Když jsem ji rozsvítil, uviděl jsem
@@ -618,14 +623,13 @@ export const story = {
           Klekl jsem si k hodinám a přitom jsem cítil, jak se mi záda ozývají po
           celém dni. Snažil jsem se prstem setřít špínu kolem rytiny, ale nápis
           pod škrábanci odolával. Pevně jsem sevřel baterku mezi zuby, opřel
-          jsem se o bok hodin a zatlačilještě víc. Dřevo skřípalo, klouby mi
-          zapraskali a konečně se těžké tělo hodin pohnulo dál od zdi. S námahou
+          jsem se o bok hodin a zatlačil ještě víc. Dřevo skřípalo, klouby mi
+          zapraskaly a konečně se těžké tělo hodin pohnulo dál od zdi. S námahou
           jsem se naklonil a pokusil se očistit prostor za nimi. Dlaně jsem měl
-          od prachu, tričko se mi lepilo na zádech. Cítil jsem, jak mi bilo
-          srdce a dech se zrychloval. Tahle snaha mě stála víc sil, než jsem
-          čekal. Konečně jsem se dostal k místu, které zaujalo moji pozornost a
-          zjistil jsem, že se jedná se výrobní štítek s názvem společnosti
-          „Mundus“.
+          od prachu, tričko se mi lepilo na zádech. Tahle snaha mě stála víc
+          sil, než jsem čekal. Konečně jsem se dostal k místu, které zaujalo
+          moji pozornost a zjistil jsem, že se jedná se výrobní štítek s názvem
+          společnosti „Mundus“.
         </p>
         <p>
           „Tohle byla ztráta času“ procedil jsem mezi zuby podrážděným tónem.
