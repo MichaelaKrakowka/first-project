@@ -47,56 +47,12 @@
   .btn {
     font-size: var(--fontSize3);
     text-align: center;
-    /* margin: 0; */
+    border: 1px solid rgb(89, 89, 89, 0.66);
   }
 }
 .btn:hover {
   box-shadow: var(--box-shadow);
   background-color: rgba(43, 43, 42, 0.735);
-}
-
-.fight_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 20px 0;
-  gap: 20px;
-}
-
-.dices {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-}
-@media (max-width: 979px) {
-  .dices {
-    gap: 20px;
-  }
-}
-
-.fight_note {
-  font-size: 1.5rem;
-  font-style: italic;
-  padding-top: 20px;
-}
-@media (max-width: 979px) {
-  .fight_note {
-    font-size: 1.1rem;
-  }
-}
-
-.fight_dice {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
-@media (max-width: 797px) {
-  .fight_dice {
-    font-size: var(--fontSize3);
-  }
 }
 
 .minus_strength {
@@ -113,15 +69,4 @@
     left: 250px;
     transform: none;
   }
-}
-
-.finish_fight {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.finish_btn {
-  margin-top: 30px;
 }
