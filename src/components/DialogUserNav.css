@@ -11,7 +11,7 @@
 }
 
 .mobile_menu_btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--secondary-color);
   border-radius: 5px;
 }
 
@@ -35,7 +35,7 @@ svg {
   left: 0;
   width: 80%;
   max-width: 300px;
-  background: #1b1b1b;
+  background: rgba(27, 27, 27, 1);
   padding: 30px 15px;
   animation: slideIn 300ms ease-out;
 }

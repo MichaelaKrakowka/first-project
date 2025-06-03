@@ -4,7 +4,7 @@ import reportWebVitals from "./reportWebVitals";
 
 import "./index.css";
 import "./settings/reset.css";
-import "./settings/variabils.css";
+import "./settings/variables.css";
 import { App } from "./App";
 
 const container = document.getElementById("app");
