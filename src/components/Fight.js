@@ -79,15 +79,15 @@ export const Fight = ({ userName, diceRoll, goToNextPart }) => {
 
       {playerFought && enemyFought && diceRoll !== null && (
         <div className="finish_fight">
-          {playerTotal > enemyTotal &&
+          {playerTotal >= enemyTotal &&
             "Sebral jsem poslední zbytky síly a kladivem jsem trefil přímo doprostřed přístroje. Cítil jsem, jakoby se dům nadechl, jakoby čekal na tento okamžik. Dědeček otevřel dveře do něčeho, co neměl. A zavřel je, jak nejlépe dovedl. Já jsem je jen zapečetil. Aby už nikdo další neskončil v tom tichu."}
           {playerTotal < enemyTotal &&
             "Všechno se pomalu nořilo do temnoty hlubší než je smrt. Pak jsem najednou stál stranou. Viděl jsem, jak moje tělo klidně odchází z místnosti. Pak se na okamžik otočilo… a usmálo se. V tu chvíli jsem pochopil: já tu zůstal v tom tichu, ve tmě a někdo jiný právě začal žít můj život."}
-          {playerTotal === enemyTotal &&
-            "Sebral jsem poslední zbytky síly a kladivem jsem trefil přímo doprostřed přístroje. Cítil jsem, jakoby se dům nadechl, jakoby čekal na tento okamžik. Dědeček otevřel dveře do něčeho, co neměl. A zavřel je, jak nejlépe dovedl. Já jsem je jen zapečetil. Aby už nikdo další neskončil v tom tichu."}
           <button
             className="btn finish_btn"
-            onClick={() => goToNextPart("finish")}>
+            onClick={() =>
+              goToNextPart(playerTotal < enemyTotal ? "finishLost" : "finish")
+            }>
             KONEC
           </button>
         </div>
