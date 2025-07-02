@@ -48,7 +48,7 @@ export const story = {
           vstupní hala a schodiště byly zakryté v šeru. Okny zatemněnými těžkými
           závěsy neprocházelo příliš mnoho světla. Robustní podlahové hodiny z
           ořechového dřeva už netikaly, ručičky na ciferníku se zastavily ve
-          3:33. Když jsem odsunul jejich těžké tělo od zdi, opravdu tam byl – na
+          3:33. Když jsem odsunul jejich těžké tělo od zdi, opravdu tam byl, na
           zemi ležel malý rezavý klíč, zavěšený na řetízku.
         </p>
         <p>Na zadní straně hodin bylo naškrábáno: „Pracovna“.</p>
@@ -103,8 +103,8 @@ export const story = {
         druhém patře na konci chodby jsem se konečně ocitl v jeho pracovně.
         Zdálo se, že zde bylo vše tak, jak to zanechal. Zápisníky, knihy a staré
         mapy. V rohu místnosti byly dveře, které jsem si jen mlhavě pamatoval z
-        dětství – byly zamčené. Z kapsy jsem si vytáhl klíč, který jsem našel
-        pod hodinami.
+        dětství, byly zamčené. Z kapsy jsem si vytáhl klíč, který jsem našel pod
+        hodinami.
       </p>
     ),
     options: [
@@ -192,8 +192,8 @@ export const story = {
     text: (
       <p>
         Ruka se mi třásla, když jsem zasouval klíč do zámku. Kov zaškrábal, klíč
-        zapadl dokonale. Otočil jsem jím – jedno klapnutí, pak druhé. Dveře se
-        po chvíli samy, s tichým zaskřípěním, pootevřely. Za nimi byla tma a ve
+        zapadl dokonale. Otočil jsem jím, jedno klapnutí, pak druhé. Dveře se po
+        chvíli samy, s tichým zaskřípěním, pootevřely. Za nimi byla tma a ve
         vzduchu byl cítit petrolej. Vstoupil jsem dovnitř a všiml si petrolejové
         lampy na stole. Z kapsy jsem vytáhl zapalovač a zapálil knot. Světlo se
         rozzářilo a odhalilo nástěnku pokrytou fotografiemi, novinovými
@@ -315,7 +315,7 @@ export const story = {
         </p>
         <p>
           Prsty jsem přejel po studeném kovu, jako bych se chtěl zeptat, co tu
-          vlastně dělá – a v tom v něm něco tiše cvaklo.
+          vlastně dělá... a v tom v něm něco tiše cvaklo.
         </p>
       </>
     ),
@@ -356,8 +356,8 @@ export const story = {
         <p>
           Cvaknutí mě zaujalo a snažil jsem se zjistit, odkud pochází. Opatrně
           jsem obcházel přístroj ze všech stran, až jsem nechtěně zatáhl za
-          páčku – a přístroj se spustil. Zpočátku se nic nedělo. Vypadalo to, že
-          je rozbitý. Ale po chvíli začal blikat a na displeji se pomalu začala
+          páčku, přístroj se spustil. Zpočátku se nic nedělo. Vypadalo to, že je
+          rozbitý. Ale po chvíli začal blikat a na displeji se pomalu začala
           vykreslovat křivka. Zatímco graf nabíral na intenzitě, otevřel jsem
           kufřík. Hned na první pohled mě zaujala poznámka, která mě
           znepokojila. Stálo na ní:
@@ -368,7 +368,7 @@ export const story = {
           nervozita. Najednou se kolem mě všechno ponořilo do husté tmy a
           naprostého ticha. Hodiny, které dříve odbíjely, najednou ztichly. Když
           se mi obraz pomalu vyjasnil, spatřil jsem něco naprosto
-          nepochopitelného — díval jsem se sám na sebe. Něco mě nahradilo a já
+          nepochopitelného - díval jsem se sám na sebe. Něco mě nahradilo a já
           jsem zůstal uvězněný v tom naprostém tichu. Postava, která teď obývala
           mé tělo, se pomalu porozhlédla po místnosti… a pak vykročila ze dveří.
         </p>
@@ -395,7 +395,7 @@ export const story = {
           obraz zase začal vracet, bylo něco špatně. Uviděl jsem sám sebe.
           Vnímal jsem vlastní postavu, jak stojí naproti mně, živá, dýchající,
           ale nebyl jsem to já. Něco jiného mě nahradilo. Já zůstal uvězněný v
-          tom nicotném tichu, a ta postava – ten druhý já – se beze slova
+          tom nicotném tichu, a ta postava - ten druhý já - se beze slova
           rozhlédl po místnosti, pomalu se otočil a vykročil směrem ke dveřím.
         </p>
       </>
@@ -415,8 +415,8 @@ export const story = {
           každým slovem jsem lépe chápal, co se tady stalo.
         </p>
         <p>
-          Dědeček psal, že přístroj otevírá zvukovou trhlinu – slabé místo v
-          našem světě, skrz které proniká něco, co nemá tvar ani jméno, ale
+          Dědeček psal, že přístroj otevírá zvukovou trhlinu, slabé místo v
+          našem světě skrz které proniká něco, co nemá tvar ani jméno, ale
           dokáže se přisát na mysl. Co tě vysaje a nahradí. Prý ji uzavřel, ale
           stálo ho to život. Pochopil jsem, že když ten přístroj znovu spustím,
           bude to jako znovu otevřít dveře, které měly zůstat navždy zavřené.
@@ -439,7 +439,7 @@ export const story = {
         rozhodnutý přístroj rozbít, jsem si uvědomil, že vše kolem ztichlo.
         Cítil jsem, jak se mi pomalu začíná svět kolem zatemňovat, a právě v ten
         moment mi došlo, že dědeček trhlinu sice uzavřel, ale něco z ní v domě
-        zůstalo – a teď mi chce ukrást to nejcennější, co mám: mě samotného, mou
+        zůstalo a teď mi chce ukrást to nejcennější, co mám: mě samotného, mou
         identitu, mé vědomí.
       </p>
     ),
@@ -472,7 +472,7 @@ export const story = {
           minulosti.
         </p>
         <p>
-          V hlavě mi stačilo pár krásných vzpomínek – jeho hlas, když se smál,
+          V hlavě mi stačilo pár krásných vzpomínek: jeho hlas, když se smál,
           kůže na rukou ztvrdlá prací a ta jeho vůně... vždycky voněl po
           doutníku, ne těžce, ale jemně, jako by ten kouř byl součástí jeho
           osobnosti. Byl to jeho tichý rituál, chvíle klidu uprostřed dne. A
@@ -494,7 +494,7 @@ export const story = {
     text: (
       <>
         <p>
-          Sáhl jsem do skříňky a vytáhl lahev whiskey – starou, kvalitní,
+          Sáhl jsem do skříňky a vytáhl lahev whiskey, starou, kvalitní,
           otevřenou jen při výjimečných příležitostech. Nalil jsem si sklenku a
           posadil se do křesla. Pil jsem pomalu, jako bych tím chtěl rozpustit i
           poslední zbytky napětí.
