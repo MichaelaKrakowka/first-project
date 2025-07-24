@@ -17,8 +17,8 @@ export const AvoidCheating = ({ diceRoll, setDiceRoll, children }) => {
           <p className="cheating_paragraph">
             Teď je čas hodit si kostkou a určit svou sílu. Síla ti bude při
             některých rozhodnutích ubývat, proto jednej s rozvahou. Kostku
-            najdeš v levém menu spolu s výsledkem hodu, nebo můžeš použít kostku
-            níže.
+            najdeš také v levém menu spolu s výsledkem tohoto hodu, nebo můžeš
+            použít kostku níže.
           </p>
           <Dice diceRoll={diceRoll} setDiceRoll={setDiceRoll} />
         </div>

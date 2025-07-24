@@ -18,11 +18,6 @@ export const BgMusic = () => {
     }
   };
 
-  // Pokud chceš spouštět hudbu automaticky:
-  // React.useEffect(() => {
-  //   audioRef.current.play().catch(() => {});
-  // }, []);
-
   return (
     <div>
       <audio ref={audioRef} loop>
