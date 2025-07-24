@@ -156,7 +156,7 @@ export const story = {
         <p>
           Sahl jsem na kliku a snažil se dveře otevřít, ale byly zamčené. V tu
           chvíli začaly znovu odbíjet hodiny. Rozběhl jsem se k nejbližšímu
-          oknu, lomcoval s ním, snažil jsem se otočit klikou, ale nešla otevřít.
+          oknu, lomcoval s ním, snažil jsem se otočit klikou, ale nešlo otevřít.
           Srdce mi tluklo až v krku.
         </p>
         <p>
@@ -628,7 +628,7 @@ export const story = {
           jsem se naklonil a pokusil se očistit prostor za nimi. Dlaně jsem měl
           od prachu, tričko se mi lepilo na zádech. Tahle snaha mě stála víc
           sil, než jsem čekal. Konečně jsem se dostal k místu, které zaujalo
-          moji pozornost a zjistil jsem, že se jedná se výrobní štítek s názvem
+          moji pozornost a zjistil jsem, že se jedná o výrobní štítek s názvem
           společnosti „Mundus“.
         </p>
         <p>
