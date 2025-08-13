@@ -79,7 +79,7 @@ export const GameBook = ({
           © 2025 | Design & Develop by{" "}
           <a
             className="footer_linkedIn"
-            href="https://www.linkedin.com/in/michaela-krakowka-8abbb2b1"
+            href="https://github.com/MichaelaKrakowka"
             target="_blank"
             rel="noopener noreferrer">
             Michaela Krakowka
