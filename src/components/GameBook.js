@@ -74,18 +74,6 @@ export const GameBook = ({
           </button>
         ))}
       </div>
-      <footer className="footer">
-        <p className="footer_paragraph">
-          © 2025 | Design & Develop by{" "}
-          <a
-            className="footer_linkedIn"
-            href="https://github.com/MichaelaKrakowka"
-            target="_blank"
-            rel="noopener noreferrer">
-            Michaela Krakowka
-          </a>
-        </p>
-      </footer>
     </div>
   );
 };

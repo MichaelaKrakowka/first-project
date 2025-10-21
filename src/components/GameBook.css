@@ -70,18 +70,3 @@
     transform: none;
   }
 }
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 30px;
-}
-.footer_paragraph {
-  font-size: 0.6rem;
-}
-.footer_linkedIn {
-  text-decoration: none;
-  color: var(--primary-color);
-  cursor: pointer;
-}
