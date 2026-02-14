@@ -1,5 +1,5 @@
 import React from "react";
-import ReactGA from "react-ga4";
+/*import ReactGA from "react-ga4";*/
 import { Header } from "./components/Header";
 import { Login } from "./components/Login";
 
@@ -8,7 +8,7 @@ import { GameBook } from "./components/GameBook";
 
 import { AvoidCheating } from "./components/AvoidCheating";
 
-const TRACKING_ID = "G-S4F2CQVK9Z";
+/*const TRACKING_ID = "G-S4F2CQVK9Z";*/
 
 export const App = () => {
   const [isStoryStarted, setIsStoryStarted] = React.useState(false);
@@ -20,8 +20,8 @@ export const App = () => {
   const diceClicked = diceRoll !== null;
 
   React.useEffect(() => {
-    ReactGA.initialize(TRACKING_ID);
-    ReactGA.send("pageview");
+    /*ReactGA.initialize(TRACKING_ID);
+    ReactGA.send("pageview");*/
 
     const savedName = localStorage.getItem("userName");
     const savedPartId = localStorage.getItem("currentPartId");
